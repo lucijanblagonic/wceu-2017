@@ -33,19 +33,8 @@ define( 'WCEU_2016_FILE', __FILE__ );
  *
  * @return void
  */
-function wceu_css_setup() {
+function wceu_2017_css_setup() {
 	wp_enqueue_style( 'wceu-2017', WCEU_2017_CSS_URL . '/style.css', array(), '1.2', 'screen' );
 	wp_dequeue_style( 'style' ); // remove base CSS from theme
 }
-add_action( 'wp_enqueue_scripts', 'wceu_css_setup', 100);
-
-/**
- * Add typekit kit
- */
-function wceu_kit() {
-	?>
-	<script src="https://use.typekit.net/eye7ffh.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	<?php
-}
-//add_action( 'wp_head', 'wceu_kit' );
+add_action( 'wp_enqueue_scripts', 'wceu_2017_css_setup', 100);
