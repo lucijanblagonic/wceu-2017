@@ -24,9 +24,6 @@ GNU General Public License for more details.
 */
 
 define( 'WCEU_2017_CSS_URL', plugins_url( '/build/assets/stylesheets', __FILE__ ) );
-define( 'WCEU_2016_PATH', dirname( __FILE__ ) );
-define( 'WCEU_2016_BASE', plugin_basename( __FILE__ ) );
-define( 'WCEU_2016_FILE', __FILE__ );
 
 /**
  * Enqueue the compiled stylesheet
