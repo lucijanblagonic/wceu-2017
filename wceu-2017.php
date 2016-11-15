@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: WCEU 2017 CSS
-Plugin URI: https://github.com/scottsweb/wceu-2016-css
+Plugin Name: WCEU 2017 CSS + Style guide
+Plugin URI: https://github.com/lucijanblagonic/wceu-2017
 Description: CSS + Style guide for the WordCamp Europe 2017 theme
 Version: 1.0
 Author: Scott Evans
 Author URI: http://scott.ee
-Text Domain: wceu-2016-css
+Text Domain: wceu-2017
 Domain Path: /languages/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
