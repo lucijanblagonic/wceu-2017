@@ -1,0 +1,28 @@
+/* =Settings: Colors
+===================================================== */
+
+// Typography
+//
+// Fonts used on the site:
+// * Primary: **Helvetica**
+// * Secondary: **Georgia**
+//
+// Style guide: 1.typography
+
+/* Fonts */
+$font-brand-primary:              $helvetica;
+$font-brand-secondary:            $georgia;
+
+/* Font use case */
+$font-body:                       $font-brand-secondary;
+$font-headline:                   $font-brand-primary;
+
+/* Font weights */
+$hairline:                        100;
+$thin:                            200;
+$light:                           300;
+$regular:                         400;
+$medium:                          500;
+$semibold:                        600;
+$bold:                            700;
+$black:                           900;

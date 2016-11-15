@@ -1,0 +1,216 @@
+/* =Settings: Colors
+===================================================== */
+
+// Colors
+//
+// Color variables and values used on the site.
+// Local color variables should be used **only** in _settings.colors.scss.
+//
+// Markup:
+// <h3 class="cc-title">Brand</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-local-darkblue">
+//		<dt class="cc__title">Dark Blue</dt>
+//		<dd class="cc__variable">$local-darkblue</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-blue">
+//		<dt class="cc__title">Blue</dt>
+//		<dd class="cc__variable">$local-blue</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-lightblue">
+//		<dt class="cc__title">Light Blue</dt>
+//		<dd class="cc__variable">$local-lightblue</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-offblack">
+//		<dt class="cc__title">Off Black</dt>
+//		<dd class="cc__variable">$local-offblack</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-yellow">
+//		<dt class="cc__title">Yellow</dt>
+//		<dd class="cc__variable">$local-yellow</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-white">
+//		<dt class="cc__title">White</dt>
+//		<dd class="cc__variable">$local-white</dd>
+//	</dl>
+// </div>
+// <h3 class="cc-title">Text</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-text">
+//		<dt class="cc__title">Text</dt>
+//		<dd class="cc__variable">$color-text</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-weak">
+//		<dt class="cc__title">Weak Text</dt>
+//		<dd class="cc__variable">$color-text-weak</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-strong">
+//		<dt class="cc__title">Strong Text</dt>
+//		<dd class="cc__variable">$color-text-strong</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-invert">
+//		<dt class="cc__title">Invert Text</dt>
+//		<dd class="cc__variable">$color-text-invert</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-weak-invert">
+//		<dt class="cc__title">Weak Invert Text</dt>
+//		<dd class="cc__variable">$color-text-weak-invert</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-text-strong-invert">
+//		<dt class="cc__title">Strong Invert Text</dt>
+//		<dd class="cc__variable">$color-text-strong-invert</dd>
+//	</dl>
+// </div>
+// <h3 class="cc-title">Links</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-color-link">
+//		<dt class="cc__title">Link</dt>
+//		<dd class="cc__variable">$color-link</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-hover">
+//		<dt class="cc__title">Hovered Link</dt>
+//		<dd class="cc__variable">$color-link-hover</dd>
+//	</dl>
+// 	<dl class="cc cc--var-color-link-visited">
+//		<dt class="cc__title">Visited Link</dt>
+//		<dd class="cc__variable">$color-link-visited</dd>
+//	</dl>
+// </div>
+//
+// Style guide: 1.colors
+
+@mixin cc($cc-variable-value, $cc-variable-class) {
+
+  .cc--var-#{$cc-variable-class} {
+
+    &:after {
+
+    	background-color: $cc-variable-value;
+
+    }
+
+    .cc__variable:after {
+
+			content: "#{$cc-variable-value}";
+
+    }
+
+  }
+
+}
+
+/* Local */
+$local-darkblue:                  #0c3a51;
+$local-blue:                      #7194a8;
+$local-lightblue:                 #d7e9f2;
+$local-offblack:                  #1d242a;
+$local-yellow:                    #dac04a;
+$local-white:                     #fff;
+
+@include cc($local-darkblue, 'local-darkblue');
+@include cc($local-blue, 'local-blue');
+@include cc($local-lightblue, 'local-lightblue');
+@include cc($local-offblack, 'local-offblack');
+@include cc($local-yellow, 'local-yellow');
+@include cc($local-white, 'local-white');
+
+// @include cc($color-button-regular, 'color-button-regular');
+// @include cc($color-button-primary, 'color-button-primary');
+// @include cc($color-button-secondary, 'color-button-secondary');
+// @include cc($color-button-invert, 'color-button-invert');
+
+/* Brand */
+$color-brand-primary:             $local-blue;
+$color-brand-secondary:           $local-lightblue;
+$color-brand-tertiary:            $local-offblack;
+
+/* Text */
+$color-text:                      rgba(0,0,0,.75);
+$color-text-weak:                 rgba(0,0,0,.6);
+$color-text-strong:               rgba(0,0,0,1);
+$color-text-invert:               rgba(255,255,255,.75);
+$color-text-weak-invert:          rgba(255,255,255,.6);
+$color-text-strong-invert:        rgba(255,255,255,1);
+
+@include cc($color-text, 'color-text');
+@include cc($color-text-weak, 'color-text-weak');
+@include cc($color-text-strong, 'color-text-strong');
+@include cc($color-text-invert, 'color-text-invert');
+@include cc($color-text-weak-invert, 'color-text-weak-invert');
+@include cc($color-text-strong-invert, 'color-text-strong-invert');
+
+/* Links */
+$color-link:                 $color-brand-primary;
+$color-link-hover:           darken($color-brand-primary, 20%);
+$color-link-visited:         lighten($color-brand-primary, 20%);
+
+@include cc($color-link, 'color-link');
+@include cc($color-link-hover, 'color-link-hover');
+@include cc($color-link-visited, 'color-link-visited');
+
+// @include color-card($color-brand-primary, 'color-brand-primary', 'Brand primary');
+// @include color-card($color-brand-secondary, 'color-brand-secondary', 'Brand secondary');
+// @include color-card($color-brand-tertiary, 'color-brand-tertiary', 'Brand tertiary');
+
+/* Visuals */
+$color-page-background:           #f3f3f3;
+
+/* Typography colors */
+$color-text-heading-1:            #222;
+$color-text-heading-2:            #222;
+$color-text-heading-3:            #222;
+$color-text-heading-4:            #222;
+$color-text-paragraph:            #444;
+
+
+
+
+/* 10 shades of grey ;) */
+$color-grey-01:                   rgba(0,0,0,.1); // Light
+$color-grey-02:                   rgba(0,0,0,.2);
+$color-grey-03:                   rgba(0,0,0,.3);
+$color-grey-04:                   rgba(0,0,0,.4);
+$color-grey-05:                   rgba(0,0,0,.5);
+$color-grey-06:                   rgba(0,0,0,.6);
+$color-grey-07:                   rgba(0,0,0,.7);
+$color-grey-08:                   rgba(0,0,0,.8);
+$color-grey-09:                   rgba(0,0,0,.9);
+$color-grey-10:                   rgba(0,0,0,1);  // Dark
+
+/* 10 shades of grey ;) */
+$color-border-weak:               #e5e5e5;
+$color-border-normal:             #d5d5d5;
+$color-border-strong:             #c5c5c5;
+
+/* Messages */
+$color-message-default:           #eeeeee;
+$color-message-success:           #00a664;
+$color-message-warning:           #ffcb05;
+$color-message-danger:            #f04e3e;
+
+/* Forms */
+$color-input-regular:             #ddd;
+$color-input-focus:               #aaa;
+$color-input-success:             #00a664;
+$color-input-error:               #f04e3e;
+$color-input-required:            #ba131a;
+$color-input-checkbox:            #ddd;
+$color-input-checkbox-active:     $color-brand-primary;
+$color-input-radio:               #ddd;
+$color-input-radio-active:        $color-brand-primary;
+
+/* Buttons */
+$color-button-regular:            $local-blue;
+$color-button-regular-hover:      darken($color-button-regular, 20%);
+$color-button-primary:            $local-darkblue;
+$color-button-primary-hover:      darken($color-button-primary, 10%);
+$color-button-secondary:          $local-yellow;
+$color-button-secondary-hover:    darken($color-button-secondary, 5%);
+$color-button-invert:             $local-lightblue;
+$color-button-invert-hover:       darken($color-button-invert, 10%);
+$color-button-inactive:           #eeeeee;
+
+/* Specific colors */
+$color-explicit-red:              #ed1c24;
+$color-explicit-green:            #00a651;
+$color-explicit-blue:             #034ea2;

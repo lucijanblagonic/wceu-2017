@@ -1,0 +1,111 @@
+/*
+ * Information
+ *
+ * Design: Designer, Web
+ * HTML/CSS: Front–end developer, Web
+ *
+ * Standards for developing flexible, durable, and sustainable HTML and CSS.
+ * http://codeguide.co/
+ *
+ */
+
+/* =Include
+===================================================== */
+
+// 0 — Overview (styleguide.md)
+// 1 — Settings
+// 2 — Tools
+// 3 — Generic
+// 4 — Elements
+// 5 — Objects
+// 6 — Components
+// 7 — Trumps
+
+@import "bourbon/bourbon"; // Bourbon [http://bourbon.io/]
+@import "susy/susy";       // Susy [http://susy.oddbird.net/]
+
+// Settings
+//
+// Global variables
+//
+// Style guide: 1
+
+// Settings: Global variables, config switches
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.other";
+
+// Tools
+//
+// Default mixins and functions
+//
+// Style guide: 2
+
+// Tools: Default mixins and functions
+@import "tools.mixins";
+@import "tools.media-queries";
+
+// Generic
+//
+// Ground–zero styles (Normalize.css, resets, box-sizing...)
+//
+// Style guide: 3
+
+// Generic: Ground–zero styles (Normalize.css, resets, box-sizing...)
+@import "generic.normalize";
+@import "generic.box-sizing";
+@import "generic.other";
+
+// Elements
+//
+// Unclassed HTML elements (type selectors)
+//
+// Style guide: 4
+
+// Elements: Unclassed HTML elements (type selectors)
+@import "elements.headings";
+@import "elements.hr";
+@import "elements.forms";
+@import "elements.links";
+@import "elements.lists";
+@import "elements.page";
+@import "elements.quotes";
+@import "elements.tables";
+@import "elements.images";
+@import "elements.code";
+
+// Objects
+//
+// Cosmetic–free design patterns
+//
+// Style guide: 5
+
+// Objects: Cosmetic–free design patterns
+@import "objects.colors";
+@import "objects.layout";
+@import "objects.nav";
+// @import "objects.media";
+
+// Components
+//
+// Designed components, chunks of UI
+//
+// Style guide: 6
+
+// Components: Designed components, chunks of UI
+@import "components.skip-links";
+@import "components.buttons";
+@import "components.forms";
+
+// Trumps
+//
+// Helpers and overrides
+//
+// Style guide: 7
+
+// Trumps: Helpers and overrides
+@import "trumps.utilities";
+
+// Playing around
+@import "experimental";
+@import "styleguide";

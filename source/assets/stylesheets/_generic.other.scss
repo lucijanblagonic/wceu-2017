@@ -1,0 +1,19 @@
+/* =Generic: Page
+===================================================== */
+
+body {
+
+  font-family: $font-body;
+  line-height: 1.5;
+  background: #fff;
+
+  @include font-feature-settings("liga");
+
+}
+
+::selection {
+
+  color: #fff;
+  background-color: $color-brand-primary;
+
+}
