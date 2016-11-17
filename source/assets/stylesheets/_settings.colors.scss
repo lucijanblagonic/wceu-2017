@@ -140,9 +140,9 @@ $color-text-strong-invert:        rgba(255,255,255,1);
 @include cc($color-text-strong-invert, 'color-text-strong-invert');
 
 /* Links */
-$color-link:                 $color-brand-primary;
-$color-link-hover:           darken($color-brand-primary, 20%);
-$color-link-visited:         lighten($color-brand-primary, 20%);
+$color-link:                 $local-yellow;
+$color-link-hover:           darken($local-yellow, 20%);
+$color-link-visited:         lighten($local-yellow, 20%);
 
 @include cc($color-link, 'color-link');
 @include cc($color-link-hover, 'color-link-hover');

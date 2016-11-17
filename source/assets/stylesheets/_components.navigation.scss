@@ -19,3 +19,57 @@
 // </div>
 //
 // Style guide: 6.navigation
+
+// .menu-main-navigation-container {}
+
+.menu {
+
+	background-color: $color-brand-tertiary;
+
+	@include list-reset();
+	@include clearfix();
+
+}
+
+.menu-item {
+
+	margin: 0;
+	display: block;
+
+	font-family: $font-brand-primary;
+	@include font-size(16);
+	line-height: em(24,16);
+	text-align: center;
+
+	@include breakpoint(medium) {
+
+		float: left;
+
+		@include font-size(18);
+		line-height: em(24,18);
+
+	}
+
+}
+
+.menu-item a {
+
+	display: block;
+	padding: $unit-xs $unit-s;
+
+	text-decoration: none;
+
+	@include breakpoint(medium) {
+
+		padding: $unit-s $unit-m;
+
+	}
+
+}
+
+.current-menu-item > a {
+
+	color: $color-text-strong-invert;
+	background-color: $color-link;
+
+}
