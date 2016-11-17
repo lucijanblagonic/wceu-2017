@@ -115,6 +115,12 @@
                 ><span class="kss-nav__name">Navigation</span>
               </a>
             </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-widget-subscribe">
+                <span class="kss-nav__ref kss-nav__ref-child">6.8.1</span
+                ><span class="kss-nav__name">Subscribe</span>
+              </a>
+            </li>
         </ul>
       </li>
       <li class="kss-nav__menu-item">
@@ -396,12 +402,24 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          Markup:
+          <footer id="colophon" class="site-footer" role="contentinfo">
+	<div id="footer-widgets"></div><!-- #footer-widgets -->
+	<div class="site-info">
+		<a class="site-info-generator" href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+		<a class="site-info-network" href="http://central.wordcamp.org/" title="Return to WordCamp Central">Go to WordCamp Central</a>
+	</div>
+</footer>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">Markup:</code></pre>
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;footer id=&quot;colophon&quot; class=&quot;site-footer&quot; role=&quot;contentinfo&quot;&gt;
+	&lt;div id=&quot;footer-widgets&quot;&gt;&lt;/div&gt;&lt;!-- #footer-widgets --&gt;
+	&lt;div class=&quot;site-info&quot;&gt;
+		&lt;a class=&quot;site-info-generator&quot; href=&quot;http://wordpress.org/&quot; title=&quot;A Semantic Personal Publishing Platform&quot; rel=&quot;generator&quot;&gt;Proudly powered by WordPress&lt;/a&gt;
+		&lt;a class=&quot;site-info-network&quot; href=&quot;http://central.wordcamp.org/&quot; title=&quot;Return to WordCamp Central&quot;&gt;Go to WordCamp Central&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;</code></pre>
       </div>
 
       </section>
@@ -646,6 +664,70 @@
 		&lt;li class=&quot;menu-item menu-item-type-post_type menu-item-object-page&quot;&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-widget-subscribe" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-6-widget-subscribe">
+          <span class="kss-title__ref">
+              6.8.1
+            <span class="kss-title__permalink-hash">
+                #6.widget.subscribe
+            </span>
+          </span>
+          Subscribe
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Subscribe jetpack widget</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <aside id="" class="widget jetpack_subscription_widget">
+	<h1 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h1>
+	<form action="#" method="post" accept-charset="utf-8" id="">
+		<div id="subscribe-text">
+			<p>Enter your email address to subscribe to this site and receive news by email.</p>
+		</div>
+		<p id="subscribe-email">
+			<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-3" style="clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;">Email Address</label>
+			<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address">
+		</p>
+		<p id="subscribe-submit">
+			<input type="submit" value="Sign me up!" name="jetpack_subscriptions_widget">
+		</p>
+	</form>
+</aside>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;aside id=&quot;&quot; class=&quot;widget jetpack_subscription_widget&quot;&gt;
+	&lt;h1 class=&quot;widget-title&quot;&gt;Subscribe to WordCamp Europe 2017 News by email&lt;/h1&gt;
+	&lt;form action=&quot;#&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot; id=&quot;&quot;&gt;
+		&lt;div id=&quot;subscribe-text&quot;&gt;
+			&lt;p&gt;Enter your email address to subscribe to this site and receive news by email.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;p id=&quot;subscribe-email&quot;&gt;
+			&lt;label id=&quot;jetpack-subscribe-label&quot; for=&quot;subscribe-field-blog_subscription-3&quot; style=&quot;clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;&quot;&gt;Email Address&lt;/label&gt;
+			&lt;input type=&quot;email&quot; name=&quot;email&quot; required=&quot;required&quot; class=&quot;required&quot; value=&quot;&quot; id=&quot;subscribe-field-blog_subscription-3&quot; placeholder=&quot;Email Address&quot;&gt;
+		&lt;/p&gt;
+		&lt;p id=&quot;subscribe-submit&quot;&gt;
+			&lt;input type=&quot;submit&quot; value=&quot;Sign me up!&quot; name=&quot;jetpack_subscriptions_widget&quot;&gt;
+		&lt;/p&gt;
+	&lt;/form&gt;
+&lt;/aside&gt;</code></pre>
       </div>
 
       </section>
