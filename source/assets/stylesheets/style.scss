@@ -93,9 +93,13 @@
 // Style guide: 6
 
 // Components: Designed components, chunks of UI
-@import "components.skip-links";
 @import "components.buttons";
 @import "components.forms";
+@import "components.branding"; // .site-branding
+@import "components.header"; // .site-header
+@import "components.navigation"; // .site-navigation
+@import "components.footer"; // .site-footer
+@import "components.main";   // #main
 
 // Trumps
 //
