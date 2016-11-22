@@ -44,7 +44,9 @@
 
   @include font-size(20);
   line-height: em(28,20);
+  font-family: $font-headline;
   font-weight: $regular;
+  text-transform: none;
   color: $color-text-strong-invert;
 
   @include breakpoint(small) {
@@ -76,7 +78,9 @@
 
   @include font-size(16);
   line-height: em(24,16);
+  font-family: $font-body;
   font-weight: $regular;
+  text-transform: none;
   color: $color-text-weak-invert;
 
   @include breakpoint(small) {

@@ -234,6 +234,14 @@ $local-offblack:                  #1d242a;
 $local-yellow:                    #dac04a;
 $local-white:                     #fff;
 
+$local-thunder: #2D282D;
+$local-ash: tint($local-thunder, 20%);
+$local-smoke: tint($local-thunder, 70%);
+$local-copper: #CC9966;
+$local-linnen: tint($local-copper,80%);
+$local-gold: #E6AA50;
+$local-lavender: #8282BE;
+
 @include cc($local-darkblue, 'local-darkblue');
 @include cc($local-blue, 'local-blue');
 @include cc($local-lightblue, 'local-lightblue');
@@ -247,9 +255,9 @@ $local-white:                     #fff;
 // @include cc($color-button-invert, 'color-button-invert');
 
 /* Brand */
-$color-brand-primary:             $local-blue;
-$color-brand-secondary:           $local-lightblue;
-$color-brand-tertiary:            $local-offblack;
+$color-brand-primary:             $local-gold;
+$color-brand-secondary:           $local-copper;
+$color-brand-tertiary:            $local-thunder;
 
 
 /*
