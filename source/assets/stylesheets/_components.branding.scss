@@ -42,8 +42,8 @@
 
   margin: 0;
 
-  @include font-size(20);
-  line-height: em(28,20);
+  @include font-size(24);
+  line-height: em(28,24);
   font-family: $font-headline;
   font-weight: $regular;
   text-transform: none;
@@ -51,15 +51,15 @@
 
   @include breakpoint(small) {
 
-    @include font-size(24);
-    line-height: em(32,24);
+    @include font-size(28);
+    line-height: em(32,28);
 
   }
 
   @include breakpoint(medium) {
 
-    @include font-size(28);
-    line-height: em(36,28);
+    @include font-size(36);
+    line-height: em(44,36);
 
   }
 
