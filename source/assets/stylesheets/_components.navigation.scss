@@ -7,15 +7,15 @@
 //
 // Markup:
 // <div class="menu-main-navigation-container">
-// 	<ul id="menu-main-navigation" class="menu">
-// 		<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="#">News</a></li>
-// 		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Volunteer</a></li>
-// 		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Être bénévole</a></li>
-// 		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Tickets</a></li>
-// 		<li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="Info" href="#">Attendee Information</a></li>
-// 		<li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="CoC" href="#">Code of Conduct</a></li>
-// 		<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
-// 	</ul>
+//  <ul id="menu-main-navigation" class="menu">
+//    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="#">News</a></li>
+//    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Volunteer</a></li>
+//    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Être bénévole</a></li>
+//    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Tickets</a></li>
+//    <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="Info" href="#">Attendee Information</a></li>
+//    <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="CoC" href="#">Code of Conduct</a></li>
+//    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
+//  </ul>
 // </div>
 //
 // Style guide: 6.navigation
@@ -24,52 +24,63 @@
 
 .menu {
 
-	background-color: $color-brand-tertiary;
+  @include list-reset();
+  @include clearfix();
 
-	@include list-reset();
-	@include clearfix();
+  background-color: $color-brand-tertiary;
+  text-align: center;
 
 }
 
 .menu-item {
 
-	margin: 0;
-	display: block;
+  margin: 0;
+  display: block;
 
-	font-family: $font-brand-primary;
-	@include font-size(16);
-	line-height: em(24,16);
-	text-align: center;
+  font-family: $font-brand-primary;
+  @include font-size(16);
+  line-height: em(24,16);
+  text-align: center;
 
-	@include breakpoint(medium) {
+  @include breakpoint(medium) {
 
-		float: left;
+    display: inline-block;
 
-		@include font-size(18);
-		line-height: em(24,18);
+    @include font-size(18);
+    line-height: em(24,18);
 
-	}
+  }
 
 }
 
 .menu-item a {
 
-	display: block;
-	padding: $unit-xs $unit-s;
+  display: block;
+  padding: $unit-xs $unit-s;
 
-	text-decoration: none;
+  text-decoration: none;
 
-	@include breakpoint(medium) {
+  @include breakpoint(medium) {
 
-		padding: $unit-s $unit-m;
+    padding: $unit-s $unit-m;
 
-	}
+  }
 
 }
 
 .current-menu-item > a {
 
-	color: $color-text-strong-invert;
-	background-color: $color-link;
+  color: $color-text-strong-invert;
+  background-color: $color-link;
+
+}
+
+/*
+ * Sub menu
+ */
+
+.sub-menu {
+
+  display: none;
 
 }

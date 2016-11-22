@@ -24,3 +24,16 @@
   text-align: right;
 
 }
+
+
+/*
+ * Assistive text
+ *
+ * Hide visually but keep it for screen readers
+ */
+
+.assistive-text {
+
+  @include visually-hidden();
+
+}

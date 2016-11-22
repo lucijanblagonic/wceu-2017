@@ -124,40 +124,28 @@
   padding: 0;
 }
 
-// Proportion
-@mixin breakpoint-proportion($property-name, $negative-value: 'none') {
+// Container padding
+//
+// Add container padding accross resolutions with the ability to set multiplicator for top and bottom padding.
+//
+// Markup:
+// @include container-padding(1.5);
+//
+// Style guide: 2.container-padding
 
-  @if $negative-value == 'negative' {
+@mixin container-padding($proportion) {
 
-    #{$property-name}: -($container-unit-small);
+  padding: ($container-unit-small * $proportion) $container-unit-small;
 
-    @include breakpoint(small) {
+  @include breakpoint(small) {
 
-      #{$property-name}: -($container-unit-medium);
+    padding: ($container-unit-medium * $proportion) $container-unit-medium;
 
-    }
+  }
 
-    @include breakpoint(medium) {
+  @include breakpoint(medium) {
 
-      #{$property-name}: -($container-unit-large);
-
-    }
-
-  } @else {
-
-    #{$property-name}: $container-unit-small;
-
-    @include breakpoint(small) {
-
-      #{$property-name}: $container-unit-medium;
-
-    }
-
-    @include breakpoint(medium) {
-
-      #{$property-name}: $container-unit-large;
-
-    }
+    padding: ($container-unit-large * $proportion) $container-unit-large;
 
   }
 

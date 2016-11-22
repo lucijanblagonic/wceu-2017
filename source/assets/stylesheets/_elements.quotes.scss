@@ -20,19 +20,19 @@ blockquote {
 
 blockquote {
 
-	padding: 2em;
-	background-color: $color-grey-01;
+  padding: 2em;
+  background-color: $color-grey-10;
 
-	p {
+  p {
 
-		font-style: italic;
+    font-style: italic;
 
-	}
+  }
 
-	p:last-child {
+  p:last-child {
 
-		margin-bottom: 0;
+    margin-bottom: 0;
 
-	}
+  }
 
 }

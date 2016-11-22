@@ -12,12 +12,9 @@
 
 hr {
 
+  margin: $unit-default 0;
   padding: 0;
-  margin: 0;
   border: 0;
-  border-top: 1px solid $color-grey-01;
-
-  @include breakpoint-proportion(margin-top);
-  @include breakpoint-proportion(margin-bottom);
+  border-top: 1px solid $color-grey-10;
 
 }
