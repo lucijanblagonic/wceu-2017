@@ -19,11 +19,11 @@ $unit-default:                  rem(24);
 
 /* Container padding */
 $container-unit-small:          $unit-s;
-$container-unit-medium:         $unit-m;
-$container-unit-large:          $unit-l;
+$container-unit-medium:         $unit-l;
+$container-unit-large:          $unit-xl;
 
 /* Container max width */
-$container-max-width:           rem(1160);
+$container-max-width:           rem(960);
 
 /* Border radius */
 $border-radius-small:           rem(3);
