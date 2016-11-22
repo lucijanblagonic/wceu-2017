@@ -35,3 +35,15 @@ function wceu_2017_css_setup() {
 	wp_dequeue_style( 'style' ); // remove base CSS from theme
 }
 add_action( 'wp_enqueue_scripts', 'wceu_2017_css_setup', 100);
+
+
+/**
+ * Add typekit kit
+ */
+function wceu_2017_fontkit() {
+	?>
+	<script src="https://use.typekit.net/amr6iww.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<?php
+}
+add_action( 'wp_head', 'wceu_2017_fontkit' );
