@@ -77,6 +77,20 @@
 
 .menu-toggle {
 
+	padding: $unit-xs $unit-s;
+	margin: 0;
+	border-top: 1px solid rgba(255,255,255,.1);
+
+	@include font-size(18);
+	line-height: em(24,18);
+	font-weight: $bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: $color-link;
+	background-color: $color-brand-tertiary;
+
+	cursor: pointer;
+
   &.toggled-on {
 
 

@@ -22,6 +22,9 @@
 
 // .menu-main-navigation-container {}
 
+.main-navigation {}
+.main-small-navigation {}
+
 .menu {
 
   @include list-reset();
@@ -44,7 +47,7 @@
   line-height: em(24,16);
   text-align: center;
 
-  @include breakpoint(medium) {
+  @include breakpoint(small) {
 
     display: inline-block;
 
@@ -92,7 +95,7 @@
 
 .menu-item-has-children {
 
-  @include breakpoint(medium) {
+  @include breakpoint(small) {
 
     &:hover > a {
 
@@ -119,11 +122,13 @@
 
   display: none;
 
-  @include breakpoint(medium) {
+  @include breakpoint(small) {
 
     position: absolute;
     top: 100%;
     left: 0;
+    right: 0;
+    z-index: 1000; //todo
 
     background-color: $color-link;
 
@@ -135,6 +140,8 @@
     }
 
     a {
+
+      padding: rem(10) $unit-s;
 
       color: $color-text;
 
