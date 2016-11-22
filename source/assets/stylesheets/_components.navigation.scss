@@ -34,6 +34,8 @@
 
 .menu-item {
 
+  position: relative;
+
   margin: 0;
   display: block;
 
@@ -66,11 +68,20 @@
 
   }
 
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-text-strong;
+    background-color: $color-link;
+
+  }
+
 }
 
 .current-menu-item > a {
 
-  color: $color-text-strong-invert;
+  color: $color-text-strong;
   background-color: $color-link;
 
 }
@@ -79,8 +90,56 @@
  * Sub menu
  */
 
+.menu-item-has-children {
+
+  @include breakpoint(medium) {
+
+    &:hover > a {
+
+      color: $color-text-strong;
+      background-color: $color-link;
+
+    }
+
+    &:hover > .sub-menu {
+
+      display: block;
+
+      // box-shadow: rem(1) rem(4) rem(24) 0 rgba(0,0,0,.125);
+
+    }
+
+  }
+
+}
+
 .sub-menu {
 
+  @include list-reset();
+
   display: none;
+
+  @include breakpoint(medium) {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: $color-link;
+
+    .menu-item {
+
+      width: 100%;
+      border-top: 1px solid $color-border-weak;
+
+    }
+
+    a {
+
+      color: $color-text;
+
+    }
+
+  }
 
 }
