@@ -36,6 +36,11 @@ $box-shadow-small:              0 rem(1) rem(3) 0 rgba(0,0,0,.2);
 $box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
 $box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
 
+/* Logo size */
+$site-logo-width:               500px; // Width of the image/element
+$site-logo-height:              416px; // Height of the image/element
+$site-logo-proportion:          .3; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
+
 /* Media queries */
 $extra-small-value:             24em; // 384px
 $small-value:                   36em; // 576px

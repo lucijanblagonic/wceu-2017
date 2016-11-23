@@ -65,7 +65,34 @@
 
   a {
 
+    display: block;
     color: $color-link;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      text-decoration: none;
+
+    }
+
+  }
+
+  a:before {
+
+    display: block;
+    width: 500px * .3 ;
+    height: 416px * .3;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $unit-xs;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
+    background-size: 100%;
+
+    content: "";
 
   }
 
