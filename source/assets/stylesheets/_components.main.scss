@@ -8,3 +8,85 @@
 // Markup:
 //
 // Style guide: 6.main
+
+/*
+ * Main
+ *
+ * Container for primary and secondary content
+ * <div id="main"> ... </div>
+ */
+
+#main {
+
+
+
+}
+
+
+/*
+ * Primary content
+ *
+ * Container for main content
+ * <div id="primary" class="site-content"> ... </div>
+ */
+
+#primary {
+
+
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: left;
+
+}
+
+
+/*
+ * Content
+ *
+ * Container for posts and pages
+ * <div id="content" role="main"> ... </div>
+ */
+
+#content {
+
+  @include container-padding(1.5);
+
+}
+
+
+/*
+ * Secondary content
+ *
+ * Container for secondary content (widgets)
+ * <div id="secondary" class="widget-area"> ... </div>
+ */
+
+#secondary {
+
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: left;
+
+}
+
+
+/*
+ * Primary sidebar
+ *
+ * Container for primary sidebar
+ * <div id="primary-sidebar"> ... </div>
+ */
+
+#primary-sidebar {
+
+  .widget {
+
+    @include container-padding(1.5);
+
+  }
+
+}

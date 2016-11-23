@@ -3,112 +3,41 @@
 
 
 /*
- * Main
- *
- * Container for primary and secondary content
- * <div id="main"> ... </div>
- */
-
-#main {
-
-
-
-}
-
-
-/*
- * Primary content
- *
- * Container for main content
- * <div id="primary" class="site-content"> ... </div>
- */
-
-#primary {
-
-
-  max-width: $container-max-width;
-  margin-left: auto;
-  margin-right: auto;
-
-  text-align: left;
-
-}
-
-
-/*
- * Content
- *
- * Container for posts and pages
- * <div id="content" role="main"> ... </div>
- */
-
-#content {
-
-  @include container-padding(1.5);
-
-}
-
-
-/*
- * Secondary content
- *
- * Container for secondary content (widgets)
- * <div id="secondary" class="widget-area"> ... </div>
- */
-
-#secondary {
-
-	max-width: $container-max-width;
-	margin-left: auto;
-	margin-right: auto;
-
-	text-align: left;
-
-}
-
-
-/*
- * Primary sidebar
- *
- * Container for primary sidebar
- * <div id="primary-sidebar"> ... </div>
- */
-
-#primary-sidebar {
-
-	.widget {
-
-		@include container-padding(1.5);
-
-	}
-
-}
-
-
-/*
  * Other
  */
 
 
 .menu-toggle {
 
-	padding: $unit-xs $unit-s;
-	margin: 0;
-	border-top: 1px solid rgba(255,255,255,.1);
+  padding: $unit-xs $unit-s;
+  margin: 0;
+  border-top: 1px solid rgba(255,255,255,.1);
 
-	@include font-size(18);
-	line-height: em(24,18);
-	font-weight: $bold;
-	text-transform: uppercase;
-	text-align: center;
-	color: $color-link;
-	background-color: $color-brand-tertiary;
+  @include font-size(18);
+  line-height: em(24,18);
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-link;
+  background-color: $color-brand-tertiary;
 
-	cursor: pointer;
+  cursor: pointer;
 
   &.toggled-on {
 
 
   }
+
+}
+
+
+/*
+ * Widgets
+ */
+
+.widget-title {
+
+  @include font-size(20);
+  line-height: em(28,20);
 
 }

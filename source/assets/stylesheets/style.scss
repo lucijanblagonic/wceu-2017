@@ -95,12 +95,14 @@
 // Components: Designed components, chunks of UI
 @import "components.buttons";
 @import "components.forms";
-@import "components.branding"; // .site-branding
-@import "components.header"; // .site-header
-@import "components.navigation"; // .site-navigation
-@import "components.footer"; // .site-footer
-@import "components.main";   // #main
-@import "components.widget-subscribe";   // #main
+@import "components.branding";
+@import "components.header";
+@import "components.navigation";
+@import "components.footer";
+@import "components.main";
+@import "components.post";
+@import "components.widget-subscribe";
+@import "components.nav-pagination";
 
 // Trumps
 //

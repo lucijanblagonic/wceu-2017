@@ -15,3 +15,20 @@
 // </footer>
 //
 // Style guide: 6.footer
+
+/*
+ * Footer
+ *
+ * Footer container
+ * <footer id="colophon" class="site-footer" role="contentinfo"> ... </footer>
+ */
+
+#colophon {
+
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+}
