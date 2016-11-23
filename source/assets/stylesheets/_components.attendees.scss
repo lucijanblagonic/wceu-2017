@@ -72,9 +72,7 @@
 
     text-align: center;
     margin-bottom: $unit-default;
-
-    @include font-size(16);
-    line-height: em(24,16);
+    font-size: ms(-1);
 
     @include breakpoint(small) {
 
@@ -109,9 +107,9 @@
 
   .tix-attendee-name {
 
-    // font-family: $font-headline;
     color: $color-text-strong;
     font-weight: $bold;
+    font-size: ms(1);
 
   }
 

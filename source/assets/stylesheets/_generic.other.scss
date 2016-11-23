@@ -3,22 +3,23 @@
 
 body {
 
-  font-family: $font-body;
-  font-size: 16px;
+  font-size: 1em;
   line-height: ms(2);
+  font-family: $font-body;
+
   background: #fff;
 
   @include font-feature-settings("liga");
 
   @include breakpoint(small) {
 
-		font-size: 18px;
+		font-size: 1.125em;
 
   }
 
   @include breakpoint(medium) {
 
-		font-size: 20px;
+		font-size: 1.25em;
 
   }
 
