@@ -97,7 +97,6 @@
     // border: 3px solid $local-gold;
     // border-radius: 50%;
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-    box-shadow: 0 0 10px 10px $local-gold;
 
     @include breakpoint(small) {
 
