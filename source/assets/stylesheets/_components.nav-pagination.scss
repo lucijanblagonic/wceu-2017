@@ -20,11 +20,25 @@
 
 .paging-navigation {
 
-  a {}
+  @include clearfix();
 
-  .nav-previous {}
+  a {
 
-  .nav-next {}
+    display: block;
+
+  }
+
+  .nav-previous {
+
+    float: left;
+
+  }
+
+  .nav-next {
+
+    float: right;
+
+  }
 
   /* Arrows */
   .meta-nav {}

@@ -38,11 +38,76 @@
 
 .wcorg-organizer {
 
-  h2 {}
+  max-width: 40em;
+  margin-bottom: $unit-default;
 
-  img {}
+  h2 {
 
-  p {}
+    @include font-size(18);
+    line-height: em(28,18);
+    font-family: $font-headline;
+    letter-spacing: .05em;
+
+    @include breakpoint(medium) {
+
+      @include font-size(20);
+      line-height: em(30,20);
+
+    }
+
+  }
+
+  .wcorg-organizer-description {
+
+    padding-left: rem(64);
+    min-height: rem(64);
+
+    @include breakpoint(small) {
+
+      padding-left: rem(96);
+      min-height: rem(96);
+
+    }
+
+  }
+
+  p {
+
+    margin: 0;
+
+    @include font-size(16);
+    line-height: em(24,16);
+
+    @include breakpoint(medium) {
+
+      // @include font-size(18);
+      // line-height: em(28,18);
+
+    }
+
+  }
+
+  img {
+
+    float: left;
+    // margin-top: rem(6);
+    margin-left: -(rem(64));
+    width: rem(48);
+
+    // border: 3px solid $local-gold;
+    // border-radius: 50%;
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    box-shadow: 0 0 10px 10px $local-gold;
+
+    @include breakpoint(small) {
+
+      margin-left: -(rem(96));
+      width: rem(80);
+
+    }
+
+  }
+
 
   a {}
 
