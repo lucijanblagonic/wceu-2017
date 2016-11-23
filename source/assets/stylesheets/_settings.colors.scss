@@ -34,7 +34,7 @@
 //		<dd class="cc__variable">$local-white</dd>
 //	</dl>
 // </div>
-// <h3 class="cc-title">Brand (V1)</h3>
+// <h3 class="cc-title">Brand (V2)</h3>
 // <div class="cc-group">
 // 	<dl class="cc cc--var-local-thunder">
 //		<dt class="cc__title">Thunder</dt>
@@ -289,15 +289,17 @@ $local-lavender: #8282BE;
 @include cc($local-copper, 'local-copper');
 @include cc($local-lavender, 'local-lavender');
 
-// @include cc($color-button-regular, 'color-button-regular');
-// @include cc($color-button-primary, 'color-button-primary');
-// @include cc($color-button-secondary, 'color-button-secondary');
-// @include cc($color-button-invert, 'color-button-invert');
 
 /* Brand */
 $color-brand-primary:             $local-gold;
 $color-brand-secondary:           $local-copper;
 $color-brand-tertiary:            $local-thunder;
+
+// $color-brand-shade-lightest:      $local-smoke;
+// $color-brand-shade-lighter:       $local-smoke;
+// $color-brand-shade-normal:        $local-smoke;
+// $color-brand-shade-darker:        $local-thunder;
+// $color-brand-shade-darkest:       $local-ash;
 
 
 /*
@@ -323,7 +325,7 @@ $color-text-strong-invert:        rgba(255,255,255,.9);
  * Links
  */
 
-$color-link:                 $color-brand-primary;
+$color-link:                 $local-gold;
 $color-link-hover:           mix($color-brand-secondary, #000, 90%);
 $color-link-focus:           mix($color-link, #000, 70%);
 $color-link-visited:         mix($color-link, #fff, 50%);
@@ -338,7 +340,7 @@ $color-link-visited:         mix($color-link, #fff, 50%);
  * Alternate links
  */
 
-$color-link-alt:             $color-brand-secondary;
+$color-link-alt:             $local-blue;
 $color-link-alt-hover:       mix($color-link-alt, #000, 90%);
 $color-link-alt-focus:       mix($color-link-alt, #000, 70%);
 $color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
