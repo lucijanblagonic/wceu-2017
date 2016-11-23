@@ -37,7 +37,6 @@
 
 .widget-title {
 
-  @include font-size(20);
-  line-height: em(28,20);
+  font-size: ms(1);
 
 }

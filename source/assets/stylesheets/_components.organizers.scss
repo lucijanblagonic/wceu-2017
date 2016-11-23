@@ -43,17 +43,9 @@
 
   h2 {
 
-    @include font-size(18);
-    line-height: em(28,18);
+    font-size: ms(1);
     font-family: $font-headline;
-    letter-spacing: .05em;
-
-    @include breakpoint(medium) {
-
-      @include font-size(20);
-      line-height: em(30,20);
-
-    }
+    letter-spacing: .1em;
 
   }
 

@@ -4,10 +4,23 @@
 body {
 
   font-family: $font-body;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: ms(2);
   background: #fff;
 
   @include font-feature-settings("liga");
+
+  @include breakpoint(small) {
+
+		font-size: 18px;
+
+  }
+
+  @include breakpoint(medium) {
+
+		font-size: 20px;
+
+  }
 
 }
 

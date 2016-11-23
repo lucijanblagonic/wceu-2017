@@ -76,8 +76,6 @@
     @include font-size(16);
     line-height: em(24,16);
 
-    // @include gallery(4 of 4);
-
     @include breakpoint(small) {
 
       @include gallery(2 of 4);
