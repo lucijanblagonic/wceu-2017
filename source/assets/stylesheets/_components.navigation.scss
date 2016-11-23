@@ -128,7 +128,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 1000; //todo
+    z-index: $z-index-navigation-submenu;
 
     background-color: $color-link;
 
