@@ -56,7 +56,15 @@
  * <div id="secondary" class="widget-area"> ... </div>
  */
 
-#secondary {}
+#secondary {
+
+	max-width: $container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+
+	text-align: left;
+
+}
 
 
 /*
@@ -66,8 +74,15 @@
  * <div id="primary-sidebar"> ... </div>
  */
 
-#primary-sidebar {}
+#primary-sidebar {
 
+	.widget {
+
+		@include container-padding(1.5);
+
+	}
+
+}
 
 
 /*
