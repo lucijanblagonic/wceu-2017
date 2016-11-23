@@ -7,7 +7,7 @@
 // Local color variables should be used **only** in _settings.colors.scss.
 //
 // Markup:
-// <h3 class="cc-title">Brand</h3>
+// <h3 class="cc-title">Brand (V1)</h3>
 // <div class="cc-group">
 // 	<dl class="cc cc--var-local-darkblue">
 //		<dt class="cc__title">Dark Blue</dt>
@@ -32,6 +32,37 @@
 // 	<dl class="cc cc--var-local-white">
 //		<dt class="cc__title">White</dt>
 //		<dd class="cc__variable">$local-white</dd>
+//	</dl>
+// </div>
+// <h3 class="cc-title">Brand (V1)</h3>
+// <div class="cc-group">
+// 	<dl class="cc cc--var-local-thunder">
+//		<dt class="cc__title">Thunder</dt>
+//		<dd class="cc__variable">$local-thunder</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-ash">
+//		<dt class="cc__title">Ash</dt>
+//		<dd class="cc__variable">$local-ash</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-smoke">
+//		<dt class="cc__title">Smoke</dt>
+//		<dd class="cc__variable">$local-smoke</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-gold">
+//		<dt class="cc__title">Gold</dt>
+//		<dd class="cc__variable">$local-gold</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-copper">
+//		<dt class="cc__title">Copper</dt>
+//		<dd class="cc__variable">$local-copper</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-linnen">
+//		<dt class="cc__title">Linnen</dt>
+//		<dd class="cc__variable">$local-linnen</dd>
+//	</dl>
+// 	<dl class="cc cc--var-local-lavender">
+//		<dt class="cc__title">Lavender</dt>
+//		<dd class="cc__variable">$local-lavender</dd>
 //	</dl>
 // </div>
 // <h3 class="cc-title">Text</h3>
@@ -226,7 +257,7 @@
 
 }
 
-/* Local */
+/* Local #V1 */
 $local-darkblue:                  #0c3a51;
 $local-blue:                      #7194a8;
 $local-lightblue:                 #d7e9f2;
@@ -234,20 +265,29 @@ $local-offblack:                  #1d242a;
 $local-yellow:                    #dac04a;
 $local-white:                     #fff;
 
-$local-thunder: #2D282D;
-$local-ash: tint($local-thunder, 20%);
-$local-smoke: tint($local-thunder, 70%);
-$local-copper: #CC9966;
-$local-linnen: tint($local-copper,80%);
-$local-gold: #E6AA50;
-$local-lavender: #8282BE;
-
 @include cc($local-darkblue, 'local-darkblue');
 @include cc($local-blue, 'local-blue');
 @include cc($local-lightblue, 'local-lightblue');
 @include cc($local-offblack, 'local-offblack');
 @include cc($local-yellow, 'local-yellow');
 @include cc($local-white, 'local-white');
+
+/* Local #V2 */
+$local-thunder: #2D282D;
+$local-ash: tint($local-thunder, 20%);
+$local-smoke: tint($local-thunder, 70%);
+$local-gold: #E6AA50;
+$local-copper: #CC9966;
+$local-linnen: tint($local-copper,80%);
+$local-lavender: #8282BE;
+
+@include cc($local-thunder, 'local-thunder');
+@include cc($local-ash, 'local-ash');
+@include cc($local-smoke, 'local-smoke');
+@include cc($local-gold, 'local-gold');
+@include cc($local-linnen, 'local-linnen');
+@include cc($local-copper, 'local-copper');
+@include cc($local-lavender, 'local-lavender');
 
 // @include cc($color-button-regular, 'color-button-regular');
 // @include cc($color-button-primary, 'color-button-primary');
