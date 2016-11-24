@@ -51,10 +51,10 @@
 #secondary .widgets {
 
   position: relative;
-
   padding: ms(2) 0;
-
   max-width: $container-max-width;
+
+  text-align: center;
 
   &:before {
 
@@ -66,6 +66,7 @@
     right: -1000px;
 
     // background: $local-linnen;
+    background-color: #fff;
 
     content: "";
 
@@ -78,6 +79,7 @@
   }
 
 }
+
 
 /*
  * Social
@@ -96,16 +98,18 @@
   a {
 
     display: inline-block;
+    text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
 
       color: $color-link;
+      text-decoration: none;
 
       strong {
 
-        color: inherit;
+        color: $color-link;
 
       }
 

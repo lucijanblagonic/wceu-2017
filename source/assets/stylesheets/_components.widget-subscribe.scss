@@ -23,3 +23,62 @@
 // </aside>
 //
 // Style guide: 6.widget.subscribe
+
+.jetpack_subscription_widget {
+
+	text-align: center;
+
+	p {
+
+		margin: 0;
+
+	}
+
+	input[type="submit"] {
+
+		width: 100%;
+		color: $color-text;
+		background-color: $color-button-primary;
+
+		&:hover,
+		&:focus,
+		&:active {
+
+			color: $color-text-strong;
+			background-color: $color-button-primary-hover;
+
+		}
+
+	}
+
+	#subscribe-text {
+
+		margin-bottom: $unit-m;
+
+	}
+
+	#subscribe-email,
+	#subscribe-submit {
+
+		display: inline-block;
+		width: rem(200);
+		margin-top: $unit-xs;
+		vertical-align: top;
+
+	}
+
+	#subscribe-email {
+
+		@include breakpoint(small) {
+
+			width: rem(400);
+
+		}
+
+	}
+
+	#subscribe-submit {
+
+	}
+
+}

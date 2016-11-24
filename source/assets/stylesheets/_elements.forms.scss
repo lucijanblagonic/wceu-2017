@@ -61,7 +61,7 @@ fieldset {
   border-radius: $border-radius-small;
 
   /* Misc */
-  // Transition
+  transition: all .1s ease;
   @include appearance(none);
 
 }
