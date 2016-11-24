@@ -9,6 +9,10 @@
 //
 // Style guide: 1.typography
 
+/* Modular scale */
+$ms-base: 1em;
+$ms-ratio: 1.25;
+
 /* Fonts */
 $font-brand-primary:              "ingra", $helvetica;
 $font-brand-secondary:            "mostra-nuova-alt-d", $helvetica;

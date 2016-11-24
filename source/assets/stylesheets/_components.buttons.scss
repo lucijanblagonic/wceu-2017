@@ -37,10 +37,11 @@
   border: 1px solid $color-button-regular;
 
   /* Typography */
-  @include font-size(16);
-  line-height: em(24,16);
+  // @include font-size(16);
+  // line-height: em(24,16);
+  font-size: ms(0);
   text-align: center;
-  color: #fff;
+  color: $color-text;
   font-family: $font-brand-primary;
   font-weight: $bold;
   text-decoration: none;
@@ -57,22 +58,28 @@
   &:focus,
   &:active {
 
-    color: #fff;
+    color: $color-text-strong;
     background-color: $color-button-regular-hover;
     text-decoration: none;
 
   }
 
+  @include breakpoint(medium) {
+
+    font-size: ms(-1);
+
+  }
+
   &.button--primary {
 
-    color: $color-text-invert;
+    color: $color-text;
     background-color: $color-button-primary;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-text-strong-invert;
+      color: $color-text-strong;
       background-color: $color-button-primary-hover;
 
     }
@@ -81,14 +88,14 @@
 
   &.button--secondary {
 
-    color: $color-text-strong;
+    color: $color-text;
     background-color: $color-button-secondary;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: rgba(0,0,0,.9);
+      color: $color-text-strong;
       background-color: $color-button-secondary-hover;
 
     }
@@ -97,14 +104,14 @@
 
   &.button--invert {
 
-    color: $color-button-primary;
+    color: $color-text;
     background-color: $color-button-invert;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-button-primary-hover;
+      color: $color-text-strong;
       background-color: $color-button-invert-hover;
 
     }
