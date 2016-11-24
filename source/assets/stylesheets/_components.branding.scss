@@ -25,7 +25,7 @@
 
 .site-header {
 
-
+  background-color: $color-brand-tertiary;
 
 }
 
@@ -34,7 +34,6 @@
   @include container-padding(1.5);
 
   text-align: center;
-  background-color: $color-brand-tertiary;
 
 }
 

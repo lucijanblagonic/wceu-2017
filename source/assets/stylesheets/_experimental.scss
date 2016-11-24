@@ -40,3 +40,100 @@
   font-size: ms(1);
 
 }
+
+
+/*
+ * Secondary Widgets
+ *
+ * Full width widgets
+ */
+
+#secondary .widgets {
+
+  position: relative;
+
+  padding: ms(2) 0;
+
+  max-width: $container-max-width;
+
+  &:before {
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    right: -1000px;
+
+    // background: $local-linnen;
+
+    content: "";
+
+  }
+
+  @include breakpoint(medium) {
+
+    padding: ms(3) 0;
+
+  }
+
+}
+
+/*
+ * Social
+ */
+
+.list-social {
+
+  @include list-reset();
+
+  li {
+
+    display: inline-block;
+
+  }
+
+  a {
+
+    display: inline-block;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-link;
+
+      strong {
+
+        color: inherit;
+
+      }
+
+    }
+
+  }
+
+  .social-twitter a,
+  .social-facebook a {
+
+    display: block;
+    padding-left: 30px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 24px;
+
+  }
+
+  .social-twitter a {
+
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/10/icon-twitter.png');
+
+  }
+
+  .social-facebook a {
+
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/10/icon-facebook.png');
+
+  }
+
+}

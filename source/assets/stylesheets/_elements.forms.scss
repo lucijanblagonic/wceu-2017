@@ -49,8 +49,9 @@ fieldset {
 
   /* Typography */
   font-family: $font-brand-primary;
-  @include font-size(16);
-  line-height: em(24,16);
+  font-size: ms(0);
+  // @include font-size(16);
+  // line-height: em(24,16);
   color: $color-text-paragraph;
 
   /* Visual */
@@ -139,8 +140,9 @@ select {
 
   /* Typography */
   font-family: $font-brand-primary;
-  @include font-size(16);
-  line-height: em(24,16);
+  // @include font-size(16);
+  // line-height: em(24,16);
+  font-size: ms(0);
   color: $color-text-paragraph;
   font-weight: $bold;
 
