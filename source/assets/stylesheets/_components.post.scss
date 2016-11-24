@@ -38,11 +38,33 @@
 //
 // Style guide: 6.post
 
-.post {}
+.post {
+
+  @include clearfix();
+
+  padding: $unit-m;
+  margin-left: -($unit-m);
+  margin-right: -($unit-m);
+  margin-bottom: $unit-default;
+  border: 6px double $local-linnen;
+
+  @include breakpoint(medium) {
+
+    padding: $unit-l;
+    margin-left: -($unit-l);
+    margin-right: -($unit-l);
+
+  }
+
+}
 
 .entry-header {}
 
-.entry-content {}
+.entry-content {
+
+  @include clearfix();
+
+}
 
 .entry-footer {}
 
