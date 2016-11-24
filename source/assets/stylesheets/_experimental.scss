@@ -51,7 +51,8 @@
 #secondary .widget {
 
   position: relative;
-  padding: ms(2) 0;
+  padding: $unit-m 0;
+  border-top: 1px solid #fff;
   max-width: $container-max-width;
 
   text-align: center;
@@ -73,7 +74,13 @@
 
   @include breakpoint(medium) {
 
-    padding: ms(3) 0;
+    padding: $unit-l 0;
+
+  }
+
+  @include breakpoint(large) {
+
+    padding: $unit-xl 0;
 
   }
 
