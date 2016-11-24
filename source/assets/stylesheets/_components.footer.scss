@@ -28,6 +28,7 @@
   max-width: $container-max-width;
   margin-left: auto;
   margin-right: auto;
+  margin-top: $unit-xl;
 
   text-align: center;
 
@@ -41,7 +42,7 @@
 
 .site-info-network {
 
-  @include hide-text();
+  // @include hide-text();
 
   position: relative;
 
@@ -51,12 +52,14 @@
   margin: 0 auto;
   margin-bottom: $unit-m;
 
+  color: #fff;
+  text-indent: -9999px;
+
   background-image: url('https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png');
   background-position: center;
   background-repeat: no-repeat;
   background-color: $color-link;
   background-size: 40px;
-  color: #fff;
   border-radius: 50%;
 
   &:after {
