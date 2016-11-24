@@ -48,7 +48,7 @@
  * Full width widgets
  */
 
-#secondary .widgets {
+#secondary .widget {
 
   position: relative;
   padding: ms(2) 0;
@@ -65,8 +65,7 @@
     left: -1000px;
     right: -1000px;
 
-    // background: $local-linnen;
-    background-color: #fff;
+    background-color: $local-linnen;
 
     content: "";
 
@@ -88,10 +87,12 @@
 .list-social {
 
   @include list-reset();
+  text-align: center;
 
   li {
 
     display: inline-block;
+    margin: ms(0);
 
   }
 
