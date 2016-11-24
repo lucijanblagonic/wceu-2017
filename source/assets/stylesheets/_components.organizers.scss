@@ -34,14 +34,18 @@
 //
 // Style guide: 6.organizers
 
-.wcorg-organizers {}
+.wcorg-organizers {
+
+  padding-bottom: $unit-default;
+  margin-bottom: $unit-default;
+  border-bottom: 1px solid $color-border-weak;
+
+}
 
 .wcorg-organizer {
 
   max-width: 40em;
-  padding-bottom: $unit-default;
   margin-bottom: $unit-default;
-  border-bottom: 1px solid $color-border-weak;
 
   h2 {
 
