@@ -39,7 +39,9 @@
 .wcorg-organizer {
 
   max-width: 40em;
+  padding-bottom: $unit-default;
   margin-bottom: $unit-default;
+  border-bottom: 1px solid $color-border-weak;
 
   h2 {
 
@@ -88,7 +90,7 @@
 
     // border: 3px solid $local-gold;
     // border-radius: 50%;
-    -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    // -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 
     @include breakpoint(small) {
