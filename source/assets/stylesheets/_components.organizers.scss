@@ -45,10 +45,17 @@
 .wcorg-organizer {
 
   max-width: 40em;
-  margin-bottom: $unit-default;
+  margin-bottom: $unit-l;
+
+  &:last-child {
+
+    margin-bottom: 0;
+
+  }
 
   h2 {
 
+    margin-bottom: $unit-xs;
     font-size: ms(1);
     font-family: $font-headline;
     letter-spacing: .1em;
@@ -73,15 +80,7 @@
 
     margin: 0;
 
-    @include font-size(16);
-    line-height: em(24,16);
-
-    @include breakpoint(medium) {
-
-      // @include font-size(18);
-      // line-height: em(28,18);
-
-    }
+    font-size: ms(0, 16px);
 
   }
 
