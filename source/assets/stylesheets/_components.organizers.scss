@@ -38,7 +38,7 @@
 
   padding-bottom: $unit-default;
   margin-bottom: $unit-default;
-  border-bottom: 1px solid $color-border-weak;
+  border-bottom: 6px double $color-border-weak;
 
 }
 
@@ -58,12 +58,12 @@
   .wcorg-organizer-description {
 
     padding-left: rem(64);
-    min-height: rem(64);
+    min-height: rem(48);
 
     @include breakpoint(small) {
 
       padding-left: rem(96);
-      min-height: rem(96);
+      min-height: rem(80);
 
     }
 

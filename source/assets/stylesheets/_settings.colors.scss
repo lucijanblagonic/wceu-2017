@@ -325,10 +325,10 @@ $color-text-strong-invert:        rgba(255,255,255,.9);
  * Links
  */
 
-$color-link:                 $local-gold;
-$color-link-hover:           mix($color-brand-secondary, #000, 90%);
-$color-link-focus:           mix($color-link, #000, 70%);
-$color-link-visited:         mix($color-link, #fff, 50%);
+$color-link:                 $local-copper;
+$color-link-hover:           $local-gold;
+$color-link-focus:           mix($local-gold, #000, 70%);
+$color-link-visited:         mix($local-gold, #fff, 50%);
 
 @include cc($color-link, 'color-link');
 @include cc($color-link-focus, 'color-link-focus');
@@ -382,9 +382,9 @@ $color-grey-100:                  mix($local-offblack, #fff, 100%);  // Dark
  * Border
  */
 
-$color-border-weak:               rgba($local-offblack, .25);
-$color-border-normal:             rgba($local-offblack, .5);
-$color-border-strong:             rgba($local-offblack, .75);
+$color-border-weak:               tint($local-copper,80%);
+$color-border-normal:             tint($local-copper,40%);
+$color-border-strong:             $local-copper;
 
 @include cc($color-border-weak, 'color-border-weak');
 @include cc($color-border-normal, 'color-border-normal');

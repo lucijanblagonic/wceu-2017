@@ -43,6 +43,8 @@
   @include clearfix();
 
   margin-bottom: $unit-default;
+  padding-bottom: $unit-default;
+  border-bottom: 6px double $color-border-weak;
 
 }
 
