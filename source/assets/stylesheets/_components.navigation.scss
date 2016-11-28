@@ -24,7 +24,6 @@
 
 .main-navigation {
 
-  // border-top: 1px solid $color-border-weak;
   border-top: 1px solid rgba(255,255,255,.2);
 
 }
@@ -62,10 +61,12 @@
   margin: 0;
   display: block;
 
-  font-family: $font-brand-primary;
+  font-family: $font-headline;
   // @include font-size(16);
   // line-height: em(24,16);
   font-size: ms(0);
+  text-transform: uppercase;
+  font-weight: $bold;
   text-align: center;
 
   @include breakpoint(small) {
@@ -92,7 +93,7 @@
   &:active {
 
     color: $color-text-strong;
-    background-color: $color-link;
+    background-color: $color-link-hover;
 
   }
 
@@ -128,7 +129,7 @@
     &:hover > a {
 
       color: $color-text-strong;
-      background-color: $color-link;
+      background-color: $color-link-hover;
 
     }
 
@@ -158,12 +159,12 @@
     right: 0;
     z-index: $z-index-navigation-submenu;
 
-    background-color: $color-link;
+    background-color: $color-link-hover;
 
     .menu-item {
 
       width: 100%;
-      border-top: 1px solid $color-border-weak;
+      border-top: 1px solid rgba(255,255,255,.2);
 
     }
 
