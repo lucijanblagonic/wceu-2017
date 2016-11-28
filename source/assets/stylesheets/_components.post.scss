@@ -42,32 +42,7 @@
 
   @include clearfix();
 
-  padding: $unit-s;
-  // margin-left: -($unit-m);
-  // margin-right: -($unit-m);
   margin-bottom: $unit-default;
-  border: 6px double $local-linnen;
-
-  @include breakpoint(small) {
-
-    padding: $unit-s;
-
-  }
-
-  @include breakpoint(medium) {
-
-    padding: $unit-m;
-
-  }
-
-  @include breakpoint(large) {
-
-
-    padding: $unit-l;
-    margin-left: -($unit-l);
-    margin-right: -($unit-l);
-
-  }
 
 }
 
