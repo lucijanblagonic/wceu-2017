@@ -36,8 +36,7 @@
 
     vertical-align: middle;
 
-    border-top-color: transparent;
-    border-bottom-color: $color-link;
+    border-top-color: $color-link;
 
     content: "";
 
@@ -49,7 +48,8 @@
 
     &:after {
 
-      border-top-color: $color-link;
+      border-top-color: transparent;
+      border-bottom-color: $color-link;
 
     }
 
