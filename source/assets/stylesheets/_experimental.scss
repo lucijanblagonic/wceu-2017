@@ -19,14 +19,18 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-link;
-  // background-color: $color-brand-tertiary;
+  background-color: rgba($color-brand-tertiary, .8);
 
   cursor: pointer;
 
   &:after {
 
-    border: rem(8) solid transparent;
+    display: inline-block;
+    border: rem(6) solid transparent;
+    margin-left: $unit-xs;
+
     border-top-color: $color-link;
+    vertical-align: middle;
 
     content: "";
 
@@ -34,10 +38,12 @@
 
   &.toggled-on {
 
+    color: $color-link-hover;
+
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-link;
+      border-bottom-color: $color-link-hover;
 
     }
 
