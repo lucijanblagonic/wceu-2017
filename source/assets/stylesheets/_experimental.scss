@@ -9,28 +9,35 @@
 
 .menu-toggle {
 
-  padding: $unit-xs $unit-s;
+  padding: $unit-s $unit-s;
   margin: 0;
   // border-top: 1px solid rgba(255,255,255,.1);
 
-  @include font-size(18);
-  line-height: em(24,18);
+  // @include font-size(18);
+  // line-height: em(24,18);
+  font-size: ms(0);
   font-weight: $bold;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: .05em;
   color: $color-link;
-  background-color: rgba($color-brand-tertiary, .8);
+  background-color: rgba($color-brand-tertiary, .9);
 
   cursor: pointer;
 
   &:after {
 
+    position: relative;
+    top: -(rem(2));
+
     display: inline-block;
     border: rem(6) solid transparent;
     margin-left: $unit-xs;
 
-    border-top-color: $color-link;
     vertical-align: middle;
+
+    border-top-color: transparent;
+    border-bottom-color: $color-link;
 
     content: "";
 
@@ -38,12 +45,11 @@
 
   &.toggled-on {
 
-    color: $color-link-hover;
+    color: $color-link;
 
     &:after {
 
-      border-top-color: transparent;
-      border-bottom-color: $color-link-hover;
+      border-top-color: $color-link;
 
     }
 
