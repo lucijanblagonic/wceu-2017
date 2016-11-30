@@ -131,9 +131,15 @@
 
 
     color: rgba(0,0,0,.8);
-    border: 1px solid $color-grey-20;
-    border-radius: $border-radius-small;
+    // border: 1px solid $color-grey-20;
+    // border-radius: $border-radius-small;
     text-decoration: none;
+
+    &:empty {
+
+      display: none;
+
+    }
 
     &:before {
 
