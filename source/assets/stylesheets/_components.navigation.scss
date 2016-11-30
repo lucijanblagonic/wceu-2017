@@ -22,6 +22,68 @@
 //
 // Style guide: 6.navigation
 
+/*
+ * Menu toggle
+ *
+ * Mobile menu switcher
+ */
+
+.menu-toggle {
+
+  padding: $unit-s $unit-s;
+  margin: 0;
+
+  font-size: ms(0);
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .05em;
+  color: $color-link;
+
+  background-color: rgba($color-brand-tertiary, .9);
+
+  cursor: pointer;
+
+  &:after {
+
+    position: relative;
+    top: -(rem(2));
+
+    display: inline-block;
+    border: rem(6) solid transparent;
+    margin-left: $unit-xs;
+
+    vertical-align: middle;
+
+    border-top-color: $color-link;
+
+    content: "";
+
+  }
+
+  &.toggled-on {
+
+    color: $color-link;
+
+    &:after {
+
+      border-top-color: transparent;
+      border-bottom-color: $color-link;
+
+    }
+
+  }
+
+}
+
+/*
+ * Main navigation
+ *
+ * Main header navigation
+ * Classes switch via JS on viewport width
+ */
+
+
 // .menu-main-navigation-container {}
 
 .main-navigation {
