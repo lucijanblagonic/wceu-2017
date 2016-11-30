@@ -27,7 +27,8 @@
 #secondary .widget {
 
   position: relative;
-  padding: $unit-m $unit-s;
+  // padding: $unit-m $unit-s;
+  @include container-padding(1.5);
   border-top: rem(2) solid #fff;
   max-width: $container-max-width;
 
@@ -131,8 +132,7 @@
 
 
     color: rgba(0,0,0,.8);
-    // border: 1px solid $color-grey-20;
-    // border-radius: $border-radius-small;
+    border-radius: $border-radius-small;
     text-decoration: none;
 
     &:empty {
