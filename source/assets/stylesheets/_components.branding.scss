@@ -66,8 +66,8 @@
   a:before {
 
     display: block;
-    width: 500px * .3 ;
-    height: 416px * .3;
+    width: ($site-logo-width * $site-logo-proportion);
+    height: ($site-logo-height * $site-logo-proportion);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: $unit-s;

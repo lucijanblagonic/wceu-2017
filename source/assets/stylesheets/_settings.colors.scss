@@ -279,9 +279,9 @@ $color-brand-tertiary:            $local-thunder;
  * Text
  */
 
-$color-text:                      rgba($local-offblack, .75);
-$color-text-weak:                 rgba($local-offblack,.6);
-$color-text-strong:               rgba($local-offblack,.9);
+$color-text:                      rgba($local-ash, .75);
+$color-text-weak:                 rgba($local-ash,.6);
+$color-text-strong:               rgba($local-ash,.9);
 $color-text-invert:               rgba(255,255,255,.75);
 $color-text-weak-invert:          rgba(255,255,255,.6);
 $color-text-strong-invert:        rgba(255,255,255,.9);
@@ -313,7 +313,7 @@ $color-link-visited:         mix($local-gold, #fff, 50%);
  * Alternate links
  */
 
-$color-link-alt:             $local-blue;
+$color-link-alt:             $local-lavender;
 $color-link-alt-hover:       mix($color-link-alt, #000, 90%);
 $color-link-alt-focus:       mix($color-link-alt, #000, 70%);
 $color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
@@ -328,16 +328,16 @@ $color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
  * Shades of grey
  */
 
-$color-grey-10:                   mix($local-offblack, #fff, 10%); // Light
-$color-grey-20:                   mix($local-offblack, #fff, 20%);
-$color-grey-30:                   mix($local-offblack, #fff, 30%);
-$color-grey-40:                   mix($local-offblack, #fff, 40%);
-$color-grey-50:                   mix($local-offblack, #fff, 50%);
-$color-grey-60:                   mix($local-offblack, #fff, 60%);
-$color-grey-70:                   mix($local-offblack, #fff, 70%);
-$color-grey-80:                   mix($local-offblack, #fff, 80%);
-$color-grey-90:                   mix($local-offblack, #fff, 90%);
-$color-grey-100:                  mix($local-offblack, #fff, 100%);  // Dark
+$color-grey-10:                   mix($local-ash, #fff, 10%); // Light
+$color-grey-20:                   mix($local-ash, #fff, 20%);
+$color-grey-30:                   mix($local-ash, #fff, 30%);
+$color-grey-40:                   mix($local-ash, #fff, 40%);
+$color-grey-50:                   mix($local-ash, #fff, 50%);
+$color-grey-60:                   mix($local-ash, #fff, 60%);
+$color-grey-70:                   mix($local-ash, #fff, 70%);
+$color-grey-80:                   mix($local-ash, #fff, 80%);
+$color-grey-90:                   mix($local-ash, #fff, 90%);
+$color-grey-100:                  mix($local-ash, #fff, 100%);  // Dark
 
 @include cc($color-grey-10, 'color-grey-10');
 @include cc($color-grey-20, 'color-grey-20');
@@ -383,14 +383,14 @@ $color-message-danger:            #f04e3e;
  * Forms
  */
 
-$color-input-regular:             mix($local-offblack, #fff, 25%);
-$color-input-focus:               mix($local-offblack, #fff, 50%);
+$color-input-regular:             mix($local-ash, #fff, 25%);
+$color-input-focus:               mix($local-ash, #fff, 50%);
 $color-input-success:             #00a664;
 $color-input-error:               $color-message-danger;
 $color-input-required:            mix($color-message-danger, #000, 75%);
-$color-input-checkbox:            mix($local-offblack, #fff, 25%);
+$color-input-checkbox:            mix($local-ash, #fff, 25%);
 $color-input-checkbox-active:     $color-brand-secondary;
-$color-input-radio:               mix($local-offblack, #fff, 25%);
+$color-input-radio:               mix($local-ash, #fff, 25%);
 $color-input-radio-active:        $color-brand-secondary;
 
 @include cc($color-input-regular, 'color-input-regular');
