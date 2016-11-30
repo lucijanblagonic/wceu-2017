@@ -47,7 +47,7 @@
 
 	input[type="submit"] {
 
-		width: 100%;
+		width: 100%!important;
 		color: $color-text;
 		text-transform: uppercase;
 		background-color: $color-button-primary;
@@ -74,7 +74,7 @@
 
 		display: inline-block;
 		width: rem(200);
-		margin-top: $unit-xs;
+		margin: $unit-xs;
 		vertical-align: top;
 
 	}
