@@ -215,8 +215,6 @@
 
       display: block;
 
-      // box-shadow: rem(1) rem(4) rem(24) 0 rgba(0,0,0,.125);
-
     }
 
   }
@@ -242,6 +240,7 @@
     .menu-item {
 
       width: 100%;
+      margin: 0;
       border-top: 1px solid rgba(255,255,255,.2);
 
     }
