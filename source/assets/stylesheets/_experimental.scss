@@ -62,6 +62,22 @@
 
 }
 
+/*
+ * Widget text
+ */
+
+.widget_text {
+
+  background-color: $color-grey-10;
+
+  &:before {
+
+    background-color: $color-grey-10!important;
+
+  }
+
+}
+
 
 /*
  * Social
@@ -69,31 +85,115 @@
 
 .list-social {
 
+  @include clearfix();
   @include list-reset();
   text-align: center;
 
   li {
 
-    display: inline-block;
-    margin: ms(0);
+    font-size: ms(0);
+    line-height: ms(1);
+
+    display: block;
+    margin-top: $unit-s;
+
+    text-align: center;
+
+    @include breakpoint(extra-small) {
+
+      width: 46%;
+      display: inline-block;
+
+    }
+
+    @include breakpoint(small) {
+
+      min-width: rem(240);
+
+    }
+
+  }
+
+  strong {
+
+    display: block;
+    color: inherit;
 
   }
 
   a {
 
-    display: inline-block;
+    position: relative;
+
+    display: block;
+    padding: $unit-s $unit-m;
+    padding-top: rem(68);
+
+
+    color: rgba(0,0,0,.8);
+    border: 1px solid $color-grey-20;
+    border-radius: $border-radius-small;
     text-decoration: none;
+
+    &:before {
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%)  rotate(45deg);
+
+      display: block;
+      width: rem(36);
+      height: rem(36);
+      border: 6px double $color-link;
+
+      background-color: $color-grey-10;
+
+      content :"";
+
+      transition: all .1s ease;
+
+    }
+
+    &:after {
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: rem(48);
+      height: rem(48);
+      // background-color: $color-link;
+
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 36px;
+
+      content :"";
+
+      // transition: all .1s ease;
+
+    }
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-link;
+      color: $color-link-hover;
       text-decoration: none;
+      background-color: $color-brand-tertiary;
 
-      strong {
+      &:after {
 
-        color: $color-link;
+        // background-size: 40px;
+
+      }
+
+      &:before {
+
+        background-color: $color-link-hover;
+        border-color: $color-link-hover;
 
       }
 
@@ -101,26 +201,15 @@
 
   }
 
-  .social-twitter a,
-  .social-facebook a {
+  .social-twitter a:after {
 
-    display: block;
-    padding-left: 30px;
-    background-position: 0 50%;
-    background-repeat: no-repeat;
-    background-size: 24px;
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-twitter.png');
 
   }
 
-  .social-twitter a {
+  .social-facebook a:after {
 
-    background-image: url('https://2017.europe.wordcamp.org/files/2016/10/icon-twitter.png');
-
-  }
-
-  .social-facebook a {
-
-    background-image: url('https://2017.europe.wordcamp.org/files/2016/10/icon-facebook.png');
+    background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-facebook.png');
 
   }
 
