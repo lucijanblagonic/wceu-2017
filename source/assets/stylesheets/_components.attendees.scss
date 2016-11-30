@@ -89,10 +89,12 @@
 
   }
 
-  img {
+  .avatar {
 
     margin-left: auto;
     margin-right: auto;
+    height: auto;
+    width: rem(64);
     margin-bottom: $unit-xs;
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 
@@ -103,6 +105,7 @@
   .tix-field {
 
     display: block;
+    font-size: ms(-1);
 
   }
 
