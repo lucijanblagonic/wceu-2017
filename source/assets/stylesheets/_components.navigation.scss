@@ -39,7 +39,7 @@
   @include list-reset();
   @include clearfix();
 
-  // background-color: $color-brand-tertiary;
+  font-size: 0;
   text-align: center;
 
   @include breakpoint(large) {
@@ -62,12 +62,10 @@
 
   position: relative;
 
-  margin: 0;
+  margin: 0 rem(1);
   display: block;
 
   font-family: $font-headline;
-  // @include font-size(16);
-  // line-height: em(24,16);
   font-size: ms(0);
   text-transform: uppercase;
   font-weight: $bold;
@@ -97,6 +95,7 @@
   &:active {
 
     color: $color-text-strong;
+    background-image: linear-gradient(to bottom, lighten($color-link-hover, 10%), transparent);
     background-color: $color-link-hover;
 
   }
