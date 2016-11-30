@@ -7,34 +7,7 @@
 // Local color variables should be used **only** in _settings.colors.scss.
 //
 // Markup:
-// <h3 class="cc-title">Brand (V1)</h3>
-// <div class="cc-group">
-// 	<dl class="cc cc--var-local-darkblue">
-//		<dt class="cc__title">Dark Blue</dt>
-//		<dd class="cc__variable">$local-darkblue</dd>
-//	</dl>
-// 	<dl class="cc cc--var-local-blue">
-//		<dt class="cc__title">Blue</dt>
-//		<dd class="cc__variable">$local-blue</dd>
-//	</dl>
-// 	<dl class="cc cc--var-local-lightblue">
-//		<dt class="cc__title">Light Blue</dt>
-//		<dd class="cc__variable">$local-lightblue</dd>
-//	</dl>
-// 	<dl class="cc cc--var-local-offblack">
-//		<dt class="cc__title">Off Black</dt>
-//		<dd class="cc__variable">$local-offblack</dd>
-//	</dl>
-// 	<dl class="cc cc--var-local-yellow">
-//		<dt class="cc__title">Yellow</dt>
-//		<dd class="cc__variable">$local-yellow</dd>
-//	</dl>
-// 	<dl class="cc cc--var-local-white">
-//		<dt class="cc__title">White</dt>
-//		<dd class="cc__variable">$local-white</dd>
-//	</dl>
-// </div>
-// <h3 class="cc-title">Brand (V2)</h3>
+// <h3 class="cc-title">Brand</h3>
 // <div class="cc-group">
 // 	<dl class="cc cc--var-local-thunder">
 //		<dt class="cc__title">Thunder</dt>
@@ -258,19 +231,19 @@
 }
 
 /* Local #V1 */
-$local-darkblue:                  #0c3a51;
-$local-blue:                      #7194a8;
-$local-lightblue:                 #d7e9f2;
-$local-offblack:                  #1d242a;
-$local-yellow:                    #dac04a;
-$local-white:                     #fff;
+// $local-darkblue:                  #0c3a51;
+// $local-blue:                      #7194a8;
+// $local-lightblue:                 #d7e9f2;
+// $local-offblack:                  #1d242a;
+// $local-yellow:                    #dac04a;
+// $local-white:                     #fff;
 
-@include cc($local-darkblue, 'local-darkblue');
-@include cc($local-blue, 'local-blue');
-@include cc($local-lightblue, 'local-lightblue');
-@include cc($local-offblack, 'local-offblack');
-@include cc($local-yellow, 'local-yellow');
-@include cc($local-white, 'local-white');
+// @include cc($local-darkblue, 'local-darkblue');
+// @include cc($local-blue, 'local-blue');
+// @include cc($local-lightblue, 'local-lightblue');
+// @include cc($local-offblack, 'local-offblack');
+// @include cc($local-yellow, 'local-yellow');
+// @include cc($local-white, 'local-white');
 
 /* Local #V2 */
 $local-thunder: #2D282D;
