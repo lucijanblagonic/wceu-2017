@@ -75,17 +75,17 @@
     margin-bottom: $unit-default;
     font-size: ms(-1);
 
-    @include breakpoint(small) {
+    // @include breakpoint(small) {
 
-      @include gallery(2 of 4);
+    //   @include gallery(2 of 4);
 
-    }
+    // }
 
-    @include breakpoint(medium) {
+    // @include breakpoint(medium) {
 
-      @include gallery(1 of 3);
+    //   @include gallery(1 of 3);
 
-    }
+    // }
 
   }
 
