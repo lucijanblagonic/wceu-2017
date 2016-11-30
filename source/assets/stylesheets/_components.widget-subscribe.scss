@@ -45,6 +45,12 @@
 
 	}
 
+	input[type="email"] {
+
+		width: 100%;
+
+	}
+
 	input[type="submit"] {
 
 		width: 100%;
@@ -80,10 +86,6 @@
 	}
 
 	#subscribe-email {
-
-		input[type="submit"] {
-			width: 100%;
-		}
 
 		@include breakpoint(small) {
 
