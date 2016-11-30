@@ -8,7 +8,7 @@
 // Markup:
 // <header id="masthead" class="site-header" role="banner">
 //   <hgroup>
-//    <h1 class="site-title"><a href="#" title="WordCamp Europe 2017" rel="home">WordCamp Europe 2017</a></h1>
+//    <h1 class="site-title"><a href="#" title="WordCamp Europe" rel="home">WordCamp Europe</a></h1>
 //    <h2 class="site-description">Paris, France – June 15-17, 2017</h2>
 //   </hgroup>
 // </header>
@@ -73,7 +73,8 @@
 
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-image: url('https://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
+    // background-image: url('https://2017.europe.wordcamp.org/files/2016/09/logo-wceu-2017.png');
+    background-image: url('http://2017.europe.wordcamp.org/files/2016/11/wceu-2017-logo.png');
     background-size: 100%;
 
     content: "";
