@@ -28,6 +28,7 @@
 
   // border-top: 2px solid rgba(255,255,255,.2);
   // border-color: $color-brand-secondary;
+  position: relative;
 
   &:before {
 
@@ -52,8 +53,8 @@
   @include list-reset();
   @include clearfix();
 
-  font-size: 0;
   text-align: center;
+  // font-size: 0;
 
   @include breakpoint(large) {
 
