@@ -47,7 +47,7 @@
 
 	input[type="email"] {
 
-		width: 100%;
+		width: 100%!important; // Override jetpack CSS
 
 	}
 
