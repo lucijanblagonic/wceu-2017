@@ -47,7 +47,7 @@
 
 	input[type="submit"] {
 
-		width: 100%!important;
+		width: 100%;
 		color: $color-text;
 		text-transform: uppercase;
 		background-color: $color-button-primary;
@@ -74,12 +74,16 @@
 
 		display: inline-block;
 		width: rem(200);
-		margin: $unit-xs;
+		margin: rem(4);
 		vertical-align: top;
 
 	}
 
 	#subscribe-email {
+
+		input[type="submit"] {
+			width: 100%;
+		}
 
 		@include breakpoint(small) {
 
