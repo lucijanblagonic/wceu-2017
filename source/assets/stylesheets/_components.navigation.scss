@@ -26,9 +26,22 @@
 
 .main-navigation {
 
-  border-top: 2px solid rgba(255,255,255,.2);
-  border-color: $color-brand-secondary;
+  // border-top: 2px solid rgba(255,255,255,.2);
+  // border-color: $color-brand-secondary;
 
+  &:before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: rem(2);
+    background-color: $color-brand-secondary;
+
+    content: "";
+
+  }
 
 }
 
@@ -95,7 +108,7 @@
   &:active {
 
     color: $color-text-strong;
-    background-image: linear-gradient(to bottom, lighten($color-link-hover, 10%), transparent);
+    // background-image: linear-gradient(to bottom, lighten($color-link-hover, 5%), transparent);
     background-color: $color-link-hover;
 
   }
