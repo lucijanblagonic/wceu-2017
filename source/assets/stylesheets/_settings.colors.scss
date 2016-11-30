@@ -437,8 +437,8 @@ $color-input-radio-active:        $color-brand-secondary;
 
 $color-button-regular:            mix($color-brand-tertiary, #fff, 20%);
 $color-button-regular-hover:      darken($color-button-regular, 10%);
-$color-button-primary:            $color-brand-primary;
-$color-button-primary-hover:      darken($color-button-primary, 5%);
+$color-button-primary:            $color-link;
+$color-button-primary-hover:      $color-link-hover;
 $color-button-secondary:          $color-brand-secondary;
 $color-button-secondary-hover:    darken($color-button-secondary, 5%);
 $color-button-invert:             #fff;
