@@ -119,6 +119,12 @@
 
   text-align: center;
 
+  @include breakpoint(small) {
+
+    display: block;
+
+  }
+
   @include breakpoint(large) {
 
     // display: table;
