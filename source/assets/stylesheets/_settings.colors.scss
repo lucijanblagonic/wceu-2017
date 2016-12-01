@@ -409,8 +409,8 @@ $color-input-radio-active:        $color-brand-secondary;
  * Buttons
  */
 
-$color-button-regular:            mix($color-brand-tertiary, #fff, 20%);
-$color-button-regular-hover:      darken($color-button-regular, 10%);
+$color-button-regular:            $color-link;
+$color-button-regular-hover:      $color-link-hover;
 $color-button-primary:            $color-link;
 $color-button-primary-hover:      $color-link-hover;
 $color-button-secondary:          $color-brand-secondary;
