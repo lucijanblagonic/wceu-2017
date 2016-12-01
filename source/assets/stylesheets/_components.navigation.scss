@@ -208,12 +208,43 @@
 
 .menu-item-has-children {
 
+  background-color: rgba($color-brand-tertiary, .6);
+
   @include breakpoint(small) {
+
+    background-color: transparent;
+
+    > a {
+
+      &:after {
+
+        position: relative;
+        top: -(rem(2));
+
+        display: inline-block;
+        border: rem(6) solid transparent;
+        margin-left: $unit-xs;
+
+        vertical-align: middle;
+
+        border-top-color: $color-link-hover;
+
+        content: "";
+
+      }
+
+    }
 
     &:hover > a {
 
       color: $color-text-strong;
       background-color: $color-link;
+
+      &:after {
+
+        border-top-color: $color-text-strong;
+
+      }
 
     }
 
@@ -231,8 +262,6 @@
 
   @include list-reset();
 
-  display: none;
-
   @include breakpoint(small) {
 
     position: absolute;
@@ -240,6 +269,8 @@
     left: 0;
     right: 0;
     z-index: $z-index-navigation-submenu;
+
+    display: none;
 
     background-color: $color-link;
 
