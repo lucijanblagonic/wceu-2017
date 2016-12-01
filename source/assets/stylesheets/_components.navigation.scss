@@ -46,6 +46,8 @@
 
   &:after {
 
+    display: none;
+
     position: relative;
     top: -(rem(2));
 
@@ -55,7 +57,7 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-link-hover;
+    border-bottom-color: $color-link-hover;
 
     content: "";
 
@@ -63,14 +65,14 @@
 
   &.toggled-on {
 
-    color: $color-link;
+    // color: $color-link;
 
-    &:after {
+    // &:after {
 
-      border-top-color: transparent;
-      border-bottom-color: $color-link-hover;
+    //   border-bottom-color: transparent;
+    //   border-top-color: $color-link-hover;
 
-    }
+    // }
 
   }
 
@@ -112,6 +114,8 @@
 
   @include list-reset();
   @include clearfix();
+
+  display: none;
 
   text-align: center;
 
