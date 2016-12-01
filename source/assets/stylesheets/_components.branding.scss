@@ -35,6 +35,12 @@
 
   text-align: center;
 
+  .home & {
+
+    @include container-padding(4);
+
+  }
+
 }
 
 .site-title {
@@ -50,13 +56,13 @@
   a {
 
     display: block;
-    color: $color-link;
+    color: $color-link-hover;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-link-hover;
+      color: $color-link;
       text-decoration: none;
 
     }

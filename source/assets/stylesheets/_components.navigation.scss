@@ -38,7 +38,7 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: .05em;
-  color: $color-link;
+  color: $color-link-hover;
 
   background-color: rgba($color-brand-tertiary, .9);
 
@@ -55,7 +55,7 @@
 
     vertical-align: middle;
 
-    border-top-color: $color-link;
+    border-top-color: $color-link-hover;
 
     content: "";
 
@@ -68,7 +68,7 @@
     &:after {
 
       border-top-color: transparent;
-      border-bottom-color: $color-link;
+      border-bottom-color: $color-link-hover;
 
     }
 
@@ -88,8 +88,6 @@
 
 .main-navigation {
 
-  // border-top: 2px solid rgba(255,255,255,.2);
-  // border-color: $color-brand-secondary;
   position: relative;
 
   &:before {
@@ -100,7 +98,7 @@
     right: 0;
 
     height: rem(2);
-    background-color: $color-brand-secondary;
+    background-color: $color-link-hover;
 
     content: "";
 
@@ -160,6 +158,7 @@
 .menu-item a {
 
   display: block;
+  color: $color-link-hover;
   padding: $unit-xs $unit-s;
 
   text-decoration: none;
@@ -170,8 +169,7 @@
   &:active {
 
     color: $color-text-strong;
-    // background-image: linear-gradient(to bottom, lighten($color-link-hover, 5%), transparent);
-    background-color: $color-link-hover;
+    background-color: $color-link;
 
   }
 
@@ -192,7 +190,7 @@
 .current-menu-item > a {
 
   color: $color-text-strong;
-  background-color: $color-link;
+  background-color: $color-link-hover;
 
 }
 
@@ -207,7 +205,7 @@
     &:hover > a {
 
       color: $color-text-strong;
-      background-color: $color-link-hover;
+      background-color: $color-link;
 
     }
 
@@ -235,7 +233,7 @@
     right: 0;
     z-index: $z-index-navigation-submenu;
 
-    background-color: $color-link-hover;
+    background-color: $color-link;
 
     .menu-item {
 
