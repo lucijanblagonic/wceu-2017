@@ -46,8 +46,6 @@
 
   &:after {
 
-    display: none;
-
     position: relative;
     top: -(rem(2));
 
@@ -57,7 +55,7 @@
 
     vertical-align: middle;
 
-    border-bottom-color: $color-link-hover;
+    border-top-color: $color-link-hover;
 
     content: "";
 
@@ -65,14 +63,14 @@
 
   &.toggled-on {
 
-    // color: $color-link;
+    color: $color-link;
 
-    // &:after {
+    &:after {
 
-    //   border-bottom-color: transparent;
-    //   border-top-color: $color-link-hover;
+      border-top-color: transparent;
+      border-bottom-color: $color-link-hover;
 
-    // }
+    }
 
   }
 
@@ -118,6 +116,12 @@
   display: none;
 
   text-align: center;
+
+  @include breakpoint(small) {
+
+    display: block;
+
+  }
 
   @include breakpoint(large) {
 
