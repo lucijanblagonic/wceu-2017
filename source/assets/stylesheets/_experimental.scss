@@ -313,3 +313,25 @@ img.wp-smiley, img.emoji {
    background: none !important;
    padding: 0 !important;
 }
+
+/* Temp fix for tickets on mobile */
+
+.tix-ticket-excerpt {
+
+  @include breakpoint(to-medium) {
+
+    display: none;
+
+  }
+
+}
+
+.tix-column-remaining {
+
+  @include breakpoint(to-medium) {
+
+    @include hide-text();
+
+  }
+
+}
