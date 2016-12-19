@@ -62,11 +62,15 @@
 // Style guide: 6.attendees
 
 #tix-attendees {}
-.tix-attendee-list {}
+
+.tix-attendee-list {
+
+  @include list-reset();
+
+}
 
 #tix-attendees {
 
-  @include list-reset();
   @include clearfix();
 
   li {

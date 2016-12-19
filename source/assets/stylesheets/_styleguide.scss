@@ -5,8 +5,8 @@
  */
 
 /* Define basic variables and colors */
-$styleguide-color-main: #3e7dca;
-$styleguide-color-link: #3e7dca;
+$styleguide-color-main: #444;
+$styleguide-color-link: #444;
 $styleguide-color-weak: rgba(0,0,0,.5);
 $styleguide-color-strong: rgba(0,0,0,.9);
 $styleguide-border-radius-small: 3px;
@@ -17,6 +17,7 @@ $styleguide-border-radius-small: 3px;
 
   @include font-size(16);
   line-height: 1.5;
+  color: $styleguide-color-strong;
   font-weight: $bold;
 
 }
@@ -24,7 +25,7 @@ $styleguide-border-radius-small: 3px;
 /* KSS sidebar */
 .kss-sidebar {
 
-  @include container-padding(1.5);
+  @include container-padding(1);
 
   background-color: tint($styleguide-color-main, 90%);
 
@@ -59,8 +60,9 @@ $styleguide-border-radius-small: 3px;
 /* KSS section */
 .kss-section {
 
+  @include container-padding(1);
+
   overflow: hidden;
-  @include container-padding(1.5);
 
   border-bottom: 1px solid rgba(0,0,0,.1);
   background-color: #fff;
@@ -100,6 +102,7 @@ $styleguide-border-radius-small: 3px;
     font-family: $helvetica;
     font-weight: $bold;
     color: #444;
+    text-transform: none;
 
     @include breakpoint(small) {
 
@@ -161,11 +164,11 @@ $styleguide-border-radius-small: 3px;
     margin-bottom: rem(24);
     @include clearfix();
 
-    &:last-child {
+    // &:last-child {
 
-      margin-bottom: 0;
+    //   margin-bottom: 0;
 
-    }
+    // }
 
   }
 
@@ -225,6 +228,13 @@ $styleguide-border-radius-small: 3px;
     -webkit-tab-size: 2;
 
   }
+
+}
+
+/* KSS description */
+.kss-description {
+
+  margin-bottom: rem(24);
 
 }
 
