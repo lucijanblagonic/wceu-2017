@@ -87,7 +87,16 @@
   border-bottom: 3px double $color-border-strong;
   margin-bottom: $unit-default;
 
-  thead {}
+  thead {
+
+    th {
+
+      color: $color-text;
+
+    }
+
+  }
+
   tbody {}
 
   th,
@@ -131,32 +140,19 @@
 
   }
 
-}
+  .tix-column-description {}
 
-/* <th> + <td> class names */
-.tix-column-description {}
+  .tix-column-price,
+  .tix-column-remaining,
+  .tix-column-quantity {
 
-.tix-column-price {
+    font-weight: $bold;
 
-  font-weight: $bold;
+  }
 
-}
-
-.tix-column-remaining {
-
-  font-weight: $bold;
+  .tix-row-coupon {}
 
 }
-
-.tix-column-quantity {
-
-  font-weight: $bold;
-
-}
-
-
-.tix-row-coupon {}
-
 
 /*
  * Coupons
@@ -198,7 +194,7 @@
 }
 
 /*
- * Table on mobile
+ * Tickets table on mobile
  *
  * Collapse columns to rows
  */
@@ -219,47 +215,48 @@
 
     tbody {
 
-        .tix-column-description {
+      .tix-column-description {
 
-          display: block;
-          width: 100%;
-
-        }
-
-        .tix-column-price,
-        .tix-column-remaining,
-        .tix-column-quantity {
-
-          display: block;
-          float: left;
-
-        }
-
-        .tix-column-price {
-
-          padding-top: rem(16);
-          padding-bottom: rem(16);
-          line-height: em(24,16);
-          width: 30%;
-
-        }
-
-        .tix-column-remaining {
-
-          padding-top: rem(16);
-          padding-bottom: rem(16);
-          line-height: em(24,16);
-          width: 30%;
-
-        }
-
-        .tix-column-quantity {
-
-          width: 40%;
-
-        }
+        display: block;
+        width: 100%;
 
       }
+
+      .tix-column-price,
+      .tix-column-remaining,
+      .tix-column-quantity {
+
+        display: block;
+        float: left;
+
+      }
+
+      .tix-column-price {
+
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        padding-left: 0;
+        line-height: em(24,16);
+        width: 30%;
+
+      }
+
+      .tix-column-remaining {
+
+        padding-top: rem(16);
+        padding-bottom: rem(16);
+        line-height: em(24,16);
+        width: 30%;
+
+      }
+
+      .tix-column-quantity {
+
+        width: 40%;
+
+      }
+
+    }
 
   }
 
