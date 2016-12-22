@@ -73,6 +73,8 @@
 
 #tix {
 
+  @include clearfix();
+
   input[type="submit"] {}
 
 }
@@ -180,8 +182,6 @@
     width: rem(160);
 
     padding: rem(7) rem(10);
-    @include font-size(14);
-    line-height: em(24,14);
 
     color: $color-text-strong-invert;
     background-color: $color-button-secondary;
