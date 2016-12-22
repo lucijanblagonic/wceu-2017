@@ -316,22 +316,22 @@ img.wp-smiley, img.emoji {
 
 /* Temp fix for tickets on mobile */
 
-.tix-ticket-excerpt {
+// .tix-ticket-excerpt {
 
-  @include breakpoint(to-medium) {
+//   @include breakpoint(to-medium) {
 
-    display: none;
+//     display: none;
 
-  }
+//   }
 
-}
+// }
 
-.tix-column-remaining {
+// .tix-column-remaining {
 
-  @include breakpoint(to-medium) {
+//   @include breakpoint(to-medium) {
 
-    display: none;
+//     display: none;
 
-  }
+//   }
 
-}
+// }

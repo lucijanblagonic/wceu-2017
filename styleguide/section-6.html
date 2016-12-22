@@ -134,15 +134,21 @@
               </a>
             </li>
             <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-tickets">
+                <span class="kss-nav__ref ">6.12</span
+                ><span class="kss-nav__name">Tickets</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
               <a href="section-6.html#kssref-6-widget-subscribe">
-                <span class="kss-nav__ref kss-nav__ref-child">6.12.1</span
+                <span class="kss-nav__ref kss-nav__ref-child">6.13.1</span
                 ><span class="kss-nav__name">Subscribe</span>
               </a>
             </li>
             <li class="kss-nav__menu-item">
               <a href="section-6.html#kssref-6-widget-text-social">
-                <span class="kss-nav__ref kss-nav__ref-child">6.12.2</span
-                ><span class="kss-nav__name">Subscribe</span>
+                <span class="kss-nav__ref kss-nav__ref-child">6.13.2</span
+                ><span class="kss-nav__name">Social</span>
               </a>
             </li>
         </ul>
@@ -1191,13 +1197,171 @@
       </div>
 
       </section>
+      <section id="kssref-6-tickets" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-6-tickets">
+          <span class="kss-title__ref">
+              6.12
+            <span class="kss-title__permalink-hash">
+                #6.tickets
+            </span>
+          </span>
+          Tickets
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>Table for buying tickets</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div id="tix" class="tix-js">
+ <form action="#" method="POST">
+   <table class="tix_tickets_table">
+     <thead>
+       <tr>
+         <th class="tix-column-description">Description</th>
+         <th class="tix-column-price">Price</th>
+         <th class="tix-column-remaining">Remaining</th>
+         <th class="tix-column-quantity">Quantity</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr class="tix-ticket-13">
+         <td class="tix-column-description">
+           <strong class="tix-ticket-title">WordCamp Europe - June 15-17, 2017</strong>
+           <br><span class="tix-ticket-excerpt">Your WordCamp Europe ticket covers both days of the conference - June 16, 17th and contributor day on Thursday, June 15th. It grants you access to all sessions, lunch, coffee breaks, and the after party. It includes an exclusive #WCEU 2017 t-shirt, stickers, and other great swag. </span>
+         </td>
+         <td class="tix-column-price" style="vertical-align: middle;">€&nbsp;40.00</td>
+         <td class="tix-column-remaining" style="vertical-align: middle;">488</td>
+         <td class="tix-column-quantity" style="vertical-align: middle;">
+           <select name="tix_tickets_selected[13]">
+             <option value="0">0</option>
+             <option selected="selected" value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+             <option value="5">5</option>
+             <option value="6">6</option>
+             <option value="7">7</option>
+             <option value="8">8</option>
+             <option value="9">9</option>
+             <option value="10">10</option>
+           </select>
+         </td>
+       </tr>
+       <tr class="tix-row-coupon">
+         <td colspan="4" style="text-align: right;">
+           <a href="#" id="tix-coupon-link" class="">Click here to enter a coupon code</a>
+           <div id="tix-coupon-container" style="display: none;">
+             <input type="text" id="tix-coupon-input" name="tix_coupon" value="">
+             <input type="submit" name="tix_coupon_submit" value="Apply Coupon">
+           </div>
+           <script>
+             // Hide the link and show the coupon form on click.
+             var link_el = document.getElementById( 'tix-coupon-link' );
+             link_el.onclick = function() {
+               this.style.display = 'none';
+               document.getElementById( 'tix-coupon-container' ).style.display = 'block';
+               document.getElementById( 'tix-coupon-input' ).focus();
+               return false;
+             };
+           </script>
+         </td>
+       </tr>
+     </tbody>
+   </table>
+   <p>
+     <input type="submit" value="Register →" style="float: right; cursor: pointer;" class="">
+     <br class="tix-clear">
+   </p>
+ </form>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;tix&quot; class=&quot;tix-js&quot;&gt;
+ &lt;form action=&quot;#&quot; method=&quot;POST&quot;&gt;
+   &lt;table class=&quot;tix_tickets_table&quot;&gt;
+     &lt;thead&gt;
+       &lt;tr&gt;
+         &lt;th class=&quot;tix-column-description&quot;&gt;Description&lt;/th&gt;
+         &lt;th class=&quot;tix-column-price&quot;&gt;Price&lt;/th&gt;
+         &lt;th class=&quot;tix-column-remaining&quot;&gt;Remaining&lt;/th&gt;
+         &lt;th class=&quot;tix-column-quantity&quot;&gt;Quantity&lt;/th&gt;
+       &lt;/tr&gt;
+     &lt;/thead&gt;
+     &lt;tbody&gt;
+       &lt;tr class=&quot;tix-ticket-13&quot;&gt;
+         &lt;td class=&quot;tix-column-description&quot;&gt;
+           &lt;strong class=&quot;tix-ticket-title&quot;&gt;WordCamp Europe - June 15-17, 2017&lt;/strong&gt;
+           &lt;br&gt;&lt;span class=&quot;tix-ticket-excerpt&quot;&gt;Your WordCamp Europe ticket covers both days of the conference - June 16, 17th and contributor day on Thursday, June 15th. It grants you access to all sessions, lunch, coffee breaks, and the after party. It includes an exclusive #WCEU 2017 t-shirt, stickers, and other great swag. &lt;/span&gt;
+         &lt;/td&gt;
+         &lt;td class=&quot;tix-column-price&quot; style=&quot;vertical-align: middle;&quot;&gt;€&amp;nbsp;40.00&lt;/td&gt;
+         &lt;td class=&quot;tix-column-remaining&quot; style=&quot;vertical-align: middle;&quot;&gt;488&lt;/td&gt;
+         &lt;td class=&quot;tix-column-quantity&quot; style=&quot;vertical-align: middle;&quot;&gt;
+           &lt;select name=&quot;tix_tickets_selected[13]&quot;&gt;
+             &lt;option value=&quot;0&quot;&gt;0&lt;/option&gt;
+             &lt;option selected=&quot;selected&quot; value=&quot;1&quot;&gt;1&lt;/option&gt;
+             &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+             &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+             &lt;option value=&quot;4&quot;&gt;4&lt;/option&gt;
+             &lt;option value=&quot;5&quot;&gt;5&lt;/option&gt;
+             &lt;option value=&quot;6&quot;&gt;6&lt;/option&gt;
+             &lt;option value=&quot;7&quot;&gt;7&lt;/option&gt;
+             &lt;option value=&quot;8&quot;&gt;8&lt;/option&gt;
+             &lt;option value=&quot;9&quot;&gt;9&lt;/option&gt;
+             &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+           &lt;/select&gt;
+         &lt;/td&gt;
+       &lt;/tr&gt;
+       &lt;tr class=&quot;tix-row-coupon&quot;&gt;
+         &lt;td colspan=&quot;4&quot; style=&quot;text-align: right;&quot;&gt;
+           &lt;a href=&quot;#&quot; id=&quot;tix-coupon-link&quot; class=&quot;&quot;&gt;Click here to enter a coupon code&lt;/a&gt;
+           &lt;div id=&quot;tix-coupon-container&quot; style=&quot;display: none;&quot;&gt;
+             &lt;input type=&quot;text&quot; id=&quot;tix-coupon-input&quot; name=&quot;tix_coupon&quot; value=&quot;&quot;&gt;
+             &lt;input type=&quot;submit&quot; name=&quot;tix_coupon_submit&quot; value=&quot;Apply Coupon&quot;&gt;
+           &lt;/div&gt;
+           &lt;script&gt;
+             // Hide the link and show the coupon form on click.
+             var link_el = document.getElementById( &#x27;tix-coupon-link&#x27; );
+             link_el.onclick = function() {
+               this.style.display = &#x27;none&#x27;;
+               document.getElementById( &#x27;tix-coupon-container&#x27; ).style.display = &#x27;block&#x27;;
+               document.getElementById( &#x27;tix-coupon-input&#x27; ).focus();
+               return false;
+             };
+           &lt;/script&gt;
+         &lt;/td&gt;
+       &lt;/tr&gt;
+     &lt;/tbody&gt;
+   &lt;/table&gt;
+   &lt;p&gt;
+     &lt;input type=&quot;submit&quot; value=&quot;Register →&quot; style=&quot;float: right; cursor: pointer;&quot; class=&quot;&quot;&gt;
+     &lt;br class=&quot;tix-clear&quot;&gt;
+   &lt;/p&gt;
+ &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
       <section id="kssref-6-widget-subscribe" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink" href="#kssref-6-widget-subscribe">
           <span class="kss-title__ref">
-              6.12.1
+              6.13.1
             <span class="kss-title__permalink-hash">
                 #6.widget.subscribe
             </span>
@@ -1265,18 +1429,18 @@
       <h3 class="kss-title kss-title--level-3">
         <a class="kss-title__permalink" href="#kssref-6-widget-text-social">
           <span class="kss-title__ref">
-              6.12.2
+              6.13.2
             <span class="kss-title__permalink-hash">
                 #6.widget.text-social
             </span>
           </span>
-          Subscribe
+          Social
         </a>
       </h3>
 
 
       <div class="kss-description">
-        <p>Subscribe jetpack widget</p>
+        <p>Custom social widget</p>
 
       </div>
     </div>
