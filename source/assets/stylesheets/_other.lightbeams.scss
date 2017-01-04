@@ -1,31 +1,8 @@
-@mixin animation($value) {
-  -webkit-animation: unquote($value);
-  -moz-animation: unquote($value);
-  -o-animation: unquote($value);
-  animation: unquote($value);
-}
+@import 'bourbon/bourbon';
 
-@mixin animation-property($property, $value) {
-  -webkit-animation-#{$property}: unquote($value);
-  -moz-animation-#{$property}: unquote($value);
-  -o-animation-#{$property}: unquote($value);
-  animation-#{$property}: unquote($value);
-}
-
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} { @content; }
-  @-moz-keyframes #{$name} { @content; }
-  @-o-keyframes #{$name} { @content; }
-  @keyframes #{$name} { @content; }
-}
-
-@mixin lightbearm-frame($skewX, $skewY){
-  -webkit-transform: skew( $skewX, $skewY);
-  -moz-transform: skew( $skewX, $skewY);
-  -ms-transform: skew( $skewX, $skewY);
-  -o-transform: skew( $skewX, $skewY);
-  transform: skew( $skewX, $skewY);
-  transform-origin: 100% 100%;
+@mixin lightbearm-frame( $skewX, $skewY ) {
+  @include transform( skew( $skewX, $skewY ) );
+  @include transform-origin( 100% 100% );
 }
 
 #masthead hgroup::before,
@@ -50,15 +27,15 @@
 
 #masthead hgroup::before {
   @include lightbearm-frame( 50deg, 0deg );
-  @include animation( 'search1 2s' );
+  @include animation( search1 2s );
 }
 
 #masthead hgroup::after {
   @include lightbearm-frame( -50deg, 0deg );
-  @include animation( 'search2 3s' );
+  @include animation( search2 3s );
 }
 
-@include keyframes('search1') {
+@include keyframes( search1 ) {
   0% {
 	@include lightbearm-frame( 50deg, 0deg );
   }
@@ -80,7 +57,7 @@
   }
 }
 
-@include keyframes('search2') {
+@include keyframes( search2 ) {
   0% {
 	@include lightbearm-frame( -50deg, 0deg );
   }
