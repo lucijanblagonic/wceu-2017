@@ -61,6 +61,7 @@
 table {
 
   width: 100%;
+  border-collapse: collapse;
   text-align: left;
 
 }
@@ -79,5 +80,11 @@ td {
 
   @include font-size(16);
   line-height: 1.5;
+
+  @include breakpoint(medium) {
+
+    padding: $unit-s $unit-s;
+
+  }
 
 }

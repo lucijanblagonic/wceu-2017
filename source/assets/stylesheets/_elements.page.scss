@@ -21,24 +21,23 @@ p {
   margin-top: 0;
   margin-bottom: rem(24);
 
-  @include font-size(16);
+  // @include font-size(16);
+  font-size: ms(0);
   line-height: ms(2);
   // line-height: 1.5;
   color: $color-text-paragraph;
 
   @include breakpoint(small) {
 
-    @include font-size(18);
+    // @include font-size(18);
     line-height: ms(2);
-    // line-height: 1.6;
 
   }
 
   @include breakpoint(medium) {
 
-    @include font-size(20);
+    // @include font-size(20);
     line-height: ms(2);
-    // line-height: 1.6;
 
   }
 
