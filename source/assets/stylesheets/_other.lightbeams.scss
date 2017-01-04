@@ -11,7 +11,7 @@
   display: block;
   opacity: .15;
   position: absolute;
-  bottom: 5vh;
+  bottom: -10vh;
   width: 0;
   height: 0;
   border-top: 110vh solid white;
@@ -19,7 +19,7 @@
   border-right: 40vh solid transparent;
   left: 60%;
   margin-left: -40vh;
-  z-index: 1;
+  z-index: -1;
   -webkit-transform: translate3d(0,0,0);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -27,12 +27,12 @@
 
 #masthead hgroup::before {
   @include lightbearm-frame( 50deg, 0deg );
-  @include animation( search1 2s );
+  @include animation( search1 5s infinite 5s );
 }
 
 #masthead hgroup::after {
   @include lightbearm-frame( -50deg, 0deg );
-  @include animation( search2 3s );
+  @include animation( search2 5s infinite 5s );
 }
 
 @include keyframes( search1 ) {
