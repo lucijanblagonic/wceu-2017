@@ -46,3 +46,99 @@
   }
 
 }
+
+/*
+ * Lightbeams
+ *
+ * Decoration on the header background
+ *
+ * Based on the pen by Umair Razzaq
+ * http://codepen.io/umairrazzaq/pen/dMQbzb
+ */
+
+@mixin lightbearm-frame($skewX, $skewY) {
+
+  @include transform( skew($skewX, $skewY));
+  @include transform-origin(100% 100%);
+
+}
+
+.site-header hgroup:before,
+.site-header hgroup:after {
+
+  position: absolute;
+  z-index: -1;
+  bottom: -10vh;
+  left: 60%;
+
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -40vh;
+
+  border-top: 110vh solid white;
+  border-left: 40vh solid transparent;
+  border-right: 40vh solid transparent;
+
+  content: "";
+  opacity: .15;
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+
+}
+
+.site-header hgroup:before {
+  @include lightbearm-frame(50deg, 0deg);
+  @include animation(search1 5s infinite 5s);
+}
+
+.site-header hgroup:after {
+  @include lightbearm-frame(-50deg, 0deg);
+  @include animation(search2 5s infinite 5s);
+}
+
+@include keyframes(search1) {
+
+  0% {
+    @include lightbearm-frame( 50deg, 0deg );
+  }
+
+  5% {
+    @include lightbearm-frame( 50deg, 0deg );
+  }
+
+  10% {
+    @include lightbearm-frame( 60deg, 0deg );
+  }
+
+  50% {
+    @include lightbearm-frame( -50deg, 0deg );
+  }
+
+  100% {
+    @include lightbearm-frame( 50deg, 0deg );
+  }
+
+}
+
+@include keyframes(search2) {
+
+  0% {
+    @include lightbearm-frame( -50deg, 0deg );
+  }
+
+  5% {
+    @include lightbearm-frame( -50deg, 0deg );
+  }
+
+  50% {
+    @include lightbearm-frame( 60deg, 0deg );
+  }
+
+  100% {
+    @include lightbearm-frame( -50deg, 0deg );
+  }
+
+}
