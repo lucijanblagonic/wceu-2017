@@ -44,9 +44,9 @@ $site-logo-proportion:          .6; // Change the logo proportion in header e.g.
 $site-logo-path:                url('https://2017.europe.wordcamp.org/files/2016/11/logo-wceu17-dark-icon.png'); // Logo image
 
 /* Hero */
-$site-hero-path:                url('https://2017.europe.wordcamp.org/files/2016/11/header-wceu17-home-hero.jpg'); // Background image
-$site-hero-path-small:          url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-desktop.jpg'); // Background image
-$site-hero-path-large:          url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-mobile.jpg'); // Background image
+// $site-hero-path:                url('https://2017.europe.wordcamp.org/files/2016/11/header-wceu17-home-hero.jpg'); // Background image
+$site-hero-path-small:          url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-mobile.jpg'); // Background image
+$site-hero-path-large:          url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-desktop.jpg'); // Background image
 $site-hero-overlay:             .6; // Image overlay color opacity
 
 /* Media queries */

@@ -18,13 +18,14 @@
   position: relative;
 
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0;
   background-size: fixed;
   background-image: $site-hero-path-small;
 
   @include breakpoint(medium) {
 
     background-image: $site-hero-path-large;
+    background-position: 50% 50%;
     background-size: cover;
 
   }
