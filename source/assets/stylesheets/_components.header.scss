@@ -19,8 +19,15 @@
 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: cover;
-  background-image: $site-hero-path;
+  background-size: fixed;
+  background-image: $site-hero-path-small;
+
+  @include breakpoint(medium) {
+
+    background-image: $site-hero-path-large;
+    background-size: cover;
+
+  }
 
   transition: all .1s ease;
 
@@ -63,8 +70,8 @@
 
 }
 
-.site-header hgroup:before,
-.site-header hgroup:after {
+.home .site-header hgroup:before,
+.home .site-header hgroup:after {
 
   position: absolute;
   z-index: -1;
@@ -89,12 +96,12 @@
 
 }
 
-.site-header hgroup:before {
+.home .site-header hgroup:before {
   @include lightbearm-frame(50deg, 0deg);
   @include animation(search1 5s infinite 5s);
 }
 
-.site-header hgroup:after {
+.home .site-header hgroup:after {
   @include lightbearm-frame(-50deg, 0deg);
   @include animation(search2 5s infinite 5s);
 }
