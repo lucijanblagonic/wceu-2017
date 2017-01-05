@@ -1,0 +1,76 @@
+@import 'bourbon/bourbon';
+
+@mixin lightbearm-frame( $skewX, $skewY ) {
+  @include transform( skew( $skewX, $skewY ) );
+  @include transform-origin( 100% 100% );
+}
+
+#masthead hgroup::before,
+#masthead hgroup::after {
+  content: "";
+  display: block;
+  opacity: .15;
+  position: absolute;
+  bottom: -10vh;
+  width: 0;
+  height: 0;
+  border-top: 110vh solid white;
+  border-left: 40vh solid transparent;
+  border-right: 40vh solid transparent;
+  left: 60%;
+  margin-left: -40vh;
+  z-index: -1;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+}
+
+#masthead hgroup::before {
+  @include lightbearm-frame( 50deg, 0deg );
+  @include animation( search1 5s infinite 5s );
+}
+
+#masthead hgroup::after {
+  @include lightbearm-frame( -50deg, 0deg );
+  @include animation( search2 5s infinite 5s );
+}
+
+@include keyframes( search1 ) {
+  0% {
+	@include lightbearm-frame( 50deg, 0deg );
+  }
+
+  5% {
+	@include lightbearm-frame( 50deg, 0deg );
+  }
+
+  10% {
+	@include lightbearm-frame( 60deg, 0deg );
+  }
+
+  50% {
+	@include lightbearm-frame( -50deg, 0deg );
+  }
+
+  100% {
+	@include lightbearm-frame( 50deg, 0deg );
+  }
+}
+
+@include keyframes( search2 ) {
+  0% {
+	@include lightbearm-frame( -50deg, 0deg );
+  }
+
+  5% {
+	@include lightbearm-frame( -50deg, 0deg );
+  }
+
+  50% {
+	@include lightbearm-frame( 60deg, 0deg );
+  }
+
+  100% {
+	@include lightbearm-frame( -50deg, 0deg );
+  }
+}
