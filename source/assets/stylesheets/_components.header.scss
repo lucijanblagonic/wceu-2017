@@ -4,12 +4,17 @@
 // Header
 //
 // Header of the site (includes site branding and navigation)
+// Animated lights based on the pen by Umair Razzaq http://codepen.io/umairrazzaq/pen/dMQbzb
 //
 // Markup:
+// <div class="home">
 // <header id="masthead" class="site-header" role="banner">
-//   <!-- Site branding -->
-//   <!-- Navigation -->
+//   <hgroup>
+//    <h1 class="site-title"><a href="#" title="WordCamp Europe" rel="home">WordCamp Europe</a></h1>
+//    <h2 class="site-description">Paris, France – June 15-17, 2017</h2>
+//   </hgroup>
 // </header>
+// </div>
 //
 // Style guide: 6.header
 
