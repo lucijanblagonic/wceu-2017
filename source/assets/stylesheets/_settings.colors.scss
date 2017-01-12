@@ -230,22 +230,7 @@
 
 }
 
-/* Local #V1 */
-// $local-darkblue:                  #0c3a51;
-// $local-blue:                      #7194a8;
-// $local-lightblue:                 #d7e9f2;
-// $local-offblack:                  #1d242a;
-// $local-yellow:                    #dac04a;
-// $local-white:                     #fff;
-
-// @include cc($local-darkblue, 'local-darkblue');
-// @include cc($local-blue, 'local-blue');
-// @include cc($local-lightblue, 'local-lightblue');
-// @include cc($local-offblack, 'local-offblack');
-// @include cc($local-yellow, 'local-yellow');
-// @include cc($local-white, 'local-white');
-
-/* Local #V2 */
+/* Local (only to be used in this file) */
 $local-thunder: #2D282D;
 $local-ash: tint($local-thunder, 20%);
 $local-smoke: tint($local-thunder, 70%);
@@ -268,12 +253,7 @@ $local-offblack: #1d242a;
 $color-brand-primary:             $local-gold;
 $color-brand-secondary:           $local-copper;
 $color-brand-tertiary:            $local-thunder;
-
-// $color-brand-shade-lightest:      $local-smoke;
-// $color-brand-shade-lighter:       $local-smoke;
-// $color-brand-shade-normal:        $local-smoke;
-// $color-brand-shade-darker:        $local-thunder;
-// $color-brand-shade-darkest:       $local-ash;
+$color-brand-quaternary:            $local-linnen;
 
 
 /*

@@ -7,7 +7,7 @@
 //
 // Markup:
 // <div id="secondary">
-//   <aside class="widget widget_text">
+//   <aside class="widget widget_text" id="text-2">
 //     <h1 class="widget-title">Follow WordCamp Europe</h1>
 //     <div class="textwidget">
 //       <ul class="list-social">
@@ -23,6 +23,23 @@
 // </div>
 //
 // Style guide: 6.widget.text-social
+
+#text-2 {
+
+  &:before {
+
+    background-image: $image-pattern-01;
+    // background-color: $color-brand-quaternar!important;
+    background-size: 120px;
+    background-attachment: fixed;
+    background-position: 50% 0;
+
+    // background-image: $image-pattern-01;
+    // background-size: 120px;
+
+  }
+
+}
 
 /*
  * Social list
