@@ -71,6 +71,10 @@
 
 /* Only visible on home page */
 
+$lightbeams-opacity-weak: .05;
+$lightbeams-opacity-normal: .1;
+$lightbeams-opacity-strong: .2;
+
 .home .site-header hgroup:before,
 .home .site-header hgroup:after {
 
@@ -89,7 +93,7 @@
   border-right: 40vh solid transparent;
 
   content: "";
-  opacity: .15;
+  opacity: $lightbeams-opacity-normal;
 
   transform-origin: 100% 100%;
 
@@ -129,16 +133,16 @@
 
   50% {
     transform: skewX(-50deg);
-    opacity: .15;
+    opacity: $lightbeams-opacity-normal;
   }
 
   80% {
-    opacity: .3;
+    opacity: $lightbeams-opacity-strong;
   }
 
   100% {
     transform: skewX(50deg);
-    opacity: .15;
+    opacity: $lightbeams-opacity-normal;
   }
 
 }
@@ -147,7 +151,7 @@
 
   0% {
     transform: skewX(-50deg);
-    opacity: .15;
+    opacity: $lightbeams-opacity-normal;
   }
 
   5% {
@@ -155,28 +159,28 @@
   }
 
   10% {
-    opacity: .1;
+    opacity: $lightbeams-opacity-weak;
   }
 
   30% {
-    opacity: .25;
+    opacity: $lightbeams-opacity-strong;
   }
 
   40% {
-    opacity: .15;
+    opacity: $lightbeams-opacity-normal;
   }
 
   50% {
     transform: skewX(60deg);
-    opacity: .15;
+    opacity: $lightbeams-opacity-normal;
   }
 
   60% {
-    opacity: .5;
+    opacity: $lightbeams-opacity-strong;
   }
 
   80% {
-    opacity: .15;
+    opacity: $lightbeams-opacity-normal;
   }
 
   100% {
