@@ -366,7 +366,6 @@ $styleguide-border-radius-small: 3px;
   line-height: 1.5;
   font-weight: $bold;
 
-  // color: rgba(255,255,255,1);
   color: yellow;
 
 }
@@ -380,5 +379,26 @@ $styleguide-border-radius-small: 3px;
   font-weight: $regular;
 
   color: inherit;
+
+}
+
+.kss-text {
+
+  > h1,
+  > h2,
+  > h3,
+  > h4 {
+
+    margin-top: $unit-l;
+    text-transform: none;
+    letter-spacing: 0;
+
+    &:first-child {
+
+      margin-top: 0;
+
+    }
+
+  }
 
 }

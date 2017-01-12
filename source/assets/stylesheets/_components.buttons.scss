@@ -89,14 +89,14 @@
 
   &.button--secondary {
 
-    color: $color-text;
+    color: $color-text-invert;
     background-color: $color-button-secondary;
 
     &:hover,
     &:focus,
     &:active {
 
-      color: $color-text-strong;
+      color: $color-text-strong-invert;
       background-color: $color-button-secondary-hover;
 
     }
