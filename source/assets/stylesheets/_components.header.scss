@@ -69,13 +69,6 @@
  * http://codepen.io/umairrazzaq/pen/dMQbzb
  */
 
-@mixin lightbearm-frame($skewX, $skewY) {
-
-  @include transform(skew($skewX, $skewY));
-  @include transform-origin(100% 100%);
-
-}
-
 /* Only visible on home page */
 
 .home .site-header hgroup:before,
@@ -98,6 +91,8 @@
   content: "";
   opacity: .15;
 
+  transform-origin: 100% 100%;
+
   -webkit-transform: translate3d(0,0,0);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -106,58 +101,86 @@
 
 .home .site-header hgroup:before {
 
-  @include lightbearm-frame(50deg, 0deg);
-  @include animation(search1 5s infinite 5s);
+  transform: skewX(50deg);
+  animation: search1 5s infinite 5s;
 
 }
 
 .home .site-header hgroup:after {
 
-  @include lightbearm-frame(-50deg, 0deg);
-  @include animation(search2 5s infinite 5s);
+  transform: skewX(-50deg);
+  animation: search2 5s infinite 5s;
 
 }
 
-@include keyframes(search1) {
+@keyframes search1 {
 
   0% {
-    @include lightbearm-frame( 50deg, 0deg );
+    transform: skewX(50deg);
   }
 
   5% {
-    @include lightbearm-frame( 50deg, 0deg );
+    transform: skewX(50deg);
   }
 
   10% {
-    @include lightbearm-frame( 60deg, 0deg );
+    transform: skewX(-60deg);
   }
 
   50% {
-    @include lightbearm-frame( -50deg, 0deg );
+    transform: skewX(-50deg);
+    opacity: .15;
+  }
+
+  80% {
+    opacity: .3;
   }
 
   100% {
-    @include lightbearm-frame( 50deg, 0deg );
+    transform: skewX(50deg);
+    opacity: .15;
   }
 
 }
 
-@include keyframes(search2) {
+@keyframes search2 {
 
   0% {
-    @include lightbearm-frame( -50deg, 0deg );
+    transform: skewX(-50deg);
+    opacity: .15;
   }
 
   5% {
-    @include lightbearm-frame( -50deg, 0deg );
+    transform: skewX(-50deg);
+  }
+
+  10% {
+    opacity: .1;
+  }
+
+  30% {
+    opacity: .25;
+  }
+
+  40% {
+    opacity: .15;
   }
 
   50% {
-    @include lightbearm-frame( 60deg, 0deg );
+    transform: skewX(60deg);
+    opacity: .15;
+  }
+
+  60% {
+    opacity: .5;
+  }
+
+  80% {
+    opacity: .15;
   }
 
   100% {
-    @include lightbearm-frame( -50deg, 0deg );
+    transform: skewX(-50deg);
   }
 
 }
