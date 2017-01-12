@@ -30,7 +30,7 @@
 
   }
 
-  transition: all .1s ease;
+  @include transition-fast();
 
   &:before {
 
@@ -66,10 +66,12 @@
 
 @mixin lightbearm-frame($skewX, $skewY) {
 
-  @include transform( skew($skewX, $skewY));
+  @include transform(skew($skewX, $skewY));
   @include transform-origin(100% 100%);
 
 }
+
+/* Only visible on home page */
 
 .home .site-header hgroup:before,
 .home .site-header hgroup:after {
@@ -98,13 +100,17 @@
 }
 
 .home .site-header hgroup:before {
+
   @include lightbearm-frame(50deg, 0deg);
   @include animation(search1 5s infinite 5s);
+
 }
 
 .home .site-header hgroup:after {
+
   @include lightbearm-frame(-50deg, 0deg);
   @include animation(search2 5s infinite 5s);
+
 }
 
 @include keyframes(search1) {

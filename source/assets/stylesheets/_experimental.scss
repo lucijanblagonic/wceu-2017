@@ -170,15 +170,12 @@
 
       width: rem(48);
       height: rem(48);
-      // background-color: $color-link;
 
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: 36px;
 
       content :"";
-
-      // transition: all .1s ease;
 
     }
 
@@ -189,12 +186,6 @@
       color: $color-link-hover;
       text-decoration: none;
       background-color: $color-brand-tertiary;
-
-      &:after {
-
-        // background-size: 40px;
-
-      }
 
       &:before {
 
@@ -222,40 +213,3 @@
 }
 
 
-/*
- * Temp
- */
-
-img.wp-smiley, img.emoji {
-   display: inline !important;
-   border: none !important;
-   box-shadow: none !important;
-   height: 1em !important;
-   width: 1em !important;
-   margin: 0 .07em !important;
-   vertical-align: -0.1em !important;
-   background: none !important;
-   padding: 0 !important;
-}
-
-/* Temp fix for tickets on mobile */
-
-// .tix-ticket-excerpt {
-
-//   @include breakpoint(to-medium) {
-
-//     display: none;
-
-//   }
-
-// }
-
-// .tix-column-remaining {
-
-//   @include breakpoint(to-medium) {
-
-//     display: none;
-
-//   }
-
-// }
