@@ -151,6 +151,12 @@
                 ><span class="kss-nav__name">Social</span>
               </a>
             </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-6.html#kssref-6-widget-text-tickets-cta">
+                <span class="kss-nav__ref kss-nav__ref-child">6.13.3</span
+                ><span class="kss-nav__name">Tickets</span>
+              </a>
+            </li>
         </ul>
       </li>
       <li class="kss-nav__menu-item">
@@ -343,7 +349,7 @@
 
 
       <div class="kss-description">
-        <p>Site logo, title and description</p>
+        <p>Site logo, title and description.</p>
 
       </div>
     </div>
@@ -848,7 +854,8 @@
 
 
       <div class="kss-description">
-        <p>Header of the site (includes site branding and navigation)</p>
+        <p>Header of the site (includes site branding and navigation)
+Animated lights based on the pen by Umair Razzaq <a href="http://codepen.io/umairrazzaq/pen/dMQbzb">http://codepen.io/umairrazzaq/pen/dMQbzb</a></p>
 
       </div>
     </div>
@@ -858,18 +865,26 @@
           Example
         </div>
         <div class="kss-modifier__example">
-          <header id="masthead" class="site-header" role="banner">
-  <!-- Site branding -->
-  <!-- Navigation -->
+          <div class="home">
+<header id="masthead" class="site-header" role="banner">
+  <hgroup>
+   <h1 class="site-title"><a href="#" title="WordCamp Europe" rel="home">WordCamp Europe</a></h1>
+   <h2 class="site-description">Paris, France – June 15-17, 2017</h2>
+  </hgroup>
 </header>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint lang-html"><code data-language="html">&lt;header id=&quot;masthead&quot; class=&quot;site-header&quot; role=&quot;banner&quot;&gt;
-  &lt;!-- Site branding --&gt;
-  &lt;!-- Navigation --&gt;
-&lt;/header&gt;</code></pre>
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div class=&quot;home&quot;&gt;
+&lt;header id=&quot;masthead&quot; class=&quot;site-header&quot; role=&quot;banner&quot;&gt;
+  &lt;hgroup&gt;
+   &lt;h1 class=&quot;site-title&quot;&gt;&lt;a href=&quot;#&quot; title=&quot;WordCamp Europe&quot; rel=&quot;home&quot;&gt;WordCamp Europe&lt;/a&gt;&lt;/h1&gt;
+   &lt;h2 class=&quot;site-description&quot;&gt;Paris, France – June 15-17, 2017&lt;/h2&gt;
+  &lt;/hgroup&gt;
+&lt;/header&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>
@@ -1384,19 +1399,19 @@
         <div class="kss-modifier__example">
           <div id="secondary">
   <aside id="" class="widget jetpack_subscription_widget">
-  	<h1 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h1>
-  	<form action="#" method="post" accept-charset="utf-8" id="">
-  		<div id="subscribe-text">
-  			<p>Enter your email address to subscribe to this site and receive news by email.</p>
-  		</div>
-  		<p id="subscribe-email">
-  			<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-3" style="clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;">Email Address</label>
-  			<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address">
-  		</p>
-  		<p id="subscribe-submit">
-  			<input type="submit" value="Sign me up!" name="jetpack_subscriptions_widget">
-  		</p>
-  	</form>
+   <h1 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h1>
+   <form action="#" method="post" accept-charset="utf-8" id="">
+     <div id="subscribe-text">
+       <p>Enter your email address to subscribe to this site and receive news by email.</p>
+     </div>
+     <p id="subscribe-email">
+       <label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-3" style="clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;">Email Address</label>
+       <input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address">
+     </p>
+     <p id="subscribe-submit">
+       <input type="submit" value="Sign me up!" name="jetpack_subscriptions_widget">
+     </p>
+   </form>
   </aside>
 </div>
         </div>
@@ -1405,19 +1420,19 @@
       <div class="kss-markup kss-style">
         <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;secondary&quot;&gt;
   &lt;aside id=&quot;&quot; class=&quot;widget jetpack_subscription_widget&quot;&gt;
-  	&lt;h1 class=&quot;widget-title&quot;&gt;Subscribe to WordCamp Europe 2017 News by email&lt;/h1&gt;
-  	&lt;form action=&quot;#&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot; id=&quot;&quot;&gt;
-  		&lt;div id=&quot;subscribe-text&quot;&gt;
-  			&lt;p&gt;Enter your email address to subscribe to this site and receive news by email.&lt;/p&gt;
-  		&lt;/div&gt;
-  		&lt;p id=&quot;subscribe-email&quot;&gt;
-  			&lt;label id=&quot;jetpack-subscribe-label&quot; for=&quot;subscribe-field-blog_subscription-3&quot; style=&quot;clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;&quot;&gt;Email Address&lt;/label&gt;
-  			&lt;input type=&quot;email&quot; name=&quot;email&quot; required=&quot;required&quot; class=&quot;required&quot; value=&quot;&quot; id=&quot;subscribe-field-blog_subscription-3&quot; placeholder=&quot;Email Address&quot;&gt;
-  		&lt;/p&gt;
-  		&lt;p id=&quot;subscribe-submit&quot;&gt;
-  			&lt;input type=&quot;submit&quot; value=&quot;Sign me up!&quot; name=&quot;jetpack_subscriptions_widget&quot;&gt;
-  		&lt;/p&gt;
-  	&lt;/form&gt;
+   &lt;h1 class=&quot;widget-title&quot;&gt;Subscribe to WordCamp Europe 2017 News by email&lt;/h1&gt;
+   &lt;form action=&quot;#&quot; method=&quot;post&quot; accept-charset=&quot;utf-8&quot; id=&quot;&quot;&gt;
+     &lt;div id=&quot;subscribe-text&quot;&gt;
+       &lt;p&gt;Enter your email address to subscribe to this site and receive news by email.&lt;/p&gt;
+     &lt;/div&gt;
+     &lt;p id=&quot;subscribe-email&quot;&gt;
+       &lt;label id=&quot;jetpack-subscribe-label&quot; for=&quot;subscribe-field-blog_subscription-3&quot; style=&quot;clip: rect(1px 1px 1px 1px); position: absolute; height: 1px; width: 1px; overflow: hidden;&quot;&gt;Email Address&lt;/label&gt;
+       &lt;input type=&quot;email&quot; name=&quot;email&quot; required=&quot;required&quot; class=&quot;required&quot; value=&quot;&quot; id=&quot;subscribe-field-blog_subscription-3&quot; placeholder=&quot;Email Address&quot;&gt;
+     &lt;/p&gt;
+     &lt;p id=&quot;subscribe-submit&quot;&gt;
+       &lt;input type=&quot;submit&quot; value=&quot;Sign me up!&quot; name=&quot;jetpack_subscriptions_widget&quot;&gt;
+     &lt;/p&gt;
+   &lt;/form&gt;
   &lt;/aside&gt;
 &lt;/div&gt;</code></pre>
       </div>
@@ -1451,7 +1466,7 @@
         </div>
         <div class="kss-modifier__example">
           <div id="secondary">
-  <aside id="text-2" class="widget widget_text">
+  <aside class="widget widget_text" id="text-2">
     <h1 class="widget-title">Follow WordCamp Europe</h1>
     <div class="textwidget">
       <ul class="list-social">
@@ -1470,7 +1485,7 @@
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;secondary&quot;&gt;
-  &lt;aside id=&quot;text-2&quot; class=&quot;widget widget_text&quot;&gt;
+  &lt;aside class=&quot;widget widget_text&quot; id=&quot;text-2&quot;&gt;
     &lt;h1 class=&quot;widget-title&quot;&gt;Follow WordCamp Europe&lt;/h1&gt;
     &lt;div class=&quot;textwidget&quot;&gt;
       &lt;ul class=&quot;list-social&quot;&gt;
@@ -1481,6 +1496,62 @@
           &lt;a href=&quot;https://www.facebook.com/WordCampEurope/&quot;&gt;&lt;strong&gt;WordCampEurope&lt;/strong&gt; on Facebook&lt;/a&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-6-widget-text-tickets-cta" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-6-widget-text-tickets-cta">
+          <span class="kss-title__ref">
+              6.13.3
+            <span class="kss-title__permalink-hash">
+                #6.widget.text-tickets-cta
+            </span>
+          </span>
+          Tickets
+        </a>
+      </h3>
+
+
+      <div class="kss-description">
+        <p>Custom tickets call–to–action widget displayed on the homepage</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Example
+        </div>
+        <div class="kss-modifier__example">
+          <div id="secondary">
+  <aside class="widget widget_text">
+    <h1 class="widget-title">Have your ticket for WordCamp Europe?</h1>
+    <div class="textwidget">
+      <p>Be a part of the most important WordPress conference in the world.</p>
+      <a class="button" href="">
+        Get your ticket today
+      </a>
+    </div>
+  </aside>
+</div>
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;secondary&quot;&gt;
+  &lt;aside class=&quot;widget widget_text&quot;&gt;
+    &lt;h1 class=&quot;widget-title&quot;&gt;Have your ticket for WordCamp Europe?&lt;/h1&gt;
+    &lt;div class=&quot;textwidget&quot;&gt;
+      &lt;p&gt;Be a part of the most important WordPress conference in the world.&lt;/p&gt;
+      &lt;a class=&quot;button&quot; href=&quot;&quot;&gt;
+        Get your ticket today
+      &lt;/a&gt;
     &lt;/div&gt;
   &lt;/aside&gt;
 &lt;/div&gt;</code></pre>

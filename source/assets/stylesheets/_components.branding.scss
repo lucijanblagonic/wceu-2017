@@ -3,7 +3,7 @@
 
 // Site branding
 //
-// Site logo, title and description
+// Site logo, title and description.
 //
 // Markup:
 // <header id="masthead" class="site-header" role="banner">
@@ -37,7 +37,7 @@
 
   .home & {
 
-    @include container-padding(4);
+    @include container-padding(3.5);
 
   }
 

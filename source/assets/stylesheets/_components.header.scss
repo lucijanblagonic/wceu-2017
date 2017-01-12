@@ -4,12 +4,17 @@
 // Header
 //
 // Header of the site (includes site branding and navigation)
+// Animated lights based on the pen by Umair Razzaq http://codepen.io/umairrazzaq/pen/dMQbzb
 //
 // Markup:
+// <div class="home">
 // <header id="masthead" class="site-header" role="banner">
-//   <!-- Site branding -->
-//   <!-- Navigation -->
+//   <hgroup>
+//    <h1 class="site-title"><a href="#" title="WordCamp Europe" rel="home">WordCamp Europe</a></h1>
+//    <h2 class="site-description">Paris, France – June 15-17, 2017</h2>
+//   </hgroup>
 // </header>
+// </div>
 //
 // Style guide: 6.header
 
@@ -18,11 +23,19 @@
   position: relative;
 
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-image: $site-hero-path;
+  background-position: 50% 0;
+  background-size: fixed;
+  background-image: $site-hero-path-small;
 
-  transition: all .1s ease;
+  @include breakpoint(medium) {
+
+    background-image: $site-hero-path-large;
+    background-position: 50% 50%;
+    background-size: cover;
+
+  }
+
+  @include transition-fast();
 
   &:before {
 
@@ -43,6 +56,135 @@
     position: relative;
     z-index: $z-index-header;
 
+  }
+
+}
+
+/*
+ * Lightbeams
+ *
+ * Decoration on the header background
+ *
+ * Based on the pen by Umair Razzaq
+ * http://codepen.io/umairrazzaq/pen/dMQbzb
+ */
+
+/* Only visible on home page */
+
+$lightbeams-opacity-weak: .05;
+$lightbeams-opacity-normal: .1;
+$lightbeams-opacity-strong: .2;
+
+.home .site-header hgroup:before,
+.home .site-header hgroup:after {
+
+  position: absolute;
+  z-index: -1;
+  bottom: -10vh;
+  left: 60%;
+
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -40vh;
+
+  border-top: 110vh solid white;
+  border-left: 40vh solid transparent;
+  border-right: 40vh solid transparent;
+
+  content: "";
+  opacity: $lightbeams-opacity-normal;
+
+  transform-origin: 100% 100%;
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+
+}
+
+.home .site-header hgroup:before {
+
+  transform: skewX(50deg);
+  animation: search1 5s infinite 5s;
+
+}
+
+.home .site-header hgroup:after {
+
+  transform: skewX(-50deg);
+  animation: search2 5s infinite 5s;
+
+}
+
+@keyframes search1 {
+
+  0% {
+    transform: skewX(50deg);
+  }
+
+  5% {
+    transform: skewX(50deg);
+  }
+
+  20% {
+    transform: skewX(-60deg);
+  }
+
+  50% {
+    transform: skewX(-50deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  80% {
+    opacity: $lightbeams-opacity-strong;
+  }
+
+  100% {
+    transform: skewX(50deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+}
+
+@keyframes search2 {
+
+  0% {
+    transform: skewX(-50deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  5% {
+    transform: skewX(-50deg);
+  }
+
+  10% {
+    opacity: $lightbeams-opacity-weak;
+  }
+
+  30% {
+    opacity: $lightbeams-opacity-strong;
+  }
+
+  40% {
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  50% {
+    transform: skewX(60deg);
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  60% {
+    opacity: $lightbeams-opacity-strong;
+  }
+
+  80% {
+    opacity: $lightbeams-opacity-normal;
+  }
+
+  100% {
+    transform: skewX(-50deg);
   }
 
 }

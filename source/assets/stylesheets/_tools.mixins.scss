@@ -21,6 +21,7 @@
   *zoom: 1;
 }
 
+
 // Visually Hidden
 //
 // Hides element visually but keeps it visible for screen readers.
@@ -40,6 +41,7 @@
   overflow: hidden;
 }
 
+
 // Visually Visible
 //
 // Resets visually hidden element.
@@ -57,6 +59,7 @@
   overflow: visible;
 }
 
+
 // Hide text
 //
 // Moves text off screen for background image purposes.
@@ -71,6 +74,7 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 
 // Show text
 //
@@ -95,12 +99,14 @@
   hyphens:         auto;
 }
 
+
 // Ellipsis
 @mixin ellipsis() {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 
 // Rem to px conversion
 @mixin font-size($sizeValue: 16) {
@@ -123,6 +129,49 @@
   margin: 0;
   padding: 0;
 }
+
+
+// Transition fast
+//
+// Uniform fast transition
+//
+// Markup:
+// @include transition-fast;
+//
+// Style guide: 2.transition-fast
+
+@mixin transition-fast {
+  transition: all .15s ease;
+}
+
+
+// Transition normal
+//
+// Uniform normal transition
+//
+// Markup:
+// @include transition-normal;
+//
+// Style guide: 2.transition-normal
+
+@mixin transition-normal {
+  transition: all .3s ease;
+}
+
+
+// Transition slow
+//
+// Uniform slow transition
+//
+// Markup:
+// @include transition-slow;
+//
+// Style guide: 2.transition-slow
+
+@mixin transition-slow {
+  transition: all .45s ease;
+}
+
 
 // Container padding
 //

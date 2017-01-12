@@ -9,11 +9,12 @@
 
 .cc-title {
 
+  margin-bottom: rem(24);
+
   @include font-size(18);
   line-height: 1.5;
   font-family: $helvetica;
-
-  margin-bottom: rem(24);
+  text-transform: none;
 
 }
 
