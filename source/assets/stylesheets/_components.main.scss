@@ -9,6 +9,16 @@
 //
 // Style guide: 6.main
 
+
+@mixin container-center {
+
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
 /*
  * Main
  *
@@ -32,10 +42,7 @@
 
 #primary {
 
-
-  max-width: $container-max-width;
-  margin-left: auto;
-  margin-right: auto;
+  @include container-center();
 
   text-align: left;
 
@@ -65,9 +72,7 @@
 
 #secondary {
 
-  max-width: $container-max-width;
-  margin-left: auto;
-  margin-right: auto;
+  @include container-center();
 
   text-align: left;
 
@@ -98,12 +103,26 @@
  * <div id="after-header-widgets" class="widget-area front-page"> ... </div>
  */
 
- #after-header-widgets {
+#after-header-widgets {
 
-   max-width: $container-max-width;
-   margin-left: auto;
-   margin-right: auto;
+  @include container-center();
 
-   text-align: left;
+  text-align: left;
 
- }
+}
+
+
+/*
+ * Before content widgets
+ *
+ * Container for before content widgets
+ * <div id="before-content-widgets" class="widget-area front-page"> ... </div>
+ */
+
+#before-content-widgets {
+
+  @include container-center();
+
+  text-align: left;
+
+}
