@@ -2,6 +2,8 @@
 
 Style guide for the WordCamp Europe 2017 theme.
 
+
+
 ## Helpful Sections
 
 * [Settings](section-1.html)
