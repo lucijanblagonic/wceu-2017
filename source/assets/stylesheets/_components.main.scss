@@ -90,3 +90,20 @@
   }
 
 }
+
+/*
+ * After header widgets
+ *
+ * Container for after header widgets
+ * <div id="after-header-widgets" class="widget-area front-page"> ... </div>
+ */
+
+ #after-header-widgets {
+
+   max-width: $container-max-width;
+   margin-left: auto;
+   margin-right: auto;
+
+   text-align: left;
+
+ }
