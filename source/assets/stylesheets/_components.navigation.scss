@@ -147,21 +147,23 @@
 
   position: relative;
 
-  margin: 0 rem(1);
+  margin: 0;
   display: block;
 
   font-family: $font-headline;
   font-size: ms(0);
   text-transform: uppercase;
   font-weight: $bold;
-  text-align: center;
+  text-align: left;
 
   @include breakpoint(small) {
 
+    margin: 0 rem(1);
     display: inline-block;
 
     @include font-size(18);
     line-height: em(24,18);
+    text-align: center;
 
   }
 
@@ -265,6 +267,12 @@
 .sub-menu {
 
   @include list-reset();
+
+  a {
+
+    padding-left: rem(32);
+
+  }
 
   @include breakpoint(small) {
 
