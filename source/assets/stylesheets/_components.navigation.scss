@@ -143,7 +143,7 @@
 
   .main-small-navigation & {
 
-    border-top: 1px solid $color-border-weak;
+    border-top: 1px solid rgba(255,255,255,.2);
 
   }
 
@@ -263,6 +263,12 @@
     &:hover > .sub-menu {
 
       display: block;
+
+    }
+
+    &.current-menu-item > a:after {
+
+      border-top-color: $color-text-strong;
 
     }
 
