@@ -280,6 +280,14 @@
 
   @include list-reset();
 
+  .menu-item {
+
+    text-transform: none;
+    font-weight: $regular;
+    font-family: $font-body;
+
+  }
+
   a {
 
     .main-small-navigation & {
