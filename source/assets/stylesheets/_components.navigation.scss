@@ -306,7 +306,7 @@
     z-index: $z-index-navigation-submenu;
 
     display: none;
-    min-width: rem(280);
+    min-width: rem(260);
 
     background-color: $color-link;
 
@@ -325,6 +325,28 @@
       padding: rem(10) $unit-s;
 
       color: $color-text;
+
+    }
+
+  }
+
+  @include breakpoint(medium) {
+
+    a {
+
+      padding-left: $unit-m;
+      padding-right: $unit-m;
+
+    }
+
+  }
+
+  @include breakpoint(large) {
+
+    a {
+
+      padding-left: $unit-l;
+      padding-right: $unit-l;
 
     }
 
