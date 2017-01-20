@@ -44,7 +44,7 @@
 
     .widget-title {
 
-      margin-right: rem(320);
+      // margin-right: rem(320);
       text-align: left;
 
     }
@@ -194,7 +194,11 @@ $realistic-ticket-padding-large: 15px;
   &:hover,
   &:focus {
 
-    transform: scale(1.05) rotate(0deg);
+    @include breakpoint(medium) {
+
+      transform: scale(1.1) rotate(-16deg);
+
+    }
 
     .realistic-ticket__part-left {
 
