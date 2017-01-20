@@ -25,6 +25,7 @@
  */
 
 #after-header-widgets .widget,
+#before-content-widgets .widget,
 #secondary .widget {
 
   // padding-left: 0;
@@ -51,18 +52,6 @@
     content: "";
 
   }
-
-  // @include breakpoint(medium) {
-
-  //   padding: $unit-l 0;
-
-  // }
-
-  // @include breakpoint(large) {
-
-  //   padding: $unit-xl 0;
-
-  // }
 
 }
 
