@@ -116,7 +116,7 @@ $realistic-ticket-padding-large: 15px;
     padding: $realistic-ticket-padding;
     height: $realistic-ticket-height;
 
-    background-image: url(../images/button-ticket.png);
+    background-image: url($image-realistic-ticket);
     background-repeat: no-repeat;
     background-size: $realistic-ticket-width $realistic-ticket-height;
 
