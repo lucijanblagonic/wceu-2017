@@ -7,15 +7,209 @@
 //
 // Markup:
 // <div id="secondary">
-//   <aside class="widget widget_text">
+//   <aside class="widget widget_text" id="text-3">
 //     <h1 class="widget-title">Have your ticket for WordCamp Europe?</h1>
 //     <div class="textwidget">
 //       <p>Be a part of the most important WordPress conference in the world.</p>
-//       <a class="button" href="">
-//         Get your ticket today
+//       <a class="realistic-ticket" href="#">
+//         <span class="realistic-ticket__part-left">
+//           <span class="realistic-ticket__info-label">Less than 300 tickets</span>
+//           <span class="realistic-ticket__info-action">Get your ticket today</span>
+//         </span>
+//         <span class="realistic-ticket__part-right">
+//           <span class="realistic-ticket__info-event">WordCamp Europe 2017</span>
+//         <span>
 //       </a>
 //     </div>
 //   </aside>
 // </div>
 //
 // Style guide: 6.widget.text-tickets-cta
+
+#text-3 {
+
+  &:before {
+
+    background-image: $image-pattern-01;
+    background-color: $color-brand-quaternary!important;
+    background-size: 120px;
+    background-attachment: fixed;
+    background-position: 50% 0;
+
+  }
+
+  @include breakpoint(medium) {
+
+    position: relative;
+    text-align: left;
+
+    .widget-title {
+
+      margin-right: 0;
+      text-align: left!important;
+
+    }
+
+    p {
+
+      margin-bottom: 0;
+      margin-right: rem(320);
+      text-align: left!important;
+
+    }
+
+    .realistic-ticket {
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: -60px;
+
+    }
+
+  }
+
+}
+
+$realistic-ticket-width: 460px;
+$realistic-ticket-height: 140px;
+$realistic-ticket-left-width: 180px;
+$realistic-ticket-right-width: 100px;
+$realistic-ticket-padding: 10px;
+$realistic-ticket-padding-large: 15px;
+
+// .realistic-ticket {}
+// .realistic-ticket__part-left {}
+// .realistic-ticket__part-right {}
+// .realistic-ticket__info-event {}
+// .realistic-ticket__info-label {}
+// .realistic-ticket__info-action {}
+
+.realistic-ticket {
+
+  /* Box-model */
+  display: inline-block;
+  min-width: $realistic-ticket-left-width + $realistic-ticket-right-width;
+  margin: 0 auto;
+
+  /* Typography */
+  font-size: ms(0, 16px);
+  line-height: ms(0, 20px);
+  font-family: $font-headline;
+  text-transform: uppercase;
+  font-weight: $bold;
+
+  /* Misc */
+  transform: rotate(-5deg);
+
+  @include breakpoint(to-extra-small) {
+
+
+
+  }
+
+  .realistic-ticket__part-left,
+  .realistic-ticket__part-right {
+
+    position: relative;
+    float: left;
+    padding: $realistic-ticket-padding;
+    height: $realistic-ticket-height;
+
+    background-image: url(../images/button-ticket.png);
+    background-repeat: no-repeat;
+    background-size: $realistic-ticket-width $realistic-ticket-height;
+
+    @include transition-fast();
+
+  }
+
+  .realistic-ticket__part-left {
+
+    width: $realistic-ticket-left-width;
+    background-position: 0 0;
+    transform-origin: 100% 100%;
+    border-right: 2px dotted $color-brand-tertiary;
+
+  }
+
+  .realistic-ticket__part-right {
+
+    width: $realistic-ticket-right-width;
+    border-left: 2px dotted $color-brand-tertiary;
+    margin-left: -2px;
+    background-position: 100% 0;
+    transform-origin: 0 100%;
+
+  }
+
+  .realistic-ticket__info-label,
+  .realistic-ticket__info-action,
+  .realistic-ticket__info-event {
+
+    padding: $realistic-ticket-padding $realistic-ticket-padding-large;
+
+  }
+
+
+  .realistic-ticket__info-label {
+
+    position: absolute;
+    top: $realistic-ticket-padding;
+    left: $realistic-ticket-padding;
+    right: 0;
+    bottom: 50%;
+
+    color: $color-text-strong;
+
+  }
+
+  .realistic-ticket__info-action {
+
+    position: absolute;
+    top: 50%;
+    left: $realistic-ticket-padding;
+    bottom: $realistic-ticket-padding;
+    right: 0;
+
+    color: $color-brand-primary;
+
+  }
+
+  .realistic-ticket__info-event {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: $realistic-ticket-height;
+
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+
+    color: $color-text-strong;
+
+  }
+
+  /* Let's animate */
+  &:hover,
+  &:focus {
+
+    transform: scale(1.05) rotate(-10deg);
+
+    .realistic-ticket__part-left {
+
+      transform: rotate(-2deg);
+
+    }
+
+    .realistic-ticket__part-right {
+
+      transform: rotate(10deg);
+
+    }
+
+
+  }
+
+}

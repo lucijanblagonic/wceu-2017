@@ -1572,12 +1572,18 @@ Animated lights based on the pen by Umair Razzaq <a href="http://codepen.io/umai
         </div>
         <div class="kss-modifier__example">
           <div id="secondary">
-  <aside class="widget widget_text">
+  <aside class="widget widget_text" id="text-3">
     <h1 class="widget-title">Have your ticket for WordCamp Europe?</h1>
     <div class="textwidget">
       <p>Be a part of the most important WordPress conference in the world.</p>
-      <a class="button" href="">
-        Get your ticket today
+      <a class="realistic-ticket" href="#">
+        <span class="realistic-ticket__part-left">
+          <span class="realistic-ticket__info-label">Less than 300 tickets</span>
+          <span class="realistic-ticket__info-action">Get your ticket today</span>
+        </span>
+        <span class="realistic-ticket__part-right">
+          <span class="realistic-ticket__info-event">WordCamp Europe 2017</span>
+        <span>
       </a>
     </div>
   </aside>
@@ -1587,12 +1593,18 @@ Animated lights based on the pen by Umair Razzaq <a href="http://codepen.io/umai
 
       <div class="kss-markup kss-style">
         <pre class="prettyprint lang-html"><code data-language="html">&lt;div id=&quot;secondary&quot;&gt;
-  &lt;aside class=&quot;widget widget_text&quot;&gt;
+  &lt;aside class=&quot;widget widget_text&quot; id=&quot;text-3&quot;&gt;
     &lt;h1 class=&quot;widget-title&quot;&gt;Have your ticket for WordCamp Europe?&lt;/h1&gt;
     &lt;div class=&quot;textwidget&quot;&gt;
       &lt;p&gt;Be a part of the most important WordPress conference in the world.&lt;/p&gt;
-      &lt;a class=&quot;button&quot; href=&quot;&quot;&gt;
-        Get your ticket today
+      &lt;a class=&quot;realistic-ticket&quot; href=&quot;#&quot;&gt;
+        &lt;span class=&quot;realistic-ticket__part-left&quot;&gt;
+          &lt;span class=&quot;realistic-ticket__info-label&quot;&gt;Less than 300 tickets&lt;/span&gt;
+          &lt;span class=&quot;realistic-ticket__info-action&quot;&gt;Get your ticket today&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class=&quot;realistic-ticket__part-right&quot;&gt;
+          &lt;span class=&quot;realistic-ticket__info-event&quot;&gt;WordCamp Europe 2017&lt;/span&gt;
+        &lt;span&gt;
       &lt;/a&gt;
     &lt;/div&gt;
   &lt;/aside&gt;
