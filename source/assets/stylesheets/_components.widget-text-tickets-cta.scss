@@ -41,11 +41,11 @@
   @include breakpoint(medium) {
 
     position: relative;
-    text-align: left;
 
     .widget-title {
 
       margin-right: rem(320);
+      text-align: left;
 
     }
 
@@ -53,6 +53,7 @@
 
       margin-bottom: 0;
       margin-right: rem(320);
+      text-align: left;
 
     }
 
