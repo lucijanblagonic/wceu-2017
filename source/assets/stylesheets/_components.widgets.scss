@@ -13,6 +13,7 @@
 .widget-title {
 
   font-size: ms(1);
+  line-height: ms(1);
 
 }
 
@@ -24,11 +25,11 @@
  */
 
 #after-header-widgets .widget,
+#before-content-widgets .widget,
 #secondary .widget {
 
-  // border-top: rem(2) solid #fff;
-  padding-left: 0;
-  padding-right: 0;
+  // padding-left: 0;
+  // padding-right: 0;
   text-align: center;
 
   > * {
@@ -51,18 +52,6 @@
     content: "";
 
   }
-
-  // @include breakpoint(medium) {
-
-  //   padding: $unit-l 0;
-
-  // }
-
-  // @include breakpoint(large) {
-
-  //   padding: $unit-xl 0;
-
-  // }
 
 }
 
