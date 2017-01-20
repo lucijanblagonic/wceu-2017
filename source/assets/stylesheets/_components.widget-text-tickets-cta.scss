@@ -44,7 +44,6 @@
 
     .widget-title {
 
-      // margin-right: rem(320);
       text-align: left;
 
     }
@@ -172,6 +171,7 @@ $realistic-ticket-padding-large: 15px;
     right: 0;
 
     color: $color-brand-primary;
+    color: $color-link;
 
   }
 
@@ -212,6 +212,11 @@ $realistic-ticket-padding-large: 15px;
 
     }
 
+    .realistic-ticket__info-action {
+
+      color: $color-link-hover;
+
+    }
 
   }
 
