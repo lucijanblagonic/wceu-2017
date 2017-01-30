@@ -75,9 +75,14 @@
 
   li {
 
-    text-align: center;
+    position: relative;
+
     margin-bottom: $unit-default;
+
     font-size: ms(-1);
+    text-align: left;
+
+    padding-left: rem(64);
 
     // @include breakpoint(small) {
 
@@ -95,31 +100,114 @@
 
   .avatar {
 
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
+    // float: left;
+    // margin: 0;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    margin: 0;
+    width: rem(48);
     height: auto;
-    width: rem(64);
-    margin-bottom: $unit-xs;
-    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    border: rem(2) solid $color-brand-primary;
+
+    transform: rotate(-5deg);
+
+    // border-radius: rem(24);
+    // margin-bottom: $unit-xs;
+    // clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 
   }
 
-  a {}
+  a {
+
+    display: block;
+
+  }
 
   .tix-field {
 
-    display: block;
+    display: inline-block;
+
     margin: 0;
+    margin-right: rem(8);
+
     font-size: ms(0, 16px);
+    line-height: ms(2);
 
   }
 
   .tix-attendee-name {
 
+    display: block;
+    margin-right: 0;
+    padding-right: 0;
+
     color: $color-text-strong;
     font-weight: $bold;
     font-size: ms(1);
+    line-height: ms(1);
+
+    background: none;
+
+  }
+
+  li {
+
+    &:before {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: rem(48);
+      height: rem(48);
+
+      background-color: $color-brand-primary;
+
+      content: "";
+
+      transform-origin: 50% 50%;
+      transform: rotate(10deg);
+
+
+    }
+
+    &:nth-child(odd) {
+
+      &:before {
+
+        transform: rotate(20deg);
+
+      }
+
+      .avatar {
+
+        transform: rotate(5deg);
+
+      }
+
+    }
+
+    &:nth-child(even) {
+
+      &:before {
+
+        transform: rotate(-5deg);
+
+      }
+
+      .avatar {
+
+        transform: rotate(-20deg);
+
+      }
+
+    }
 
   }
 
@@ -128,7 +216,27 @@
 
   .tix-attendee-url {}
 
-  .tix-attendee-twitter {}
+  .tix-attendee-twitter {
+
+    &:after {
+
+      display: inline-block;
+
+      width: rem(14);
+      height: rem(14);
+      margin-left: rem(8);
+      vertical-align: middle;
+
+      background: no-repeat $image-bullet-dark 100% 50%;
+      background-size: 14px;
+
+      opacity: .5;
+
+      content: "";
+
+    }
+
+  }
 
 
 
