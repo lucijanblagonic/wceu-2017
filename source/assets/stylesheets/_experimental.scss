@@ -1,2 +1,25 @@
 /* =Experimental
 ===================================================== */
+
+/*
+ * Attendees page
+ *
+ * Experimenting with global style overrides
+ */
+
+.page-slug-attendees {
+
+  #primary {
+
+    max-width: 100%;
+
+  }
+
+  .entry-title {
+
+    text-align: center;
+    margin-bottom: $unit-l;
+
+  }
+
+}
