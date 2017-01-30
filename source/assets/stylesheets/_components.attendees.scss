@@ -109,6 +109,7 @@
     text-align: left;
 
     padding-left: rem(64);
+    padding-right: rem(8);
 
     // @include breakpoint(small) {
 
@@ -162,7 +163,7 @@
     margin: 0;
     margin-right: rem(8);
 
-    font-size: ms(0, 16px);
+    font-size: ms(0, 14px);
     line-height: ms(2);
 
   }
@@ -175,8 +176,8 @@
 
     color: $color-text-strong;
     font-weight: $bold;
-    font-size: ms(1);
-    line-height: ms(1);
+    font-size: ms(0, 18px);
+    line-height: ms(2);
 
     background: none;
 
