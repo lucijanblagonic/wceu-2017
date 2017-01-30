@@ -111,26 +111,9 @@
     padding-left: rem(64);
     padding-right: rem(8);
 
-    // @include breakpoint(small) {
-
-    //   @include gallery(2 of 4);
-
-    // }
-
-    // @include breakpoint(medium) {
-
-    //   @include gallery(1 of 3);
-
-    // }
-
   }
 
   .avatar {
-
-    // float: left;
-    // margin: 0;
-    // margin-left: auto;
-    // margin-right: auto;
 
     position: absolute;
     top: 0;
@@ -139,14 +122,13 @@
 
     margin: 0;
     width: rem(48);
-    height: auto;
+    height: rem(48);
     border: rem(2) solid $color-brand-primary;
 
-    transform: rotate(-5deg);
+    background-color: #fff;
 
-    // border-radius: rem(24);
-    // margin-bottom: $unit-xs;
-    // clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    transform: rotate(-5deg);
+    @include transition-fast();
 
   }
 
@@ -171,19 +153,36 @@
   .tix-attendee-name {
 
     display: block;
-    margin-right: 0;
     padding-right: 0;
+    margin-right: 0;
+    margin-bottom: rem(2);
 
     color: $color-text-strong;
     font-weight: $bold;
     font-size: ms(0, 18px);
-    line-height: ms(2);
+    line-height: ms(1);
 
     background: none;
 
   }
 
   li {
+
+    &:hover {
+
+      &:before {
+
+        transform: rotate(90deg) scale(1.2)!important;
+
+      }
+
+      .avatar {
+
+        transform: rotate(10deg) scale(1.2)!important;
+
+      }
+
+    }
 
     &:before {
 
@@ -200,6 +199,7 @@
 
       transform-origin: 50% 50%;
       transform: rotate(10deg);
+      @include transition-fast();
 
 
     }
