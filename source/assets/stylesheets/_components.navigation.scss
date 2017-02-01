@@ -7,17 +7,36 @@
 //
 // Markup:
 // <header id="masthead" class="site-header" role="banner">
-//   <div class="menu-main-navigation-container">
-//    <ul id="menu-main-navigation" class="menu">
-//      <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item"><a href="#">News</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Volunteer</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Être bénévole</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Tickets</a></li>
-//      <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="Info" href="#">Attendee Information</a></li>
-//      <li class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page"><a title="CoC" href="#">Code of Conduct</a></li>
-//      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Contact</a></li>
-//    </ul>
-//   </div>
+//   <nav id="site-navigation" class="main-navigation" role="navigation">
+//     <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Primary Menu</button>
+//     <div class="menu-main-menu-container">
+//       <ul id="primary-menu" class="menu">
+//         <li id="menu-item-17012" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-17012">
+//           <a href="#">Home</a>
+//         </li>
+//         <li id="menu-item-17013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17013">
+//           <a href="#">Get a ticket</a>
+//         </li>
+//         <li id="menu-item-17014" class="use-title-for-small menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17014">
+//           <a title="Attendes" href="https://  wceu2017.wc.dev.kau-boys.com/attendees/">Attendees Information</a>
+//           <ul class="sub-menu">
+//             <li id="menu-item-17109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17109">
+//               <a href="#">Press</a>
+//             </li>
+//             <li id="menu-item-17110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17110">
+//               <a href="#">Subscribe</a>
+//             </li>
+//           </ul>
+//         </li>
+//         <li id="menu-item-17015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17015">
+//           <a href="#">Location</a>
+//         </li>
+//         <li id="menu-item-17016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17016">
+//           <a href="#">Contact</a>
+//         </li>
+//       </ul>
+//     </div>
+//   </nav><!-- #site-navigation -->
 // </header>
 //
 // Style guide: 6.navigation
