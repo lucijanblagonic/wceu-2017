@@ -87,6 +87,14 @@
   line-height: em(24,16);
   color: $color-text-weak;
 
+  > :after {
+    content: " | ";
+
+    &:last-child {
+      content: "";
+    }
+  }
+
   a {
 
     color: $color-link-alt;
