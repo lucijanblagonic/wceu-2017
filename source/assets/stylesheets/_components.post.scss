@@ -88,11 +88,19 @@
   color: $color-text-weak;
 
   > :after {
+
     content: " | ";
 
-    &:last-child {
+  }
+
+  > :last-child {
+
+    &:after {
+
       content: "";
+
     }
+
   }
 
   a {
