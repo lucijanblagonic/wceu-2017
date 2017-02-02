@@ -1,2 +1,64 @@
 /* =Experimental
 ===================================================== */
+
+/*
+ * Attendees page
+ *
+ * Experimenting with global style overrides
+ */
+
+.page-slug-attendees {
+
+  #primary {
+
+    max-width: rem(1400);
+
+  }
+
+  .entry-title {
+
+    position: relative;
+
+    margin-bottom: $unit-l;
+    margin-bottom: rem(64);
+    padding-bottom: rem(64);
+
+    text-align: center;
+
+    &:before {
+
+      width: rem(160);
+      height: rem(2);
+
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background-color: $color-brand-secondary;
+
+      content: "";
+
+    }
+
+    &:after {
+
+      // position: absolute;
+      // left: 50%;
+      // bottom: 0;
+
+      // width: rem(32);
+      // height: rem(32);
+
+      // border: 2px solid $color-brand-secondary;
+
+      // transform-origin: 0 50%;
+      // transform: rotate(45deg);
+
+      // content: "";
+
+    }
+
+  }
+
+}
