@@ -188,7 +188,12 @@
   .tix-first {}
   .tix-last {}
 
-  .tix-attendee-url {}
+  .tix-attendee-url {
+
+    @include ellipsis();
+    max-width: rem(180);
+
+  }
 
   .tix-attendee-twitter {
 
