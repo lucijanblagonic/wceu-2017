@@ -69,7 +69,7 @@
 
 }
 
-#tix-attendees .tix-columns-4 li {
+#tix-attendees .tix-columns-3 li {
 
   width: 100%;
 
@@ -97,6 +97,7 @@
 
     margin-top: 0;
     margin-bottom: $unit-default;
+    height: auto; // Override
 
     font-size: ms(-1);
     line-height: ms(1);
