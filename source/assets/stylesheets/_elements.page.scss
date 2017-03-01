@@ -70,6 +70,18 @@ em {
 
 }
 
+
+// Sup + Sub
+
+sup
+sub, {
+
+  font-size:75%;
+  line-height: 0;
+  position: relative;
+
+}
+
 // Sup
 //
 // Markup:
@@ -79,8 +91,7 @@ em {
 
 sup {
 
-  vertical-align: text-top;
-  font-size:75%;
+  top: -0.5em;
 
 }
 
@@ -93,7 +104,6 @@ sup {
 
 sub {
 
-  vertical-align: bottom;
-  font-size:75%;
+  bottom: -0.25em;
 
 }
