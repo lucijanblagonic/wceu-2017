@@ -1,56 +1,18 @@
 // Requiring Gulp
-var gulp = require('gulp');
-
-// Requires the gulp-sass plugin
-var sass = require('gulp-sass');
-
-// Requires the gulp-file-include plugin
-var fileinclude = require('gulp-file-include');
-
-// Requiring autoprefixer
-var autoprefixer = require('gulp-autoprefixer');
-
-// Requiring sourcemaps
-var sourcemaps = require('gulp-sourcemaps');
-
-// Requiring browser-sync
-var browserSync = require('browser-sync');
-
-// Requiring concat
-var concat = require('gulp-concat');
-
-// Requiring imagemin
-var imagemin = require('gulp-imagemin');
-
-// Requiring cssnano
-var cssnano = require('gulp-cssnano');
-
-// Requiring uglify
-var uglify = require('gulp-uglify');
-
-// Requiring rename
-var rename = require('gulp-rename');
-
-// Requiring gulp-shell
-var shell = require('gulp-shell');
-
-// Require kss-node
-var kssNode = 'node ' + __dirname + '/node_modules/kss/bin/kss-node ';
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),                 // Requiring gulp-sass (compiles SCSS)
+    sourcemaps = require('gulp-sourcemaps'),     // Requiring sourcemaps (helps working locally)
+    autoprefixer = require('gulp-autoprefixer'), // Requiring autoprefixer (adds browser prefixes)
+    cssnano = require('gulp-cssnano'),           // Requiring cssnano (minifies CSS)
+    imagemin = require('gulp-imagemin'),         // Requiring imagemin (lossless image optimization)
+    browserSync = require('browser-sync'),       // Requiring browser-sync (browser refresh)
+    shell = require('gulp-shell'),               // Requiring gulp-shell (used for KSS node)
+    kssNode = 'node ' + __dirname + '/node_modules/kss/bin/kss-node '; // Require kss-node
 
 // Start KSS (style guide) task
 gulp.task('kss', shell.task(
   [kssNode + '--config source/kss-config.json']));
   // [kssNode + '--xdemo']));
-
-// Start file include task
-gulp.task('templates', function() {
-  gulp.src(['./source/templates/**'])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: './source/patterns'
-    }))
-    .pipe(gulp.dest('./build'));
-});
 
 // Start browserSync server
 gulp.task('browserSync', function() {
@@ -78,14 +40,6 @@ gulp.task('stylesheets', function() {
     }));
 })
 
-// Start scripts task
-gulp.task('scripts', function() {
-  gulp.src(['source/assets/scripts/modernizr.js', 'source/assets/scripts/main.js'])
-    .pipe(concat('all.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('build/assets/scripts'));
-});
-
 // Start images task
 gulp.task('images', function() {
 
@@ -95,25 +49,14 @@ gulp.task('images', function() {
 
 });
 
-// Start fonts task
-gulp.task('fonts', function() {
-
-  gulp.src('source/assets/fonts/**')
-    .pipe(gulp.dest('build/assets/fonts'));
-
-});
-
 // Start watch groups of tasks
-gulp.task('default', ['browserSync', 'templates', 'stylesheets', 'scripts', 'images', 'fonts', 'kss'], function() {
+gulp.task('default', ['browserSync', 'stylesheets', 'images', 'kss'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['stylesheets']); // Watch for SCSS changes
-  gulp.watch('source/assets/scripts/**/*.js', ['scripts']); // Watch for JS changes
   gulp.watch('source/assets/images/**/*', ['images']); // Watch for image changes
-  gulp.watch('source/assets/fonts/**/*', ['fonts']); // Watch for font changes
-  gulp.watch('source/**/*.html', ['templates']); // Watch for template changes
   gulp.watch('source/**', ['kss']); // Watch for style guide changes
   gulp.watch('build/**.html', browserSync.reload);
   gulp.watch('styleguide/**.html', browserSync.reload);
 });
 
 // Start build task
-gulp.task('build', ['templates', 'stylesheets', 'scripts', 'images', 'fonts', 'kss'], function() {})
+gulp.task('build', ['stylesheets', 'images', 'kss'], function() {})
