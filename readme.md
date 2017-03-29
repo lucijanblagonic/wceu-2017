@@ -25,7 +25,7 @@ Use `gulp` for on–the–fly updates of your code (templates, js, css) and styl
 
 ### `gulp build`
 
-This will create a `build` directory for project assets and templates and a `styleguide` directory from your KSS documentation in CSS **without browser-sync live preview**.
+This will create a `build` directory for project assets and a `styleguide` directory from your KSS documentation in CSS **without browser-sync live preview**.
 
 ## Directory Structure
 
@@ -35,9 +35,7 @@ Feel free to modify everything in the `source` directory and keep in mind that `
 	package.json
 	readme.md
 	source/
-	├── assets/ [images, fonts, scripts, stylesheets]
-	├── patterns/ [patterns that are included in templates]
-	├── templates/ [page templates and flows]
+	├── assets/ [images, stylesheets]
 	├── styleguide-template/ [modified KSS template for generating style guides]
 	├── kss-config.json [style guide configuration]
 	└── styleguide.md [description of the project and the style guide]
@@ -48,6 +46,7 @@ Feel free to modify everything in the `source` directory and keep in mind that `
 ## Interesting Bits
 
 * Uses [Bourbon](bourbon.io), a lightweight Sass Tool Set
+* Uses [Modular scale](https://github.com/modularscale/modularscale-sass) for typography
 * Uses [Susy](susy.oddbird.net) for grids
 * CSS architecture based on ITCSS (Inverted Triangle CSS) by [Harry Roberts](http://csswizardry.com) [Article](http://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528)
 
