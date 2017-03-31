@@ -11,5 +11,13 @@
 // Style guide: 6.oembed
 
 div.googlemaps {
+
   margin-bottom: rem(24);
+
+  iframe {
+
+    max-width: 100%;
+
+  }
+
 }

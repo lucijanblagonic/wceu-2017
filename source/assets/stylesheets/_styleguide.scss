@@ -5,9 +5,10 @@
  */
 
 /* Define basic variables and colors */
-$styleguide-color-main: #444;
-$styleguide-color-link: #444;
-$styleguide-color-weak: rgba(0,0,0,.5);
+$styleguide-color-main: #FF9505;
+$styleguide-color-link: #EC4E20;
+$styleguide-color-link-alt: red;
+$styleguide-color-weak: rgba(0,0,0,.7);
 $styleguide-color-strong: rgba(0,0,0,.9);
 $styleguide-border-radius-small: 3px;
 
@@ -15,9 +16,10 @@ $styleguide-border-radius-small: 3px;
 
   margin-bottom: rem(24);
 
-  @include font-size(16);
+  @include font-size(18);
   line-height: 1.5;
   color: $styleguide-color-strong;
+  text-transform: none;
   font-weight: $bold;
 
 }
@@ -70,6 +72,17 @@ $styleguide-border-radius-small: 3px;
   &:last-child {
 
     border-bottom: 0;
+
+  }
+
+  &:target {
+
+    .kss-title__permalink {
+
+      color: #222!important;
+      text-decoration: none!important;
+
+    }
 
   }
 
@@ -144,10 +157,10 @@ $styleguide-border-radius-small: 3px;
     font-family: $helvetica;
     color: rgba(0,0,0,.9);
 
-    border-left: 4px solid #fce053;
+    border-left: 4px solid $styleguide-color-main;
     border-radius: $styleguide-border-radius-small;
     padding: rem(8) rem(24);
-    background-color: tint(#fce053, 80%);
+    background-color: tint($styleguide-color-main, 80%);
 
   }
 
@@ -205,8 +218,8 @@ $styleguide-border-radius-small: 3px;
     padding: rem(24);
     border-radius: $styleguide-border-radius-small;
     // box-shadow: inset rem(4) 0 0 #fce053;
-    border-left: 4px solid #fce053;
-    background-color: tint(#fce053, 95%);
+    border-left: 4px solid $styleguide-color-main;
+    background-color: tint($styleguide-color-main, 95%);
 
     clear: both;
 
@@ -291,10 +304,17 @@ $styleguide-border-radius-small: 3px;
 
     margin: 0;
 
-    @include font-size(14);
-    line-height: 1.5;
-
     border-top: 1px solid rgba(0,0,0,.05);
+
+    @include font-size(16);
+    line-height: 1.5;
+    font-weight: bold;
+
+  }
+
+  li li {
+
+    font-weight: normal;
 
   }
 
@@ -302,8 +322,6 @@ $styleguide-border-radius-small: 3px;
 
     display: block;
     padding: rem(4) rem(10);
-    // @include breakpoint-proportion(padding-left);
-    // @include breakpoint-proportion(padding-right);
     color: $styleguide-color-link;
 
   }
