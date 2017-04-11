@@ -51,12 +51,26 @@
  * Component description
  */
 
- .wcb_speaker .wcb_speaker {
+.wcb_speaker {
 
-  @include visually-hidden();
+  .entry-meta {
 
- }
+    @include visually-hidden();
 
-.speaker-avatar {} // Image
-.speaker-sessions {} // Title
-.speaker-session-names // List
+  }
+
+  // Image
+  .speaker-avatar {
+
+    float: left;
+    margin: $unit-xs $unit-s $unit-xs 0;
+
+  }
+
+  // Title
+  .speaker-sessions {}
+
+  // List
+  .speaker-session-names
+
+}
