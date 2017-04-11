@@ -369,3 +369,30 @@
   }
 
 }
+
+/*
+ * Prepare markup for theme update
+ */
+
+// .main-navigation {}
+// .main-navigation.toggled {}
+
+// .menu-toggle {
+
+//   margin-top: rem(2);
+//   width: 100%;
+//   border-radius: 0;
+
+//   @include breakpoint(small) {
+
+//     display: none;
+
+//   }
+
+// }
+
+// .menu-toggle[aria-expanded="true"] {}
+// .menu-toggle[aria-expanded="false"] {}
+
+// .menu[aria-expanded="true"] {}
+// .menu[aria-expanded="false"] {}
