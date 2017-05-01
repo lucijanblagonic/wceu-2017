@@ -21,6 +21,37 @@
     margin-bottom: $unit-default;
 
     font-size: ms(0);
+    line-height: ms(2);
+    text-align: center;
+
+    position: relative;
+    z-index: 100;
+
+    &:before,
+    &:after {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+
+      border-top: 1px solid $color-border-weak;
+
+      content: "";
+
+      z-index: -1;
+
+    }
+
+    &:after {
+
+      border-color: #fff;
+      width: 10em;
+
+      z-index: -1;
+
+    }
 
   }
 
