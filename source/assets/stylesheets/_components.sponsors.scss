@@ -47,7 +47,7 @@
     &:after {
 
       border-color: #fff;
-      width: 10em;
+      width: 16em;
 
       z-index: -1;
 
@@ -72,6 +72,27 @@
   .wcorg-sponsor-description p {
 
     display: none;
+
+  }
+
+  a {
+
+    background-color: #fff;
+
+    img {
+
+      @include transition-fast();
+
+    }
+
+    &:hover img,
+    &:focus img,
+    &:active img {
+
+      filter:  sepia(100%);
+      opacity: .75;
+
+    }
 
   }
 
