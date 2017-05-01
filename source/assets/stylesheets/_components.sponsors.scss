@@ -1,0 +1,134 @@
+/* =Sponsors
+===================================================== */
+
+.wcorg-sponsors {
+
+  > div {
+
+    display: flex;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  > div h2 {
+
+    width: 100%;
+
+    margin-top: $unit-default;
+    margin-bottom: $unit-default;
+
+    font-size: ms(0);
+
+  }
+
+}
+
+.wcorg-sponsor {
+
+  margin-bottom: 0;
+
+  img {
+
+    display: block;
+    margin: 0;
+
+  }
+
+  h3,
+  .wcorg-sponsor-description p {
+
+    display: none;
+
+  }
+
+}
+
+// Large
+.wcorg-sponsor-level-administrator,
+.wcorg-sponsor-level-after-party,
+.wcorg-sponsor-level-super-admin {
+
+  @include clearfix();
+
+  .wcorg-sponsor {
+
+    width: percentage(1/1);
+
+    @include breakpoint(small) {
+
+      width: percentage(1/2);
+
+    }
+
+    @include breakpoint(medium) {
+
+      width: percentage(1/3);
+
+    }
+
+  }
+
+}
+
+// Medium
+.wcorg-sponsor-level-speakers-dinner,
+.wcorg-sponsor-level-author,
+.wcorg-sponsor-level-editor {
+
+  @include clearfix();
+
+  .wcorg-sponsor {
+
+    width: percentage(1/2);
+
+    @include breakpoint(medium) {
+
+      width: percentage(1/4);
+
+    }
+
+  }
+
+}
+
+// Small
+.wcorg-sponsor-level-subscriber,
+.wcorg-sponsor-level-small-business {
+
+  @include clearfix();
+
+  .wcorg-sponsor {
+
+    width: percentage(1/3);
+
+    @include breakpoint(medium) {
+
+      width: percentage(1/5);
+
+    }
+
+  }
+
+}
+
+// Tiny
+.wcorg-sponsor-level-microsponsor {
+
+  @include clearfix();
+
+  .wcorg-sponsor {
+
+    width: percentage(1/3);
+
+    @include breakpoint(medium) {
+
+      width: percentage(1/6);
+
+    }
+
+  }
+
+}

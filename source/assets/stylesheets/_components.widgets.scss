@@ -64,11 +64,11 @@
 
 .widget_text {
 
-  background-color: $color-grey-10;
+  background-color: #fff; // $color-grey-10
 
   &:before {
 
-    background-color: $color-grey-10!important;
+    background-color: #fff!important; // $color-grey-10
 
   }
 

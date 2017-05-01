@@ -292,6 +292,7 @@
 .wcpt-schedule {
 
   border: rem(4) solid $color-brand-secondary;
+  margin-bottom: $unit-default;
 
   td,
   th {
@@ -374,9 +375,10 @@
 
   .wcpt-session-speakers {
 
+    display: block;
+
     a {
 
-      // color: $color-link-alt;
       color: $color-text;
 
     }
@@ -494,5 +496,163 @@
 
 }
 
+/*
+ * Session labels
+ *
+ * Component description
+ */
+
+$session-type-color-1: #176799;
+$session-type-color-2: #ebe700;
+$session-type-color-3: #d95e2b;
+$session-type-color-4: #e32d88;
+$session-type-color-5: #69d240;
+$session-type-color-6: #ebe700;
+$session-type-color-7: #176799;
+$session-type-color-8: #e32d88;
+
+@mixin session-label($session-label, $session-color) {
+
+  position: relative;
+  padding-bottom: rem(40);
+
+  &:after {
+
+    display: inline-block;
+    padding: rem(1) rem(6);
+
+    border: 2px solid $session-color;
+
+    position: absolute;
+    bottom: $unit-s;
+
+    font-size: ms(-1);
+    line-height: ms(1);
+    color: $color-text-strong;
+    border-radius: $border-radius-large;
+    background: #fff;
+
+    content: "#{$session-label}";
+
+  }
+
+}
 
 
+.wcb-session-empathy-and-acceptance-in-design-and-community,
+.wcb-session-from-blogger-to-wordpress-core-committer,
+.wcb-session-handling-anxiety,
+.wcb-session-my-friend-the-impostor-syndrome,
+.wcb-session-short-talks-03,
+.wcb-session-tbd,
+.wcb-session-the-2016-plugin-directory,
+.wcb-session-the-rebirth-of-the-italian-community,
+.wcb-session-the-science-of-happiness {
+
+  // .wcpt-session-speakers:after {
+
+  // }
+
+  @include session-label('Community', #176799);
+
+}
+
+.wcb-session-a-look-into-calypso,
+.wcb-session-assistive-technology-demo,
+.wcb-session-code-is-poetry-a-musicians-tale,
+.wcb-session-connected-wordpress,
+.wcb-session-editing-text-at-the-new-york-times,
+.wcb-session-internationalizing-the-new-york-times,
+.wcb-session-modernizing-wordpress-search-with-elasticsearch,
+.wcb-session-moving-forward-with-a-mature-platform,
+.wcb-session-my-condolences-youre-now-the-maintainer-of-a-popular-open-source-project,
+.wcb-session-open-source-project-management-at-scale-how-1300-people-improved-drupal-8s-multilingual-features,
+.wcb-session-seven-times-faster-a-study-in-frontend-optimization,
+.wcb-session-short-talks-01,
+.wcb-session-short-talks-02,
+.wcb-session-short-talks-04,
+.wcb-session-tba-2,
+.wcb-session-the-swiss-knife-of-a-wordpress-developer,
+.wcb-session-the-ultimate-rest-api-dev-talk,
+.wcb-session-the-ultimate-rest-api-talk,
+.wcb-session-the-ultimate-rest-api-talk-part-2,
+.wcb-session-thinking-outside-the-boxmodel-an-introduction-to-flexbox,
+.wcb-session-using-composer-to-create-manageable-wordpress-websites,
+.wcb-session-using-the-rest-api-and-javascript-to-create-better-wordpress-interfaces,
+.wcb-session-whats-new-in-php7-and-what-to-expect-in-php7-1,
+.wcb-session-wordpress-hardening-ten-tips-in-ten-minutes,
+.wcb-session-wordpress-state-of-the-accessibility {
+
+  @include session-label('Development', #ebe700);
+
+}
+
+.wcb-session-art-directed-web-typography,
+.wcb-session-caring-is-the-coolest-thing-ive-ever-seen-anyone-do-thoughts-on-wordpress-plugin-ui,
+.wcb-session-emotional-interfaces,
+.wcb-session-forefront-a-new-front-end-experience,
+.wcb-session-making-ads-great-again,
+.wcb-session-moving-the-design-process-to-the-browser {
+
+  @include session-label('Design', #d95e2b);
+
+}
+
+.wcb-session-closing-the-gap-developing-your-support-philosophy,
+.wcb-session-cultivating-happy-teams-for-better-business-panel,
+.wcb-session-dealing-with-different-client-cultures,
+.wcb-session-how-newscorp-australia-scaled-wordpress-to-host-australias-largest-news-websites-on-wordpress-vip,
+.wcb-session-privacy-and-the-web-are-you-doing-what-it-takes,
+.wcb-session-proudly-powered-by-the-wordpress-rest-api,
+.wcb-session-rebuilding-babel-communication-in-a-virtual-world,
+.wcb-session-remote-is-the-new-black-to-be-changed,
+.wcb-session-reviews-the-good-the-bad-and-the-stalker,
+.wcb-session-the-discovery-definition-approach-to-project-planning,
+.wcb-session-the-making-of-calypso-a-team-perspective,
+.wcb-session-unsafe-harbors-data-protection-strikes-back,
+.wcb-session-you-are-too-cheap,
+.wcb-session-you-are-too-cheap-2,
+.wcb-session-zen-and-the-art-of-online-communication {
+
+  @include session-label('Business', #e32d88);
+
+}
+
+.wcb-session-beyond-seo-copywriting-for-professionals,
+.wcb-session-publish-in-10-minutes-per-day,
+.wcb-session-your-content-is-trapped-how-a-proper-content-architecture-can-save-it {
+
+  @include session-label('Content', #e32d88);
+
+}
+
+.wcb-session-lets-write-a-plugin-demystifying-the-art-and-science-of-plugin-development,
+.wcb-session-multisite,
+.wcb-session-the-ultimate-wordpress-development-environment,
+.wcb-session-themes-plugins-in-harmony,
+.wcb-session-theming-in-wordpress-where-do-i-start,
+.wcb-session-website-security-the-big-picture-w-simple-steps-to-take,
+.wcb-session-wp-cli-for-beginners {
+
+  @include session-label('Development for Beginners', #ebe700);
+
+}
+
+.wcb-session-contributing-to-wordpress-for-business-profession-the-community,
+.wcb-session-japanese-wordpress-community,
+.wcb-session-keys-to-growing-developing-your-wordpress-meetup,
+.wcb-session-managing-a-local-wordpress-community {
+
+  @include session-label('Running a local WP community', #176799);
+
+}
+
+.wcb-session-changing-the-world-one-wordpress-site-at-a-time-how-we-built-a-successful-distributed-wordpress-firm-serving-nonprofits,
+.wcb-session-making-the-leap-successful-products-as-a-web-agency,
+.wcb-session-managing-a-remote-wordpress-team,
+.wcb-session-project-management-or-how-to-herd-cats,
+.wcb-session-whats-my-wordpress-sites-email-strategy {
+
+  @include session-label('Running a WordPress agency', #e32d88);
+
+}
