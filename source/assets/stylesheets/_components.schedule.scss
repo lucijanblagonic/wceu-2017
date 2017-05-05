@@ -521,6 +521,11 @@
  * Component description
  */
 
+$session-type-color-design:      #176799;
+$session-type-color-community:   #ebe700;
+$session-type-color-development: #d95e2b;
+$session-type-color-business:    #e32d88;
+
 $session-type-color-1: #176799;
 $session-type-color-2: #ebe700;
 $session-type-color-3: #d95e2b;
@@ -578,7 +583,7 @@ $session-type-color-8: #e32d88;
 .wcb-session-reacting-natively-with-wordpress,
 .wcb-session-accessibility-in-the-age-of-the-headless-cms {
 
-	@include session-label('Development', $color-brand-primary);
+	@include session-label('Development', $session-type-color-development);
 
 }
 
@@ -592,7 +597,7 @@ $session-type-color-8: #e32d88;
 .wcb-session-lessons-learnt-marketing-woocommerce-since-july-2014,
 .wcb-session-using-wordpress-for-good {
 
-	@include session-label('Business', $color-brand-tertiary);
+	@include session-label('Business', $session-type-color-business);
 
 }
 
@@ -603,7 +608,7 @@ $session-type-color-8: #e32d88;
 .wcb-session-big-little-shame-a-tale-of-empowered-user-experience-through-localisation,
 .wcb-session-wordpress-beyond-borders-cross-cultural-communication-and-the-fundamentals-of-caring {
 
-	@include session-label('Community', $color-brand-quaternary);
+	@include session-label('Community', $session-type-color-community);
 
 }
 
@@ -613,7 +618,7 @@ $session-type-color-8: #e32d88;
 .wcb-session-big-design-troubles-in-open-source,
 .wcb-session-night-of-the-living-style-guides {
 
-	@include session-label('Design', $color-brand-secondary);
+	@include session-label('Design', $session-type-color-design);
 
 }
 
