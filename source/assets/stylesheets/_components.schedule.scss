@@ -419,6 +419,7 @@
 
       display: block;
       border-top: none;
+      margin: 0;
 
     }
 
@@ -533,6 +534,12 @@ $session-type-color-8: #e32d88;
 
   position: relative;
   padding-bottom: rem(40);
+
+  @include breakpoint(to-medium) {
+
+    padding-bottom: rem(48);
+
+  }
 
   &:after {
 
