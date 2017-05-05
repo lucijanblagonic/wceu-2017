@@ -539,6 +539,65 @@ $session-type-color-8: #e32d88;
 }
 
 
+// Development
+.wcb-session-selfish-accessibility,
+.wcb-session-demystifying-the-wordpress-bootstrap-process,
+.wcb-session-lightning-talks-development, //
+.wcb-session-we-are-all-making-this-up-improv-lessons-for-developers,
+.wcb-session-is-your-code-ready-for-php7,
+.wcb-session-data-visualization-with-the-rest-api,
+.wcb-session-security-is-a-process,
+.wcb-session-wordpress-security-for-all-you-wont-believe-how-simple-it-can-be,
+.wcb-session-css-grid-changes-everything-about-web-layouts,
+.wcb-session-improving-wordpress-performance-with-xdebug-and-php-profiling,
+.wcb-session-reacting-natively-with-wordpress,
+.wcb-session-accessibility-in-the-age-of-the-headless-cms {
+
+	@include session-label('Development', $color-brand-primary);
+
+}
+
+// Business
+.wcb-session-3-gifts-my-users-gave-me,
+.wcb-session-lightning-talks-inspire, //
+.wcb-session-lightning-talks-content, //
+.wcb-session-how-to-grow-from-freelancer-to-agency-owner,
+.wcb-session-making-your-voice-heard-how-to-win-friends-and-influence-policy,
+.wcb-session-5-ways-you-may-be-sabotaging-your-business-2-proven-ways-to-succeed,
+.wcb-session-lessons-learnt-marketing-woocommerce-since-july-2014,
+.wcb-session-using-wordpress-for-good {
+
+	@include session-label('Business', $color-brand-tertiary);
+
+}
+
+// Community
+
+.wcb-session-lightning-talks-contributing-to-wordpress,
+.wcb-session-the-pernicious-myth-of-the-code-poet,
+.wcb-session-big-little-shame-a-tale-of-empowered-user-experience-through-localisation,
+.wcb-session-wordpress-beyond-borders-cross-cultural-communication-and-the-fundamentals-of-caring {
+
+	@include session-label('Community', $color-brand-quaternary);
+
+}
+
+// Design
+.wcb-session-new-to-theme-design-heres-what-you-should-know,
+.wcb-session-the-three-kinds-of-design,
+.wcb-session-big-design-troubles-in-open-source,
+.wcb-session-night-of-the-living-style-guides {
+
+	@include session-label('Design', $color-brand-secondary);
+
+}
+
+
+/*
+ * Old schedule
+ */
+
+
 .wcb-session-empathy-and-acceptance-in-design-and-community,
 .wcb-session-from-blogger-to-wordpress-core-committer,
 .wcb-session-handling-anxiety,
@@ -548,10 +607,6 @@ $session-type-color-8: #e32d88;
 .wcb-session-the-2016-plugin-directory,
 .wcb-session-the-rebirth-of-the-italian-community,
 .wcb-session-the-science-of-happiness {
-
-  // .wcpt-session-speakers:after {
-
-  // }
 
   @include session-label('Community', #176799);
 
