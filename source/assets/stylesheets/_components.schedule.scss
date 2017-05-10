@@ -518,22 +518,13 @@
 /*
  * Session labels
  *
- * Component description
+ * Displaying labels for session groups
  */
 
-$session-type-color-design:      #176799;
-$session-type-color-community:   #ebe700;
-$session-type-color-development: #d95e2b;
-$session-type-color-business:    #e32d88;
-
-$session-type-color-1: #176799;
-$session-type-color-2: #ebe700;
-$session-type-color-3: #d95e2b;
-$session-type-color-4: #e32d88;
-$session-type-color-5: #69d240;
-$session-type-color-6: #ebe700;
-$session-type-color-7: #176799;
-$session-type-color-8: #e32d88;
+$session-type-color-design:      #E6AA50; // Gold
+$session-type-color-development: #CC9966; // Copper
+$session-type-color-community:   #f5ebe0; // Linnen
+$session-type-color-business:    #575357; // Ash
 
 @mixin session-label($session-label, $session-color) {
 

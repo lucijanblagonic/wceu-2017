@@ -58,7 +58,7 @@
   background-image: url('https://europe.wordcamp.org/2016/files/2015/11/wordpress-footer-logo.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $color-link;
+  background-color: $color-link-alt;
   background-size: 40px;
   border-radius: 50%;
 
@@ -76,7 +76,7 @@
     width: rem(30);
     height: rem(100);
 
-    background: $color-link;
+    background: $color-link-alt;
     transition: all .1s ease;
 
     content: "";
@@ -87,11 +87,11 @@
   &:focus,
   &:active {
 
-    background-color: $color-link-hover;
+    background-color: $color-link-alt-hover;
 
     &:after {
 
-      background-color: $color-link-hover;
+      background-color: $color-link-alt-hover;
     }
 
   }
