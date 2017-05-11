@@ -78,6 +78,7 @@
 
     display: block;
     margin: 0 auto;
+    max-height: rem(140);
 
   }
 
@@ -105,6 +106,18 @@
       filter:  grayscale(100%);
       // filter:  sepia(100%);
       opacity: .75;
+
+    }
+
+  }
+
+  @include breakpoint(medium) {
+
+    padding: $unit-s;
+
+    img {
+
+      max-height: rem(200);
 
     }
 
