@@ -103,7 +103,7 @@
       display: block;
       width: rem(36);
       height: rem(36);
-      border: 6px double $color-link;
+      border: 6px double $color-brand-quinary;
 
       // background-color: $color-grey-10;
 
@@ -135,14 +135,18 @@
     &:focus,
     &:active {
 
-      color: $color-link-hover;
+      // color: $color-link-hover;
       text-decoration: none;
-      background-color: $color-brand-tertiary;
+      // background-color: $color-brand-tertiary;
+      color: $color-text-strong-invert;
+      background-color: $color-brand-quinary;
 
       &:before {
 
-        background-color: $color-link-hover;
-        border-color: $color-link-hover;
+        // background-color: $color-link-hover;
+        // border-color: $color-link-hover;
+        background-color: tint($color-brand-quinary, 60%);
+        border-color: tint($color-brand-quinary, 60%);
 
       }
 

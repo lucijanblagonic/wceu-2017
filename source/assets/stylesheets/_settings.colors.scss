@@ -33,9 +33,9 @@
 //		<dt class="cc__title">Linnen</dt>
 //		<dd class="cc__variable">$local-linnen</dd>
 //	</dl>
-// 	<dl class="cc cc--var-local-lavender">
-//		<dt class="cc__title">Lavender</dt>
-//		<dd class="cc__variable">$local-lavender</dd>
+// 	<dl class="cc cc--var-local-purple">
+//		<dt class="cc__title">purple</dt>
+//		<dd class="cc__variable">$local-purple</dd>
 //	</dl>
 // </div>
 // <h3 class="cc-title">Text</h3>
@@ -237,7 +237,7 @@ $local-smoke: tint($local-thunder, 70%);
 $local-gold: #E6AA50;
 $local-copper: #CC9966;
 $local-linnen: tint($local-copper,80%);
-$local-lavender: #8282BE;
+$local-purple: #614787; // was #8282BE
 $local-offblack: #1d242a;
 
 @include cc($local-thunder, 'local-thunder');
@@ -246,7 +246,7 @@ $local-offblack: #1d242a;
 @include cc($local-gold, 'local-gold');
 @include cc($local-linnen, 'local-linnen');
 @include cc($local-copper, 'local-copper');
-@include cc($local-lavender, 'local-lavender');
+@include cc($local-purple, 'local-purple');
 
 
 /* Brand */
@@ -254,6 +254,7 @@ $color-brand-primary:             $local-gold;
 $color-brand-secondary:           $local-copper;
 $color-brand-tertiary:            $local-thunder;
 $color-brand-quaternary:          $local-linnen;
+$color-brand-quinary:             $local-purple;
 
 
 /*
@@ -294,7 +295,7 @@ $color-link-visited:         mix($local-gold, #fff, 50%);
  * Alternate links
  */
 
-$color-link-alt:             $local-lavender;
+$color-link-alt:             $local-purple;
 $color-link-alt-hover:       mix($color-link-alt, #000, 90%);
 $color-link-alt-focus:       mix($color-link-alt, #000, 70%);
 $color-link-alt-visited:     mix($color-link-alt, #fff, 50%);
