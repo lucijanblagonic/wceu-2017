@@ -391,16 +391,19 @@
 
   .global-session {
 
-    background-image: $image-pattern-01;
-    background-color: $color-brand-quaternary!important;
-    background-size: 120px;
-    background-position: 50% 0;
-
     /* Target specifically */
-    &.registration {}
-    &.lunch {}
-    &.morning-break {}
-    &.afternoon-break {}
+    // Make the the whole row visually stand out (texture, uppercase, color)
+    &.registration,
+    &.lunch,
+    &.morning-break,
+    &.afternoon-break {
+
+      background-image: $image-pattern-01;
+      background-color: $color-brand-quaternary!important;
+      background-size: 120px;
+      background-position: 50% 0;
+
+    }
 
   }
 
@@ -491,8 +494,8 @@
 
     .wcpt-time {
 
-    	padding-top: $unit-s;
-    	padding-bottom: $unit-s;
+      padding-top: $unit-s;
+      padding-bottom: $unit-s;
 
       color: $color-text-strong-invert;
       background-color: $color-brand-tertiary;
@@ -501,13 +504,13 @@
 
     .wcpt-session-title {
 
-    	padding: 0;
+      padding: 0;
 
     }
 
     .wcpt-session-speakers {
 
-    	padding-left: 0;
+      padding-left: 0;
 
     }
 
@@ -574,7 +577,7 @@ $session-type-color-business:    #575357; // Ash
 .wcb-session-reacting-natively-with-wordpress,
 .wcb-session-accessibility-in-the-age-of-the-headless-cms {
 
-	@include session-label('Development', $session-type-color-development);
+  @include session-label('Development', $session-type-color-development);
 
 }
 
@@ -588,7 +591,7 @@ $session-type-color-business:    #575357; // Ash
 .wcb-session-lessons-learnt-marketing-woocommerce-since-july-2014,
 .wcb-session-using-wordpress-for-good {
 
-	@include session-label('Business', $session-type-color-business);
+  @include session-label('Business', $session-type-color-business);
 
 }
 
@@ -599,7 +602,7 @@ $session-type-color-business:    #575357; // Ash
 .wcb-session-big-little-shame-a-tale-of-empowered-user-experience-through-localisation,
 .wcb-session-wordpress-beyond-borders-cross-cultural-communication-and-the-fundamentals-of-caring {
 
-	@include session-label('Community', $session-type-color-community);
+  @include session-label('Community', $session-type-color-community);
 
 }
 
@@ -609,7 +612,7 @@ $session-type-color-business:    #575357; // Ash
 .wcb-session-big-design-troubles-in-open-source,
 .wcb-session-night-of-the-living-style-guides {
 
-	@include session-label('Design', $session-type-color-design);
+  @include session-label('Design', $session-type-color-design);
 
 }
 
