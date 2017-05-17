@@ -363,15 +363,26 @@
 
   }
 
-  .global-session .wcpt-session-title {
+  .global-session {
 
-    margin-bottom: 0;
+    &.registration,
+    &.lunch,
+    &.morning-break,
+    &.afternoon-break {
 
-    font-size: ms(2);
-    line-height: ms(1);
-    font-family: $font-brand-secondary;
-    text-transform: uppercase;
-    color: $color-text-strong;
+      .wcpt-session-title {
+
+        margin-bottom: 0;
+
+        font-size: ms(2);
+        line-height: ms(1);
+        font-family: $font-brand-secondary;
+        text-transform: uppercase;
+        color: $color-text-strong;
+
+      }
+
+    }
 
   }
 
