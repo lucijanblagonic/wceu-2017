@@ -139,7 +139,9 @@
 
     background-color: $color-brand-tertiary;
 
-    &.toggled-on {
+
+
+    &.toggled-on .menu {
 
       display: block;
 
@@ -160,8 +162,6 @@
   @include list-reset();
   @include clearfix();
 
-  display: none;
-
   text-align: center;
 
   @include breakpoint(small) {
@@ -170,23 +170,17 @@
 
   }
 
-  @include breakpoint(large) {
-
-    // display: table;
-    // width: 100%;
-
-    // > .menu-item {
-
-    //   float: none;
-    //   display: table-cell;
-
-    // }
-
-  }
-
-  .main-small-navigation & {
+  @include breakpoint(to-small) {
 
     border-top: 1px solid rgba(255,255,255,.2);
+
+    display: none;
+
+    .toggled-on & {
+
+      display: block;
+
+    }
 
   }
 
@@ -265,6 +259,12 @@
 
   background-color: rgba($color-brand-tertiary, .6);
 
+  .dropdown-toggle {
+
+    display: none;
+
+  }
+
   @include breakpoint(small) {
 
     background-color: transparent;
@@ -287,6 +287,20 @@
         content: "";
 
       }
+
+    }
+
+    > a .dropdown-toggle {
+
+      display: inline-block;
+
+      display: none; // Hide temporarily
+
+      // position: relative;
+
+      // background-color: transparent;
+      // border: none;
+      // border-radius: 0;
 
     }
 
