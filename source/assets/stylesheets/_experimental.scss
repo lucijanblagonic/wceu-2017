@@ -40,6 +40,25 @@
     .widget-title {
 
       // @include visually-hidden();
+      font-size: ms(2);
+
+    }
+
+  }
+
+  #content-widget-1 .widget:first-child {
+
+    @include container-padding(2);
+
+    .widget-title {
+
+      font-size: ms(3);
+
+    }
+
+    p {
+
+      font-size: ms(1);
 
     }
 
@@ -50,8 +69,7 @@
 .content-widgets-block {
 
   position: relative;
-
-  background-color: $color-grey-10;
+  background-color: #fff;
 
   &:before {
 
@@ -61,7 +79,7 @@
     left: -1000px;
     right: -1000px;
 
-    background-color: $color-grey-10;
+    background-color: inherit;
 
     content: "";
 
@@ -71,11 +89,13 @@
 
 #content-widget-1 {
 
-  background-color: $color-grey-10;
-
   &:before {
 
-    background-color: $color-grey-10;
+    background-image: $image-pattern-01;
+    background-color: $color-brand-quaternary!important;
+    background-size: 120px;
+    background-attachment: fixed;
+    background-position: 50% 0;
 
   }
 
@@ -83,11 +103,11 @@
 
 #content-widget-2 {
 
-  background-color: $color-grey-20;
-
   &:before {
 
-    background-color: $color-grey-20;
+    border-top: 1px solid $color-border-weak;
+
+    // background-color: $color-grey-20;
 
   }
 
@@ -95,11 +115,51 @@
 
 #content-widget-3 {
 
-  background-color: $color-grey-30;
+  &:before {
+
+    border-top: 1px solid $color-border-weak;
+
+    // background-color: $color-grey-30;
+
+  }
+
+}
+
+#content-widget-4 {
 
   &:before {
 
-    background-color: $color-grey-30;
+    border-top: 1px solid $color-border-weak;
+
+    // background-color: $color-grey-30;
+
+  }
+
+}
+
+#content-widget-5 {
+
+  &:before {
+
+    // background-image: $image-pattern-01;
+    background-color: $color-brand-tertiary!important;
+    background-size: 120px;
+    background-attachment: fixed;
+    background-position: 50% 0;
+
+  }
+
+  text-align: center;
+
+  .widget-title {
+
+    color: $color-text-heading-1;
+
+  }
+
+  p {
+
+    color: rgba(255,255,255,.8);
 
   }
 
@@ -109,6 +169,8 @@
 .nav-anchor {
 
   @include list-reset();
+
+  margin-top: $unit-default;
 
   text-align: center;
 
