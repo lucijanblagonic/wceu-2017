@@ -22,9 +22,12 @@
 
   #content-widgets .widget {
 
-    .widget-title {
+    border-top: 1px solid $color-border-weak;
+    background: none!important;
 
-      @include visually-hidden();
+    &:first-child {
+
+      border-top: none;
 
     }
 
@@ -34,27 +37,74 @@
 
     }
 
-  }
+    .widget-title {
 
-  #content-widget-1 {
+      // @include visually-hidden();
 
-    background-color: #ccc;
-
-  }
-
-  #content-widget-2 {
-
-    background-color: #ddd;
-
-  }
-
-  #content-widget-3 {
-
-    background-color: #eee;
+    }
 
   }
 
 }
+
+.content-widgets-block {
+
+  position: relative;
+
+  background-color: $color-grey-10;
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1000px;
+    right: -1000px;
+
+    background-color: $color-grey-10;
+
+    content: "";
+
+  }
+
+}
+
+#content-widget-1 {
+
+  background-color: $color-grey-10;
+
+  &:before {
+
+    background-color: $color-grey-10;
+
+  }
+
+}
+
+#content-widget-2 {
+
+  background-color: $color-grey-20;
+
+  &:before {
+
+    background-color: $color-grey-20;
+
+  }
+
+}
+
+#content-widget-3 {
+
+  background-color: $color-grey-30;
+
+  &:before {
+
+    background-color: $color-grey-30;
+
+  }
+
+}
+
 
 .nav-anchor {
 
@@ -68,6 +118,9 @@
 
     font-size: ms(0);
     line-height: ms(1);
+    font-family: $font-headline;
+    text-transform: uppercase;
+    font-weight: $bold;
 
   }
 
@@ -76,19 +129,23 @@
     display: block;
     padding: $unit-s  $unit-m;
 
-    color: $color-link;
-    background-color: $color-grey-01;
+    color: $color-text-strong;
+    background-color: $color-link;
+
+    text-decoration: none;
+    border-radius: $border-radius-small;
 
     &:active {
 
-      color: $color-link;
+      color: $color-text-strong;
 
     }
 
     &:hover,
     &:focus {
 
-      color: $color-link-hover;
+      color: $color-text-strong;
+      background-color: $color-link-hover;
 
     }
 
