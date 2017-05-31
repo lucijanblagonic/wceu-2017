@@ -80,7 +80,7 @@
 
   }
 
-  &.toggled-on {
+  &[aria-expanded="true"] {
 
     color: $color-link;
 
@@ -90,6 +90,12 @@
       border-bottom-color: $color-link-hover;
 
     }
+
+  }
+
+  @include breakpoint(small) {
+
+    display: none;
 
   }
 
