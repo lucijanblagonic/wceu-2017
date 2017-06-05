@@ -127,7 +127,8 @@
 
 // Large
 .wcorg-sponsor-level-administrator,
-.wcorg-sponsor-level-after-party,
+.wcorg-sponsor-level-event-after-party,
+.wcorg-sponsor-level-event-speakers-dinner,
 .wcorg-sponsor-level-super-admin {
 
   @include clearfix();
@@ -214,6 +215,8 @@
 
 // Hide
 .wcorg-sponsor-level-community-summit-individual,
+.wcorg-sponsor-level-community-summit-gold,
+.wcorg-sponsor-level-community-summit-silver,
 .wcorg-sponsor-level-community-summit-bronze {
 
   display: none;
