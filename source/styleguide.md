@@ -22,10 +22,10 @@ This style guide is based on [KSS](http://warpspire.com/kss/) methodology. If yo
 WordCamp Europe 2017 logo. Read more about [colors](section-1.html#kssref-1-colors) and [fonts](section-1.html#kssref-1-typography) used on the site.
 
 <header id="masthead" class="site-header" role="banner">
-  <hgroup>
+  <div class="site-branding">
    <h1 class="site-title"><a href="#" title="WordCamp Europe" rel="home">WordCamp Europe</a></h1>
    <h2 class="site-description">Paris, France – June 15-17, 2017</h2>
-  </hgroup>
+  </div>
 </header>
 
 ## Code standards

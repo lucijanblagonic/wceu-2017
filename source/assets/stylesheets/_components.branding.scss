@@ -7,11 +7,12 @@
 //
 // Markup:
 // <header id="masthead" class="site-header" role="banner">
-//   <hgroup>
-//    <h1 class="site-title"><a href="#" title="WordCamp Europe" rel="home">WordCamp Europe</a></h1>
-//    <h2 class="site-description">Paris, France – June 15-17, 2017</h2>
-//   </hgroup>
-// </header>
+//   <div class="site-branding">
+//     <p class="site-title"><a href="https://2017.europe.wordcamp.org/" rel="home">WordCamp Europe 2017</a></p>
+//     <p class="site-description">June 15-17, Paris, France | #WCEU</p>
+//   </div><!-- .site-branding -->
+//   <!-- #site-navigation -->
+// </header><!-- #masthead -->
 //
 // Style guide: 6.branding
 
@@ -20,7 +21,7 @@
  * Header
  *
  * Container for navigation and branding
- * <heaeder id="masthead" class="site-header" role="banner"> ... </header>
+ * <header id="masthead" class="site-header" role="banner"> ... </header>
  */
 
 .site-header {
@@ -29,9 +30,10 @@
 
 }
 
-.site-header hgroup {
+.site-header .site-branding {
 
-  overflow: hidden; // Add overflow hidden to keep light beams from leaking out
+  position: relative; // Add position: relative to keep the light beams from leaking out
+  overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
   @include container-padding(1.5);
 
@@ -97,6 +99,7 @@
   margin-top: $unit-xs;
 
   font-size: ms(0);
+  line-height: ms(1);
   font-family: $font-body;
   font-weight: $regular;
   text-transform: none;

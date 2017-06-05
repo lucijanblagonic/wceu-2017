@@ -7,6 +7,8 @@
   @include container-padding(1.5);
   position: relative;
   max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -26,6 +28,7 @@
 
 #after-header-widgets .widget,
 #before-content-widgets .widget,
+#content-widgets .widget,
 #secondary .widget {
 
   // padding-left: 0;
@@ -41,7 +44,6 @@
   &:before {
 
     position: absolute;
-    // z-index: -1;
     top: 0;
     bottom: 0;
     left: -1000px;

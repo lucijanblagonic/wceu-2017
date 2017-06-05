@@ -8,7 +8,7 @@
 // Markup:
 // <div id="secondary">
 //   <aside id="" class="widget jetpack_subscription_widget">
-//    <h1 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h1>
+//    <h2 class="widget-title">Subscribe to WordCamp Europe 2017 News by email</h2>
 //    <form action="#" method="post" accept-charset="utf-8" id="">
 //      <div id="subscribe-text">
 //        <p>Enter your email address to subscribe to this site and receive news by email.</p>
@@ -28,6 +28,8 @@
 
 .jetpack_subscription_widget {
 
+  text-align: center;
+
   &:before {
 
     background-image: $image-pattern-01;
@@ -38,7 +40,10 @@
 
   }
 
-  text-align: center;
+  .widget-title {
+
+    color: $color-brand-secondary;
+  }
 
   p {
 
