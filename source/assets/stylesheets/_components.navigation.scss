@@ -67,6 +67,15 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus,
+  &:active {
+
+    color: $color-link-hover;
+    background-color: rgba($color-brand-tertiary, .9);
+
+  }
+
   &:after {
 
     position: relative;
@@ -345,9 +354,9 @@
 
   }
 
-  a {
+  @include breakpoint(to-small) {
 
-    .main-small-navigation & {
+    a {
 
       padding-left: rem(40);
 
@@ -364,7 +373,6 @@
       }
 
     }
-
 
   }
 
