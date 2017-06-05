@@ -50,6 +50,14 @@
 
 }
 
+.content-area {
+
+  text-align: left;
+
+  @include container-padding(1.5);
+
+}
+
 
 /*
  * Content
