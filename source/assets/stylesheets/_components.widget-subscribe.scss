@@ -28,6 +28,8 @@
 
 .jetpack_subscription_widget {
 
+  text-align: center;
+
   &:before {
 
     background-image: $image-pattern-01;
@@ -38,7 +40,10 @@
 
   }
 
-  text-align: center;
+  .widget-title {
+
+    color: $color-brand-secondary;
+  }
 
   p {
 
