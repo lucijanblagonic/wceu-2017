@@ -32,7 +32,8 @@
 
 .site-header .site-branding {
 
-  overflow: hidden; // Add overflow hidden to keep light beams from leaking out
+  position: relative; // Add position: relative to keep the light beams from leaking out
+  overflow: hidden; // Add overflow: hidden to keep light beams from leaking out
 
   @include container-padding(1.5);
 
@@ -98,6 +99,7 @@
   margin-top: $unit-xs;
 
   font-size: ms(0);
+  line-height: ms(1);
   font-family: $font-body;
   font-weight: $regular;
   text-transform: none;
