@@ -82,6 +82,26 @@
 
 }
 
+.entry-meta {
+
+  margin-bottom: $unit-s;
+
+  a {
+
+    color: $color-link-alt;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      color: $color-link-alt-hover;
+
+    }
+
+  }
+
+}
+
 .entry-footer {
 
   margin-bottom: $unit-default;
