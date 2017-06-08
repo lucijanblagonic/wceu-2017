@@ -104,7 +104,9 @@
 
 }
 
-.speaker-session-names {
+#speaker-session-names {
+
+  @include list-reset();
 
   li {
 
