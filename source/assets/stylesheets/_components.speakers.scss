@@ -69,6 +69,8 @@
 
     margin-bottom: $unit-xs;
 
+    font-size: ms(0, 16px);
+
     &:last-child {
 
       margin-bottom: 0;
@@ -85,5 +87,34 @@
 
   ul {}
   li {}
+
+}
+
+/*
+ * Speaker page
+ */
+
+.single-wcb_speaker {
+
+  .entry-content {
+
+    font-size: ms(0, 18px);
+
+  }
+
+}
+
+.speaker-session-names {
+
+  li {
+
+    padding-left: rem(40);
+
+    background-image: $image-bullet-color;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: $unit-s 50%;
+
+  }
 
 }
