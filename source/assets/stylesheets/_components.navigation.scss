@@ -56,7 +56,7 @@
   width: 100%;
 
   // font-size: ms(0);
-  font-size: 0;
+  font-size: 0; /* Hides the default "Primary menu" label */
   line-height: 24px;
 
   font-weight: $bold;
@@ -80,12 +80,14 @@
 
   }
 
+  /* Replaces the "Primary menu" label */
   &:before {
 
     display: inline-block;
 
     font-size: 16px;
     line-height: 24px;
+    vertical-align: middle;
 
     content: "Menu";
 
