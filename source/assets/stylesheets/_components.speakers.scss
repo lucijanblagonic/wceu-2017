@@ -108,14 +108,16 @@
 
   @include list-reset();
 
+  margin-bottom: $unit-default;
+
   li {
 
-    padding-left: rem(40);
+    padding-left: rem(32);
 
-    background-image: $image-bullet-color;
+    background-image: $image-bullet-dark;
     background-repeat: no-repeat;
     background-size: 12px;
-    background-position: $unit-s 50%;
+    background-position: $unit-xs 50%;
 
   }
 
