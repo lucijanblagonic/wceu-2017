@@ -55,7 +55,10 @@
   margin-top: rem(2);
   width: 100%;
 
-  font-size: ms(0);
+  // font-size: ms(0);
+  font-size: 0; /* Hides the default "Primary menu" label */
+  line-height: 24px;
+
   font-weight: $bold;
   text-transform: uppercase;
   text-align: center;
@@ -74,6 +77,19 @@
 
     color: $color-link-hover;
     background-color: rgba($color-brand-tertiary, .9);
+
+  }
+
+  /* Replaces the "Primary menu" label */
+  &:before {
+
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: middle;
+
+    content: "Menu";
 
   }
 
