@@ -20,6 +20,20 @@
 
 .page-template-page-day-of {
 
+  /*
+   * Hiding content on this page
+   */
+
+  #primary {
+
+    display: none;
+
+  }
+
+  /*
+   * Widget styling
+   */
+
   #content-widgets .widget {
 
     border-top: 1px solid $color-border-weak;
