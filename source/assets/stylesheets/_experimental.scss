@@ -179,7 +179,13 @@
 
   p {
 
-    color: rgba(255,255,255,.8);
+    color: $color-text-invert;
+
+  }
+
+  strong {
+
+    color: $color-text-strong-invert;
 
   }
 
