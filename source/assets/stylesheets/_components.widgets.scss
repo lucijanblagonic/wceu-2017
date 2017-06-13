@@ -30,6 +30,13 @@
   margin: $unit-default auto;
   border-top: 2px solid $color-brand-secondary;
 
+  @include breakpoint(medium) {
+
+    margin-top: $unit-l;
+    margin-bottom: $unit-l;
+
+  }
+
 }
 
 
