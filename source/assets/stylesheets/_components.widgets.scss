@@ -19,6 +19,26 @@
 
 }
 
+/*
+ * Widget helpers
+ */
+
+.widget hr {
+
+  width: rem(160);
+  padding: 0;
+  margin: $unit-default auto;
+  border-top: 2px solid $color-brand-secondary;
+
+}
+
+.widget h3 {
+
+  font-size: ms(0);
+  line-height: ms(2);
+
+}
+
 
 /*
  * Secondary Widgets
