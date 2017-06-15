@@ -230,6 +230,7 @@
 
     display: block;
     padding: $unit-s  $unit-m;
+    min-width: rem(220);
 
     color: $color-text-strong;
     background-color: $color-link;
@@ -254,8 +255,6 @@
   }
 
 }
-
-
 
 
 /*
