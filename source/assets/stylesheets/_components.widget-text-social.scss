@@ -17,6 +17,9 @@
 //         <li class="social-facebook" id="facebook">
 //           <a href="https://www.facebook.com/WordCampEurope/"><strong>WordCampEurope</strong> on Facebook</a>
 //         </li>
+//         <li class="social-instagram" id="instagram">
+//           <a href="https://www.instagram.com/WCEurope/"><strong>WordCampEurope</strong> on Instagram</a>
+//         </li>
 //       </ul>
 //     </div>
 //   </aside>
@@ -61,7 +64,8 @@
 
     @include breakpoint(small) {
 
-      min-width: rem(240);
+      width: 30%;
+      min-width: rem(200);
 
     }
 
@@ -105,8 +109,6 @@
       height: rem(36);
       border: 6px double $color-brand-quinary;
 
-      // background-color: $color-grey-10;
-
       content :"";
 
       transition: all .1s ease;
@@ -135,16 +137,12 @@
     &:focus,
     &:active {
 
-      // color: $color-link-hover;
       text-decoration: none;
-      // background-color: $color-brand-tertiary;
       color: $color-text-strong-invert;
       background-color: $color-brand-quinary;
 
       &:before {
 
-        // background-color: $color-link-hover;
-        // border-color: $color-link-hover;
         background-color: tint($color-brand-quinary, 60%);
         border-color: tint($color-brand-quinary, 60%);
 
@@ -163,6 +161,12 @@
   .social-facebook a:after {
 
     background-image: url('https://2017.europe.wordcamp.org/files/2016/11/icon-facebook.png');
+
+  }
+
+  .social-instagram a:after {
+
+    background-image: url('https://2017.europe.wordcamp.org/files/2017/06/icon-instagram.png');
 
   }
 
