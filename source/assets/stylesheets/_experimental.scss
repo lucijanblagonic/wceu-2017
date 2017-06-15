@@ -217,19 +217,20 @@
   li {
 
     display: inline-block;
+    margin: $unit-xs;
 
+    font-family: $font-headline;
     font-size: ms(0);
     line-height: ms(1);
-    font-family: $font-headline;
-    text-transform: uppercase;
     font-weight: $bold;
+    text-transform: uppercase;
 
   }
 
   a {
 
     display: block;
-    padding: $unit-s  $unit-m;
+    padding: $unit-s  $unit-s;
     min-width: rem(220);
 
     color: $color-text-strong;
