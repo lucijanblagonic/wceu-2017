@@ -40,6 +40,12 @@ gulp.task('stylesheets', function() {
     }));
 })
 
+// Start scripts task
+gulp.task('scripts', function() {
+  gulp.src(['source/assets/scripts/main.js'])
+    .pipe(gulp.dest('build/assets/scripts'));
+});
+
 // Start images task
 gulp.task('images', function() {
 
@@ -50,13 +56,14 @@ gulp.task('images', function() {
 });
 
 // Start watch groups of tasks
-gulp.task('default', ['browserSync', 'stylesheets', 'images', 'kss'], function() {
+gulp.task('default', ['browserSync', 'stylesheets', 'images', 'scripts', 'kss'], function() {
   gulp.watch('source/assets/stylesheets/**/*.scss', ['stylesheets']); // Watch for SCSS changes
   gulp.watch('source/assets/images/**/*', ['images']); // Watch for image changes
+  gulp.watch('source/assets/scripts/**/*.js', ['scripts']); // Watch for JS changes
   gulp.watch('source/**', ['kss']); // Watch for style guide changes
   gulp.watch('build/**.html', browserSync.reload);
   gulp.watch('styleguide/**.html', browserSync.reload);
 });
 
 // Start build task
-gulp.task('build', ['stylesheets', 'images', 'kss'], function() {})
+gulp.task('build', ['stylesheets', 'images', 'scripts', 'kss'], function() {})
