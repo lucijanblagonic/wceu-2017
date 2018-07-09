@@ -1,5 +1,7 @@
 # WordCamp Europe 2017 CSS
 
+👀 **Check out the WCEU 2018 [style guide](https://lucijanblagonic.github.io/wceu-2017/styleguide/)**.
+
 **Work in progress.** See the current version of the generated [style guide](https://lucijanblagonic.github.io/wceu-2017/styleguide/).
 
 ![Style guide created with KSS methodology](screenshot.png)
